@@ -1,0 +1,195 @@
+{
+  "title": "The Shady Businessman and the Rock Trap",
+  "textboxes": [
+    {
+      "id": "businessman-1",
+      "description": "You’re walking through the desert when you spot a man, dressed in a crisp suit, strangely out of place. He's stuck inside a large rock formation, his body wedged into a tight gap. His face is red with strain, and he’s struggling to free himself. He looks up at you, desperation in his eyes.",
+      "choices": [
+        {
+          "text": "Ask him who he is and why he's stuck",
+          "next_id": "businessman-2"
+        },
+        {
+          "text": "Walk away, he might be better off alone",
+          "next_id": "businessman-end"
+        }
+      ]
+    },
+    {
+      "id": "businessman-2",
+      "description": "The man takes a deep breath, managing to speak between his gasps. 'I’m Dominic Keller, a businessman. I was trying to climb up this rock, and now I'm stuck. Please, help me. I’ll reward you handsomely.' His offer seems suspicious, but his struggle is genuine.",
+      "choices": [
+        {
+          "text": "Try to help him free himself",
+          "next_id": "businessman-3",
+          "skill_check": {
+            "skill": "strength",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Refuse to help and demand more information about his business",
+          "next_id": "businessman-4"
+        }
+      ]
+    },
+    {
+      "id": "businessman-3",
+      "description": "You apply all your strength, but the rock is stubborn, and it barely budges. The man’s breathing is heavy, and the sweat glistens on his forehead. 'Please, I can pay you! Whatever you want!' He’s getting frantic now.",
+      "choices": [
+        {
+          "text": "Keep trying to free him with more effort",
+          "next_id": "businessman-5",
+          "skill_check": {
+            "skill": "strength",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Stop and ask him again what he was doing out here",
+          "next_id": "businessman-4"
+        }
+      ]
+    },
+    {
+      "id": "businessman-4",
+      "description": "'I’m a businessman,' he says, but his eyes flicker nervously. 'I’ve been dealing with... some ventures. I was meeting a contact in the desert when this happened. But don’t mind that. Just get me out of here.' His evasiveness is unsettling.",
+      "choices": [
+        {
+          "text": "Press him further, ask what business he was involved in",
+          "next_id": "businessman-6"
+        },
+        {
+          "text": "Let him off the hook and try to help him again",
+          "next_id": "businessman-3"
+        }
+      ]
+    },
+    {
+      "id": "businessman-5",
+      "description": "You push yourself harder, and with one final heave, you manage to dislodge the rock slightly, but it’s still not enough. The man’s foot seems injured, and he can’t move it. He looks at you with pleading eyes.",
+      "choices": [
+        {
+          "text": "Offer him a makeshift splint for his foot",
+          "next_id": "businessman-7"
+        },
+        {
+          "text": "Leave him behind and continue on your way",
+          "next_id": "businessman-end"
+        }
+      ]
+    },
+    {
+      "id": "businessman-6",
+      "description": "He hesitates before speaking. 'Let’s just say... I’m in some dangerous deals with people who don’t play fair. It’s all about power, leverage, and... money. But that’s not important right now, is it?' The more he talks, the more you feel like something’s off.",
+      "choices": [
+        {
+          "text": "Try to untie him, asking more about the dangerous deals",
+          "next_id": "businessman-8"
+        },
+        {
+          "text": "Decide to leave him and walk away, warning him to be careful next time",
+          "next_id": "businessman-end"
+        }
+      ]
+    },
+    {
+      "id": "businessman-7",
+      "description": "You quickly fashion a splint for his foot. He winces but thanks you for your help. 'I owe you one,' he says. 'If you ever need anything, I can make sure you’re taken care of.' His tone shifts from desperate to calm, almost calculating.",
+      "choices": [
+        {
+          "text": "Ask him more about his business dealings",
+          "next_id": "businessman-9"
+        },
+        {
+          "text": "Help him get up and continue helping him out of the desert",
+          "next_id": "businessman-10"
+        }
+      ]
+    },
+    {
+      "id": "businessman-8",
+      "description": "You untie him cautiously, trying to get more information about the shady dealings. He’s evasive, but he drops a hint about a powerful enemy. 'I don’t trust the people I work with anymore. They’ve been tracking me. I don’t even know who I can trust.' His paranoia is growing.",
+      "choices": [
+        {
+          "text": "Warn him to stay hidden and avoid these people",
+          "next_id": "businessman-end"
+        },
+        {
+          "text": "Offer to help him get away from his enemies",
+          "next_id": "businessman-11"
+        }
+      ]
+    },
+    {
+      "id": "businessman-9",
+      "description": "You ask him about his business ventures, and he speaks in vague terms about working with influential people and shady contacts. The conversation only deepens your suspicion that he’s involved in something dangerous. You start to feel uneasy about helping him.",
+      "choices": [
+        {
+          "text": "Decide to leave and escape the situation",
+          "next_id": "businessman-end"
+        },
+        {
+          "text": "Agree to help him further despite the risks",
+          "next_id": "businessman-11"
+        }
+      ]
+    },
+    {
+      "id": "businessman-10",
+      "description": "After much effort, you manage to help the businessman to his feet. He thanks you, but there's an air of tension between you now. You start to wonder if you’ve done the right thing, as he walks off into the desert with a calculated look on his face.",
+      "choices": [
+        {
+          "text": "Watch him carefully as he walks away",
+          "next_id": "businessman-end"
+        },
+        {
+          "text": "Follow him cautiously, suspecting he may be up to no good",
+          "next_id": "businessman-12"
+        }
+      ]
+    },
+    {
+      "id": "businessman-11",
+      "description": "He looks you in the eye and says, 'You have no idea who I know, do you?' Before you can respond, several shadowy figures appear on the horizon, moving toward you. 'I’ve led you right into their trap,' he smirks.",
+      "choices": [
+        {
+          "text": "Prepare to defend yourself",
+          "next_id": "businessman-end"
+        },
+        {
+          "text": "Run and try to escape the situation",
+          "next_id": "businessman-12"
+        }
+      ]
+    },
+    {
+      "id": "businessman-12",
+      "description": "You decide to follow him cautiously, but you’re too late. The shadowy figures have already surrounded you both. The businessman laughs coldly. 'You’ve been played.' It’s too late to escape. They have you cornered.",
+      "choices": [
+        {
+          "text": "Fight back",
+          "next_id": "businessman-end"
+        },
+        {
+          "text": "Surrender and see what they want",
+          "next_id": "businessman-end"
+        }
+      ]
+    },
+    {
+      "id": "businessman-end",
+      "description": "The adventure concludes. Depending on your choices, you may have helped a shady businessman escape, or you may have fallen into a trap yourself. The consequences of your actions will remain with you.",
+      "choices": [
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    }
+  ],
+  "reward": {
+    "id": "shady-business-deal",
+    "quantity": 1
+  }
+}

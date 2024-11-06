@@ -1,0 +1,73 @@
+{
+  "title": "Adventure Title",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "Describe the scene here, with the protagonist (Em) encountering a dilemma or event. The protagonist’s options are presented here.",
+      "choices": [
+        {
+          "text": "Choice option 1 text",
+          "next_id": "adventure-2",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Choice option 2 text",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Choice option 3 text",
+          "next_id": "adventure-4"
+        }
+      ]
+    },
+    {
+      "id": "adventure-2",
+      "description": "The outcome of choice option 1 with further choices or consequences.",
+      "choices": [
+        {
+          "text": "Continue with choice 1",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Change your mind and go down a different path",
+          "next_id": "adventure-6"
+        }
+      ]
+    },
+    {
+      "id": "adventure-3",
+      "description": "The outcome of choice option 2 with further choices or consequences.",
+      "choices": [
+        {
+          "text": "Choice 1",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Choice 2",
+          "next_id": "adventure-7"
+        }
+      ]
+    },
+    {
+      "id": "adventure-4",
+      "description": "The outcome of choice option 3 with further choices or consequences.",
+      "choices": [
+        {
+          "text": "Choice 1",
+          "next_id": "adventure-8"
+        }
+      ]
+    },
+    {
+      "id": "adventure-end",
+      "description": "A conclusion for the adventure.",
+      "reward": {
+        "id": "item_id",
+        "quantity": 1
+      }
+    }
+  ]
+}

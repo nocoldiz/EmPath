@@ -1,0 +1,258 @@
+{
+  "title": "Fishing Trip with Bubba",
+  "textboxes": [
+    {
+      "id": "fishing-1",
+      "description": "Em and Bubba decide to take a break from their hectic lives and go fishing in a secluded lake. They set up their gear and get ready to relax. The calmness of nature is a welcome change, but there’s an underlying tension. Bubba’s been quiet lately, and Em wonders if this trip will help him open up.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Ask Bubba how he’s been feeling lately",
+          "next_id": "fishing-2",
+          "skill_check": {
+            "skill": "empathy",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Start fishing and let the silence be",
+          "next_id": "fishing-3",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Tell Bubba a funny story to lighten the mood",
+          "next_id": "fishing-4",
+          "skill_check": {
+            "skill": "bluffing",
+            "difficulty": 35
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-2",
+      "description": "Em asks Bubba how he’s been feeling, hoping to get some insight into his quiet demeanor. Bubba looks up from his fishing rod and sighs deeply. He says that he’s been thinking a lot lately about the past and some things that still haunt him. It’s clear he’s not ready to fully open up.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Give Bubba some space and fish quietly",
+          "next_id": "fishing-3",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Try to comfort Bubba and get him to talk more",
+          "next_id": "fishing-5",
+          "skill_check": {
+            "skill": "empathy",
+            "difficulty": 50
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-3",
+      "description": "Em settles down and starts fishing. The sound of the water and the gentle breeze create a peaceful atmosphere. Bubba stays silent, focusing on his own fishing. It’s a calm moment, but Em can feel the weight of the silence between them.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Cast the line deeper into the lake, hoping for a big catch",
+          "next_id": "fishing-6",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Keep the line close to the shore and enjoy the peace",
+          "next_id": "fishing-7",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-4",
+      "description": "Em tells Bubba a funny story to lighten the mood, hoping to break the ice. Bubba chuckles a bit but doesn’t say much afterward. It’s clear that he’s not in the mood for jokes, but he appreciates the effort.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Keep fishing in silence, waiting for a big catch",
+          "next_id": "fishing-6",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Try another lighthearted conversation to shift the mood",
+          "next_id": "fishing-8",
+          "skill_check": {
+            "skill": "bluffing",
+            "difficulty": 45
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-5",
+      "description": "Em tries to comfort Bubba, offering some words of encouragement and empathy. Bubba listens but doesn’t seem convinced. He mutters something about needing time to figure things out. It’s clear that Em’s efforts to get him to talk are met with resistance, but the attempt wasn’t wasted.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Give Bubba some space and continue fishing",
+          "next_id": "fishing-6",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Try to offer a distraction, like pointing out a fish you’ve caught",
+          "next_id": "fishing-7",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 35
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-6",
+      "description": "Em casts the line deeper into the lake, hoping for a bigger catch. The waiting time stretches on, but eventually, the line tightens. Em fights the fish and manages to reel it in, but it’s a small one. Bubba nods in approval, though he says little about it.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Keep fishing and see if you can catch something bigger",
+          "next_id": "fishing-9",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Take a break and relax, enjoying the surroundings",
+          "next_id": "fishing-10",
+          "skill_check": {
+            "skill": "observation",
+            "difficulty": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-7",
+      "description": "Em keeps the line close to the shore, enjoying the peaceful setting. The sound of the water and the chirping of birds create a relaxing atmosphere. Bubba seems to ease up a bit, but neither of them speaks much.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Cast the line a bit farther to try for a bigger fish",
+          "next_id": "fishing-9",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Relax and talk about something else to pass the time",
+          "next_id": "fishing-8",
+          "skill_check": {
+            "skill": "bluffing",
+            "difficulty": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-8",
+      "description": "Em tries again with a lighthearted conversation, but Bubba seems to be in his own world. The silence returns. The moment isn’t uncomfortable, just distant. It’s clear that Bubba still needs some time.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Keep fishing and let the silence linger",
+          "next_id": "fishing-9",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Ask Bubba if there’s anything on his mind",
+          "next_id": "fishing-2",
+          "skill_check": {
+            "skill": "empathy",
+            "difficulty": 45
+          }
+        }
+      ]
+    },
+    {
+      "id": "fishing-9",
+      "description": "After a few more attempts, Em and Bubba continue fishing, each in their own rhythm. The peaceful nature of the lake and the serenity of the moment finally bring Bubba a sense of calm, and he begins to talk about things he hasn’t shared in a long while.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Listen to Bubba and offer words of encouragement",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Finish fishing and head back to the camper",
+          "next_id": "neutral-end"
+        }
+      ]
+    },
+    {
+      "id": "fishing-10",
+      "description": "Em takes a break, relaxing and enjoying the serenity of the moment. Bubba quietly fishes beside her. The calmness of nature seems to be enough to ease both of their minds, if only for a little while.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Go back to fishing after a short rest",
+          "next_id": "fishing-9",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Pack up and head back home",
+          "next_id": "neutral-end"
+        }
+      ]
+    }
+  ],
+  "endings": {
+    "good-end": {
+      "description": "Bubba opens up to Em, sharing his thoughts and feelings. It’s a breakthrough in their relationship, and the fishing trip ends with a sense of renewal and understanding. The quiet of the lake served its purpose, and the bond between them grows stronger.",
+      "image": "",
+      "sound": ""
+    },
+    "neutral-end": {
+      "description": "The trip ends quietly, with Bubba still keeping his thoughts to himself. Em tries her best, but they both know that time and patience are still needed. They head back home without having fully resolved what was weighing on Bubba’s mind.",
+      "image": "",
+      "sound": ""
+    },
+    "bad-end": {
+      "description": "The fishing trip doesn’t help either of them. Bubba remains distant, and Em is left feeling helpless. They both leave the lake with a sense of frustration and unresolved tension.",
+      "image": "",
+      "sound": ""
+    }
+  }
+}

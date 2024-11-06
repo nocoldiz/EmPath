@@ -1,0 +1,118 @@
+{
+  "title": "The Prince's Promise",
+  "textboxes": [
+    {
+      "id": "prince-1",
+      "description": "One day, Bubba finds a neatly folded, handwritten letter slipped under his camper’s door. It’s beautifully calligraphed, with a royal seal. The letter claims to be from a Nigerian prince who needs help transferring his fortune, offering Bubba a substantial cut for his assistance.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Read the letter carefully",
+          "next_id": "prince-2"
+        },
+        {
+          "text": "Ignore it and toss it out",
+          "next_id": "neutral-end"
+        }
+      ]
+    },
+    {
+      "id": "prince-2",
+      "description": "Intrigued, Bubba reads that all the prince needs is a small sum upfront for “transaction fees” — around 10,000 — in return for millions. The letter is filled with elegant prose, making the deal sound almost magical. Bubba can’t help but feel flattered.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Send the money and await fortune",
+          "next_id": "prince-3",
+          "skill_check": {
+            "skill": "intuition",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Consult Em for advice",
+          "next_id": "prince-4",
+          "skill_check": {
+            "skill": "observation",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Investigate the prince’s background",
+          "next_id": "prince-5",
+          "skill_check": {
+            "skill": "genealogy",
+            "difficulty": 35
+          }
+        }
+      ]
+    },
+    {
+      "id": "prince-3",
+      "description": "Bubba, dreaming of wealth, sends the 10,000 to the prince’s address. Days pass with no word. Finally, another letter arrives asking for more, explaining it’s 'just one last payment.'",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Send more money, hoping it’s the last",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Realize it’s a scam and stop all contact",
+          "next_id": "neutral-end"
+        }
+      ]
+    },
+    {
+      "id": "prince-4",
+      "description": "Em reads the letter with a smirk, pointing out several red flags. 'Handwritten letters? A fortune transfer? Bubba, this has scam written all over it.' Bubba feels a bit embarrassed but grateful for her insight.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Thank Em and drop the idea",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Ignore Em’s advice and continue communicating with the prince",
+          "next_id": "prince-3"
+        }
+      ]
+    },
+    {
+      "id": "prince-5",
+      "description": "With a hunch, Bubba researches the so-called prince’s lineage. As he digs deeper, he realizes there’s no record of such a person. The scam becomes obvious.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Confront the sender with his findings",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Stop all communication and warn others",
+          "next_id": "good-end"
+        }
+      ]
+    }
+  ],
+  "endings": {
+    "good-end": {
+      "description": "Bubba, enlightened by Em’s advice, avoids the scam and learns to be more cautious in the future. He even shares his experience to prevent others from being deceived.",
+      "image": "",
+      "sound": ""
+    },
+    "neutral-end": {
+      "description": "Bubba realizes the scam but is disappointed, losing some faith in people’s intentions. It’s a bitter lesson, but at least he didn’t lose everything.",
+      "image": "",
+      "sound": ""
+    },
+    "bad-end": {
+      "description": "Despite warnings, Bubba keeps sending money, and soon he’s in serious debt. The prince vanishes without a trace, leaving Bubba heartbroken and financially drained.",
+      "image": "",
+      "sound": ""
+    }
+  }
+}

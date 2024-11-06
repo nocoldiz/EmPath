@@ -1,0 +1,158 @@
+{
+  "title": "The Fever Dream",
+  "textboxes": [
+    {
+      "id": "fever-1",
+      "description": "Em awakens in her camper, drenched in sweat, head throbbing with a blinding fever. Bubba hovers nearby, concerned. 'You’re burning up, Em,' he mutters, handing her a damp cloth. Em feels herself slipping in and out of strange fever dreams.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Ask Bubba to fetch medicine",
+          "next_id": "fever-2",
+          "skill_check": {
+            "skill": "medicine",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Try to meditate and control the fever",
+          "next_id": "fever-3",
+          "skill_check": {
+            "skill": "meditation",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Request Bubba to find nearby herbs",
+          "next_id": "fever-4",
+          "skill_check": {
+            "skill": "gardening",
+            "difficulty": 35
+          }
+        }
+      ]
+    },
+    {
+      "id": "fever-2",
+      "description": "Bubba nods, scrambling to find any medicine in the camper. He returns with an old bottle of fever reducer. Em takes a dose and lies back, hoping for relief as her vision blurs.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Rest and hope the medicine helps",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Try to force the fever to break through sheer will",
+          "next_id": "fever-5",
+          "skill_check": {
+            "skill": "willpower",
+            "difficulty": 50
+          }
+        }
+      ]
+    },
+    {
+      "id": "fever-3",
+      "description": "Em closes her eyes, focusing her mind to calm the searing fever. She chants softly, envisioning the heat leaving her body. However, the fever makes concentration difficult, and fevered hallucinations creep into her vision.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Persist with meditation, fighting through the visions",
+          "next_id": "fever-6"
+        },
+        {
+          "text": "Slip deeper into the feverish dreamscape",
+          "next_id": "bad-end"
+        }
+      ]
+    },
+    {
+      "id": "fever-4",
+      "description": "Bubba rushes out of the camper, searching nearby plants in hopes of finding fever-relieving herbs. He brings back some herbs he recognizes, brewing them into a tea.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Drink the herbal tea",
+          "next_id": "fever-7",
+          "skill_check": {
+            "skill": "herbology",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Doubt the tea’s effectiveness and ask Bubba to try something else",
+          "next_id": "neutral-end"
+        }
+      ]
+    },
+    {
+      "id": "fever-5",
+      "description": "Em tries to push through the fever, her body and mind struggling against the blazing heat. She feels a brief surge of power, a burst of will pushing the fever back…",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Keep pushing with all your might",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Relapse into exhaustion",
+          "next_id": "bad-end"
+        }
+      ]
+    },
+    {
+      "id": "fever-6",
+      "description": "Through intense focus, Em gains a strange clarity. She visualizes each feverish wave receding, calming her mind and her body. Slowly, she feels the fever beginning to ease.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Embrace the sense of relief and let yourself drift to sleep",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Fight to stay awake, in case the fever returns",
+          "next_id": "neutral-end"
+        }
+      ]
+    },
+    {
+      "id": "fever-7",
+      "description": "Em sips the herbal tea, tasting the bitter warmth. Almost immediately, she feels a gentle cooling spreading through her. Bubba watches anxiously, and Em begins to feel the fever abate.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Thank Bubba and rest with renewed hope",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Remain vigilant in case the fever returns",
+          "next_id": "neutral-end"
+        }
+      ]
+    }
+  ],
+  "endings": {
+    "good-end": {
+      "description": "Em awakens later, feeling refreshed and healthy. The fever is gone, thanks to her perseverance, Bubba’s help, or the calming tea. She thanks Bubba, and the two continue on their journey, closer than ever.",
+      "image": "",
+      "sound": ""
+    },
+    "neutral-end": {
+      "description": "Em recovers from the fever, but her body feels drained. She resolves to be more cautious and rest, knowing that she narrowly avoided a worse fate.",
+      "image": "",
+      "sound": ""
+    },
+    "bad-end": {
+      "description": "Em falls deeper into the fevered haze, and her body is too weak to overcome it. Bubba is left hoping for her recovery, but it may be a long, painful journey back to health.",
+      "image": "",
+      "sound": ""
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "title": "The Search for a Companion",
+  "textboxes": [
+    {
+      "id": "companion-1",
+      "description": "Dr. Irwin is sitting at his desk, looking through a stack of personal ads on his old-fashioned computer. His usual professional demeanor is softened, and you can tell something's weighing on his mind. When he notices you, he looks up with a tired smile. 'I... need help,' he says, pushing the screen toward you. 'I'm trying to find someone compatible with my work, but I think I might need someone who can understand me better on a personal level too. Could you help me find a suitable companion?'",
+      "choices": [
+        {
+          "text": "Ask Dr. Irwin what qualities he’s looking for in a companion.",
+          "next_id": "companion-2"
+        },
+        {
+          "text": "Suggest that Dr. Irwin go on an adventure to take his mind off the search for now.",
+          "next_id": "companion-3"
+        },
+        {
+          "text": "Offer to help him draft an ad and search for possible candidates.",
+          "next_id": "companion-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-2",
+      "description": "Dr. Irwin rubs his temples, clearly struggling with this. 'I want someone who’s intellectual, curious, and can stand the long hours in the lab. But, honestly, I also need someone who doesn’t mind the oddities of my lifestyle. I get so wrapped up in my work that sometimes I forget to be... human.' He looks at you with a mixture of uncertainty and hope. 'Could you help me find someone who fits that?'",
+      "choices": [
+        {
+          "text": "Suggest that finding someone who shares his passion for science might be a good start.",
+          "next_id": "companion-5"
+        },
+        {
+          "text": "Offer to look for someone who also enjoys the same hobbies and downtime activities as him.",
+          "next_id": "companion-6"
+        },
+        {
+          "text": "Encourage Dr. Irwin to open up and be more personal in his search for a companion.",
+          "next_id": "companion-7"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-3",
+      "description": "Dr. Irwin gives a small chuckle, though it doesn’t reach his eyes. 'I suppose you're right. A break might help clear my head. We could go out and explore some of the nearby ruins. I've been curious about them for a while.' He gathers his things and gives you a small smile. 'Alright, let's go.'",
+      "choices": [
+        {
+          "text": "Go on the exploration with Dr. Irwin and bond over the adventure.",
+          "next_id": "companion-8"
+        },
+        {
+          "text": "Suggest investigating the ruins in a more scientific way, bringing some tools along.",
+          "next_id": "companion-9"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-4",
+      "description": "You help Dr. Irwin write an ad, focusing on his intellectual interests, love for science, and desire for someone who can accept his eccentricities. Once it's posted, you both wait for responses. The list of candidates begins to grow, but most seem to be interested in his work rather than him personally. Dr. Irwin grows more frustrated. 'I just want someone who sees me for who I am... not just my achievements.'",
+      "choices": [
+        {
+          "text": "Review the responses again to see if anyone fits Dr. Irwin’s personal criteria.",
+          "next_id": "companion-10"
+        },
+        {
+          "text": "Try to help him approach someone in the nearby town who might be a better match.",
+          "next_id": "companion-11"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-5",
+      "description": "Dr. Irwin nods thoughtfully. 'Someone who shares my passion for knowledge, yes. But I also need someone who’s more than just an academic.' He starts brainstorming ideas for potential candidates, but it's clear he's overthinking it. 'I guess I just need a little help in narrowing down what truly matters. It's difficult, you know?' He looks to you for guidance.",
+      "choices": [
+        {
+          "text": "Encourage Dr. Irwin to look beyond the obvious qualifications and focus on deeper connections.",
+          "next_id": "companion-12"
+        },
+        {
+          "text": "Suggest he try out a few meetings to see how well the candidates match his personality.",
+          "next_id": "companion-13"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-6",
+      "description": "You help Dr. Irwin compose a list of hobbies and leisure activities that might match with someone else's. He becomes more animated as you brainstorm together, but his excitement wanes when he realizes no one seems to have that balance of intellectual curiosity and an ability to enjoy downtime. 'Maybe I’m asking for too much,' he murmurs. 'I think I need someone who can balance my seriousness with a little bit of joy.'",
+      "choices": [
+        {
+          "text": "Help him approach someone who might balance him out, even if they don’t have the same background.",
+          "next_id": "companion-14"
+        },
+        {
+          "text": "Encourage Dr. Irwin to take a more laid-back approach and just enjoy the search for now.",
+          "next_id": "companion-15"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-7",
+      "description": "Dr. Irwin laughs nervously. 'I suppose that's one way to put it. But it's hard to open up when I’m so used to being wrapped up in work. Maybe I need someone who can help me ease into this new side of life.' He seems deep in thought, considering your suggestion. 'Perhaps I need to learn how to relax a little more. Any advice on that?'",
+      "choices": [
+        {
+          "text": "Suggest he take part in a more social activity with you to ease him into it.",
+          "next_id": "companion-16"
+        },
+        {
+          "text": "Encourage Dr. Irwin to explore hobbies outside of work and academia.",
+          "next_id": "companion-17"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-8",
+      "description": "You and Dr. Irwin explore the nearby ruins, discussing everything from ancient civilizations to modern scientific theories. It’s a good opportunity for him to unwind and open up about his struggles with finding the right person. By the end of the day, he seems less burdened, his mind distracted by the adventure. 'This was a good idea,' he admits. 'I needed this.'",
+      "choices": [
+        {
+          "text": "Continue exploring together, helping Dr. Irwin find clarity in his personal search.",
+          "next_id": "companion-18"
+        },
+        {
+          "text": "Take a moment to reflect on how the search for a companion should also focus on his happiness, not just his work.",
+          "next_id": "companion-19"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-9",
+      "description": "You suggest investigating the ruins in a more scientific way, and Dr. Irwin eagerly agrees. You both analyze the ancient technology and uncover some fascinating relics. Though the work is still in his element, Dr. Irwin seems to be enjoying the company. It’s clear that he’s beginning to relax a bit in your presence.",
+      "choices": [
+        {
+          "text": "Keep working together while helping him refocus on the social aspect of life.",
+          "next_id": "companion-18"
+        },
+        {
+          "text": "Take a break and reflect on the connection he’s forming with you during this time.",
+          "next_id": "companion-19"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-10",
+      "description": "You both review the responses and notice a pattern. Many of the candidates seem like a perfect fit for Dr. Irwin’s professional life, but none truly seem to understand the more personal aspects of him. 'I guess I need someone who sees me as a person, not just as a scientist,' Dr. Irwin admits, his frustration mounting.",
+      "choices": [
+        {
+          "text": "Help him refine the search to focus more on personal qualities.",
+          "next_id": "companion-11"
+        },
+        {
+          "text": "Decide that Dr. Irwin may need to take a more active role in seeking someone out personally.",
+          "next_id": "companion-12"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "companion-11",
+      "description": "Dr. Irwin agrees to go to a nearby town to meet someone who might match his personal qualities. After some introductions and pleasant conversation, he seems more at ease. 'Maybe I’m not meant to find someone right away,' he reflects. 'But maybe this was a good start.'",
+      "choices": [
+        {
+          "text": "Reflect on how Dr. Irwin’s personal growth is just as important as the search for a companion.",
+          "next_id": "companion-18"
+        },
+        {
+          "text": "Suggest taking more time to meet people and experience more personal interactions.",
+          "next_id": "companion-19"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

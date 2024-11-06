@@ -1,0 +1,153 @@
+{
+  "title": "The Scroll of Secrets",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "You find yourself in the heart of an ancient library, surrounded by scrolls and old tomes. One scroll, however, catches your eye. It rests on a pedestal, glowing faintly with golden light. As you approach, a strange feeling washes over you. The scroll is inscribed with intricate symbols—symbols that only the most skilled in calligraphy could hope to understand. A small inscription on the pedestal reads: 'To unlock the secrets within, one must write the words in the perfect hand.' A quill and inkpot rest nearby.",
+      "choices": [
+        {
+          "text": "Attempt to write the words on the scroll using your calligraphy skills.",
+          "next_id": "adventure-2",
+          "skill_check": {
+            "skill": "calligraphy",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Leave the scroll alone, unsure of its magic.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Try to decipher the scroll without writing on it.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "You steady your hand and begin to write the ancient symbols on the scroll. As the ink flows, the symbols begin to glow brighter, and a warmth spreads through your fingers. You feel a deep connection to the words, as if you're unlocking something long forgotten. The scroll begins to reveal its secrets—a map to a hidden location, an ancient spell, and knowledge beyond your years.",
+      "choices": [
+        {
+          "text": "Read the full secrets revealed on the scroll.",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Leave the scroll, not wishing to be burdened with such power.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You hesitate, feeling uneasy about tampering with the scroll. As you turn to leave, the room seems to grow darker, and the air becomes heavy with an ominous force. It seems as if the scroll itself is displeased with your indecision. The door behind you slams shut, and you’re forced to confront the challenge in front of you. You realize that only by interacting with the scroll can you leave this place.",
+      "choices": [
+        {
+          "text": "Try to write the symbols on the scroll, despite your hesitation.",
+          "next_id": "adventure-2",
+          "skill_check": {
+            "skill": "calligraphy",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Try to force the door open and escape.",
+          "next_id": "adventure-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You decide to try and decipher the scroll without writing on it. The intricate symbols seem to twist and shift, but your knowledge of calligraphy isn't enough to fully understand them. A pulse of energy shoots from the scroll, knocking you back, and the room grows colder. It seems that without the perfect handwriting, you cannot access its knowledge.",
+      "choices": [
+        {
+          "text": "Try to write on the scroll now, knowing this might be your only chance.",
+          "next_id": "adventure-2",
+          "skill_check": {
+            "skill": "calligraphy",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Leave the scroll behind, accepting that some secrets remain hidden.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "You study the map, the ancient spell, and the knowledge now flowing through you. With the scroll’s secrets revealed, you feel an overwhelming sense of power and wisdom. The room feels lighter, and the oppressive atmosphere lifts. You have unlocked something profound—something that could change the course of your journey. You now possess the scroll’s knowledge and an ancient, forgotten spell.",
+      "choices": [
+        {
+          "text": "Use the knowledge gained to unlock a hidden potential within you.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Leave the library, knowing you have the power but unsure of how to use it.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You try to force the door open, but it resists, and the pressure builds. The scroll seems to react, and its glowing symbols intensify. Suddenly, the quill darts from the pedestal and scribbles its own set of symbols on the scroll. The air grows electric, and before you can react, a surge of dark energy strikes you. Your hand seizes, and the power of the scroll overwhelms your senses.",
+      "choices": [
+        {
+          "text": "Accept the surge of power, hoping you can control it.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Fight the surge and try to break free from the scroll’s grasp.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "Having unlocked the scroll's secrets, you feel a profound sense of clarity and purpose. The knowledge empowers you, and you now possess the means to accomplish great things. With newfound confidence, you leave the library and continue your journey, knowing you are prepared for whatever lies ahead.",
+      "reward": {
+        "id": "ancient_spell",
+        "quantity": 1
+      },
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "The knowledge granted by the scroll is incredible, but you are unsure how to use it. While you leave the library with the power to alter the course of events, you cannot shake the feeling of uncertainty. Will you truly make the most of this power? Time will tell.",
+      "reward": {
+        "id": "ancient_knowledge",
+        "quantity": 1
+      },
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "The surge of power from the scroll consumes you. You are left with nothing but the overwhelming sensation of loss. The dark energy twists your mind, leaving you a mere shadow of yourself. The library falls silent, and you are trapped in a state between worlds.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-end",
+      "description": "Your adventure with the scroll is over, but the choices you made will forever haunt you. The knowledge, power, and consequences will shape your future.",
+      "reward": {
+        "id": "none",
+        "quantity": 0
+      },
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

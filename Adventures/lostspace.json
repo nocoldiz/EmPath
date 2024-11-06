@@ -1,0 +1,246 @@
+{
+  "title": "Lost in the Stars",
+  "textboxes": [
+    {
+      "id": "space-1",
+      "description": "You exit the highway, intending to make a quick stop, but as soon as you turn off, you feel a strange shift in gravity. The camper shakes violently, and the landscape outside blurs into a swirling vortex. After what feels like an eternity, everything goes still. You find yourself in the quiet expanse of space, far from any familiar stars.",
+      "choices": [
+        {
+          "text": "Examine the camper’s dashboard for any signal",
+          "next_id": "space-2",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Peer out the window to assess your surroundings",
+          "next_id": "space-3",
+          "skill_check": {
+            "skill": "astronomy",
+            "difficulty": 50
+          }
+        }
+      ]
+    },
+    {
+      "id": "space-2",
+      "description": "You manage to reboot the camper’s electronic systems, revealing a faint signal indicating an unknown star system nearby. It’s faint but could provide a path home. However, the dashboard indicates low fuel levels.",
+      "choices": [
+        {
+          "text": "Follow the faint signal toward the star system",
+          "next_id": "space-4"
+        },
+        {
+          "text": "Conserve fuel and stay put, hoping for rescue",
+          "next_id": "space-5"
+        }
+      ]
+    },
+    {
+      "id": "space-3",
+      "description": "You scan the surroundings and spot a massive asteroid nearby, dotted with strange, glowing crystals. They pulse with energy, casting a faint light across the void. Your intuition tells you these might hold some kind of power source.",
+      "choices": [
+        {
+          "text": "Investigate the asteroid and its crystals",
+          "next_id": "space-6",
+          "skill_check": {
+            "skill": "geology",
+            "difficulty": 55
+          }
+        },
+        {
+          "text": "Ignore the asteroid and conserve your resources",
+          "next_id": "space-5"
+        }
+      ]
+    },
+    {
+      "id": "space-4",
+      "description": "You guide the camper toward the faint signal, navigating carefully. The controls feel sluggish, but you manage to approach a small, dim star surrounded by rocky planets. One planet has a small outpost—a beacon of hope.",
+      "choices": [
+        {
+          "text": "Attempt to dock with the outpost",
+          "next_id": "space-7",
+          "skill_check": {
+            "skill": "navigation",
+            "difficulty": 65
+          }
+        },
+        {
+          "text": "Land on the nearby planet and explore",
+          "next_id": "space-8"
+        }
+      ]
+    },
+    {
+      "id": "space-5",
+      "description": "You decide to stay put, conserving fuel and supplies. Hours pass in the silence of space. Just when hope seems lost, a bright light appears from nowhere—a ship unlike anything you’ve seen, sleek and shimmering with alien tech. It hails you telepathically, asking if you need assistance.",
+      "choices": [
+        {
+          "text": "Accept their help",
+          "next_id": "space-9"
+        },
+        {
+          "text": "Refuse and wait for a more familiar solution",
+          "next_id": "space-10"
+        }
+      ]
+    },
+    {
+      "id": "space-6",
+      "description": "As you investigate the crystals, you realize they radiate a kind of energy you've never encountered before. Using your tools, you manage to extract some of this energy, which seems to restore partial power to the camper. But the crystals' extraction process triggers a strange, low hum from the asteroid.",
+      "choices": [
+        {
+          "text": "Quickly retreat to the camper and take off",
+          "next_id": "space-5"
+        },
+        {
+          "text": "Investigate the humming sound",
+          "next_id": "space-11"
+        }
+      ]
+    },
+    {
+      "id": "space-7",
+      "description": "You manage to dock with the outpost. The inside is silent, covered in a layer of dust. It looks abandoned. Still, you find a control panel with logs that might hold clues to what happened here—or how to get back to Earth.",
+      "choices": [
+        {
+          "text": "Search for information on the control panel",
+          "next_id": "space-12",
+          "skill_check": {
+            "skill": "programming",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Search the outpost for supplies",
+          "next_id": "space-13"
+        }
+      ]
+    },
+    {
+      "id": "space-8",
+      "description": "You land on the planet and step out into a barren, rocky landscape under a strange purple sky. You spot an ancient temple structure nearby with markings that seem oddly familiar. As you approach, you feel a presence watching you.",
+      "choices": [
+        {
+          "text": "Enter the temple and explore",
+          "next_id": "space-14"
+        },
+        {
+          "text": "Return to the camper and try another route",
+          "next_id": "space-5"
+        }
+      ]
+    },
+    {
+      "id": "space-9",
+      "description": "The alien ship beams you aboard. Inside, a group of shimmering, translucent beings communicates with you telepathically. They seem interested in Earth and offer to help you return in exchange for some genetic samples.",
+      "choices": [
+        {
+          "text": "Agree and give them a sample",
+          "next_id": "space-15",
+          "reward": {
+            "id": "galactic_map",
+            "quantity": 1
+          }
+        },
+        {
+          "text": "Refuse and ask to be dropped off at the outpost",
+          "next_id": "space-7"
+        }
+      ]
+    },
+    {
+      "id": "space-10",
+      "description": "You refuse the telepathic offer, opting to stay with your camper. After a few moments, the ship vanishes, leaving you alone once again in the vast emptiness of space. Hours pass before you spot a small speck moving toward you—another ship, but this one looks human-made.",
+      "choices": [
+        {
+          "text": "Signal the ship and request assistance",
+          "next_id": "space-16"
+        },
+        {
+          "text": "Wait and observe before approaching",
+          "next_id": "space-10"
+        }
+      ]
+    },
+    {
+      "id": "space-11",
+      "description": "You approach the source of the hum and realize it’s emanating from a fissure in the asteroid. Peering inside, you see a small, pulsating device that resembles an alien artifact. It might be a power source or something even more valuable.",
+      "choices": [
+        {
+          "text": "Take the artifact",
+          "next_id": "space-17",
+          "reward": {
+            "id": "alien_artifact",
+            "quantity": 1
+          }
+        },
+        {
+          "text": "Leave the artifact alone and return to the camper",
+          "next_id": "space-5"
+        }
+      ]
+    },
+    {
+      "id": "space-12",
+      "description": "You manage to hack into the control panel, which reveals that the outpost was used by travelers from another dimension. One of the logs mentions a portal that may connect back to Earth, but it’s highly unstable.",
+      "choices": [
+        {
+          "text": "Attempt to activate the portal",
+          "next_id": "space-18"
+        },
+        {
+          "text": "Gather information and leave",
+          "next_id": "space-9"
+        }
+      ]
+    },
+    {
+      "id": "space-13",
+      "description": "You search the outpost and find some emergency supplies—food, water, and a small plasma weapon. Just as you collect them, an alarm blares, signaling the outpost’s self-destruct sequence.",
+      "choices": [
+        {
+          "text": "Hurry back to the camper",
+          "next_id": "space-5"
+        },
+        {
+          "text": "Look for a way to disarm the alarm",
+          "next_id": "space-19",
+          "skill_check": {
+            "skill": "cybersecurity",
+            "difficulty": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": "space-14",
+      "description": "Inside the temple, the air is thick with energy. Strange symbols on the walls glow as you step closer. Suddenly, a voice echoes in your mind, asking if you seek knowledge or passage.",
+      "choices": [
+        {
+          "text": "Ask for knowledge about the universe",
+          "next_id": "space-20"
+        },
+        {
+          "text": "Ask for passage back to Earth",
+          "next_id": "space-18"
+        }
+      ]
+    },
+    {
+      "id": "space-15",
+      "description": "The aliens take a small genetic sample and, true to their word, provide you with a galactic map. This should help you navigate your way back to familiar star systems, and maybe, with some luck, home.",
+      "next_id": "end"
+    },
+    {
+      "id": "space-16",
+      "description": "The human-made ship responds and agrees to guide you to the nearest station. You might be able to chart a course home from there.",
+      "next_id": "end"
+    }
+  ],
+  "end": {
+    "description": "After an arduous journey, you manage to return to a familiar galaxy. This cosmic odyssey has left you with more questions than answers, but you have returned safely, ready to continue your journey."
+  }
+}

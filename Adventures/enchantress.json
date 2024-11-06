@@ -1,0 +1,148 @@
+{
+  "title": "The Enchantress",
+  "textboxes": [
+    {
+      "id": "enchantress-1",
+      "description": "As you pull over at a rest stop, a woman in a dark, flowing cloak appears seemingly out of nowhere. Her eyes shimmer with an unnatural light as she approaches. 'Could you give me a lift?' she asks, her voice smooth and commanding. 'Just to the next gas stop.'",
+      "choices": [
+        {
+          "text": "Agree to give her a ride",
+          "next_id": "enchantress-2"
+        },
+        {
+          "text": "Politely decline",
+          "next_id": "enchantress-3"
+        },
+        {
+          "text": "Ask why she needs a ride",
+          "next_id": "enchantress-4",
+          "skill_check": {
+            "skill": "empathy",
+            "difficulty": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "enchantress-2",
+      "description": "She smiles as she steps into the camper, the air suddenly feeling charged with energy. As you start driving, you feel a strange tension building, as if reality itself is bending around her presence.",
+      "choices": [
+        {
+          "text": "Strike up a conversation",
+          "next_id": "enchantress-5"
+        },
+        {
+          "text": "Stay silent and focus on driving",
+          "next_id": "enchantress-6"
+        }
+      ]
+    },
+    {
+      "id": "enchantress-3",
+      "description": "The woman tilts her head, her smile fading. 'Are you sure? It’s a long road, and I could make it worth your while.' Her voice has an edge of warning, her eyes gleaming with hidden power.",
+      "choices": [
+        {
+          "text": "Stand firm in your decision",
+          "next_id": "enchantress-7",
+          "skill_check": {
+            "skill": "willpower",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Reluctantly agree to give her a ride",
+          "next_id": "enchantress-2"
+        }
+      ]
+    },
+    {
+      "id": "enchantress-4",
+      "description": "She raises an eyebrow and laughs lightly. 'Curiosity suits you,' she says, giving a cryptic smile. 'I simply enjoy the company of travelers.' Something in her tone suggests there’s more to the story.",
+      "choices": [
+        {
+          "text": "Invite her into the camper",
+          "next_id": "enchantress-2"
+        },
+        {
+          "text": "Decline and drive away",
+          "next_id": "enchantress-3"
+        }
+      ]
+    },
+    {
+      "id": "enchantress-5",
+      "description": "You ask her name, and she hesitates, her gaze distant. 'Names have power,' she replies enigmatically. 'You may call me Mara.' Her words send a shiver down your spine as the road stretches on.",
+      "choices": [
+        {
+          "text": "Ask her about her powers",
+          "next_id": "enchantress-8",
+          "skill_check": {
+            "skill": "arcane knowledge",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Focus on driving",
+          "next_id": "enchantress-6"
+        }
+      ]
+    },
+    {
+      "id": "enchantress-6",
+      "description": "As you drive, you sense her watching you closely, her gaze intense. The air feels thick with an unfamiliar magic, making you uneasy. She finally speaks, 'What do you fear the most?'",
+      "choices": [
+        {
+          "text": "Answer her question",
+          "next_id": "enchantress-9",
+          "skill_check": {
+            "skill": "willpower",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Ignore her and keep driving",
+          "next_id": "enchantress-10"
+        }
+      ]
+    },
+    {
+      "id": "enchantress-7",
+      "description": "Her eyes flash with irritation, but she simply nods, disappearing into the shadows as if she were never there. The road feels strangely empty afterward, leaving you wondering what might have happened if you’d accepted her request.",
+      "choices": []
+    },
+    {
+      "id": "enchantress-8",
+      "description": "She gives a mysterious smile. 'Power is simply the art of knowing who and what to control,' she says. 'And you, dear traveler, have more power than you realize.'",
+      "choices": [
+        {
+          "text": "Ask her what she means",
+          "next_id": "enchantress-11"
+        },
+        {
+          "text": "End the conversation and focus on driving",
+          "next_id": "enchantress-10"
+        }
+      ]
+    },
+    {
+      "id": "enchantress-9",
+      "description": "You tell her about your greatest fear, and she listens intently, nodding as if she understands completely. 'Fear is a guide,' she says. 'It shows you where to find strength.'",
+      "choices": [
+        {
+          "text": "Thank her for the advice",
+          "next_id": "enchantress-10"
+        }
+      ]
+    },
+    {
+      "id": "enchantress-10",
+      "description": "Eventually, you reach the gas station, and Mara gives you a lingering look. 'Thank you for the ride,' she says softly, before stepping out and disappearing into the night. As you drive away, the atmosphere in the camper feels lighter, but her presence lingers in your mind.",
+      "choices": []
+    },
+    {
+      "id": "enchantress-11",
+      "description": "Mara leans in, her voice a whisper. 'You are closer to understanding the hidden forces than you know. There is much potential within you, Em. Use it wisely.' With that, she falls silent until you reach the gas stop, leaving you deep in thought.",
+      "choices": []
+    }
+  ]
+}

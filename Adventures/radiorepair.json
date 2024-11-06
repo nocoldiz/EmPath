@@ -1,0 +1,182 @@
+{
+  "id": "radio-repair-1",
+  "description": "Em is sitting in the camper, frustrated by the broken radio. She hasn’t been able to get a signal for hours. The silence is driving her crazy. She grabs her toolkit and examines the radio, hoping to fix it herself.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Inspect the radio for any obvious issues",
+      "next_id": "radio-repair-2",
+      "skill_check": {
+        "skill": "electronics",
+        "difficulty": 20
+      }
+    },
+    {
+      "text": "Search the camper for any spare parts",
+      "next_id": "radio-repair-3",
+      "skill_check": {
+        "skill": "scavenging",
+        "difficulty": 15
+      }
+    },
+    {
+      "text": "Try to manually tune the radio to a different frequency",
+      "next_id": "radio-repair-4",
+      "skill_check": {
+        "skill": "observation",
+        "difficulty": 25
+      }
+    }
+  ]
+},
+{
+  "id": "radio-repair-2",
+  "description": "Upon closer inspection, Em notices a loose wire inside the radio. It seems like a simple fix, but it might take a little time.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Reconnect the wire carefully",
+      "next_id": "radio-repair-5",
+      "skill_check": {
+        "skill": "electronics",
+        "difficulty": 35
+      }
+    },
+    {
+      "text": "Try using duct tape to temporarily fix it",
+      "next_id": "radio-repair-6",
+      "skill_check": {
+        "skill": "scavenging",
+        "difficulty": 25
+      }
+    }
+  ]
+},
+{
+  "id": "radio-repair-3",
+  "description": "Em rummages through the camper, finding a few useful items, but not exactly what she needs. There's still no clear spare part for the radio.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Try searching the toolbox again",
+      "next_id": "radio-repair-5",
+      "skill_check": {
+        "skill": "electronics",
+        "difficulty": 30
+      }
+    },
+    {
+      "text": "Give up and start the camper's engine to see if that helps",
+      "next_id": "radio-repair-7",
+      "skill_check": {
+        "skill": "driving",
+        "difficulty": 20
+      }
+    }
+  ]
+},
+{
+  "id": "radio-repair-4",
+  "description": "Em fiddles with the dial, but the signal is still faint. The radio seems to have more serious issues than just tuning.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Open the radio up to check for internal damage",
+      "next_id": "radio-repair-5",
+      "skill_check": {
+        "skill": "electronics",
+        "difficulty": 40
+      }
+    },
+    {
+      "text": "Try tapping on the radio to see if it helps",
+      "next_id": "radio-repair-6",
+      "skill_check": {
+        "skill": "observation",
+        "difficulty": 30
+      }
+    }
+  ]
+},
+{
+  "id": "radio-repair-5",
+  "description": "After reconnecting the wire carefully, Em powers on the radio. The static fades, and the signal becomes clearer. It looks like the repair is a success!",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Turn up the volume and enjoy the music",
+      "next_id": "good-end"
+    },
+    {
+      "text": "Test the radio with different stations to be sure it works",
+      "next_id": "radio-repair-7",
+      "skill_check": {
+        "skill": "electronics",
+        "difficulty": 45
+      }
+    }
+  ]
+},
+{
+  "id": "radio-repair-6",
+  "description": "The temporary fix with duct tape works for a moment, but soon the connection fails again. Em realizes she’ll need a more permanent solution.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Go back and try a proper wire fix",
+      "next_id": "radio-repair-5",
+      "skill_check": {
+        "skill": "electronics",
+        "difficulty": 40
+      }
+    },
+    {
+      "text": "Start the engine and leave the radio issue for later",
+      "next_id": "bad-end"
+    }
+  ]
+},
+{
+  "id": "radio-repair-7",
+  "description": "Em starts the engine and drives, hoping the vibrations will help the radio. Unfortunately, it does not solve the issue, and the static continues.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Try fixing the radio again once parked",
+      "next_id": "radio-repair-5",
+      "skill_check": {
+        "skill": "electronics",
+        "difficulty": 40
+      }
+    },
+    {
+      "text": "Give up and enjoy the drive without music",
+      "next_id": "neutral-end"
+    }
+  ]
+},
+{
+  "id": "good-end",
+  "description": "Em successfully fixes the radio, and the sound of music fills the camper once again. She relaxes and enjoys the ride with Bubba, knowing that she’s made a small victory.",
+  "image": "",
+  "sound": ""
+},
+{
+  "id": "bad-end",
+  "description": "The duct tape fix doesn’t last, and the radio is completely silent. Em sighs in frustration, realizing that some things might need professional help.",
+  "image": "",
+  "sound": ""
+},
+{
+  "id": "neutral-end",
+  "description": "Em decides to let go of the radio issue for now. She drives in silence, content to focus on the road and let the peaceful hum of the engine be her company.",
+  "image": "",
+  "sound": ""
+}

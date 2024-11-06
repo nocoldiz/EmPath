@@ -1,0 +1,228 @@
+{
+  "title": "The Broken Jump",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "The hum of the liminal engine vibrates through your bones as the jump begins. The vessel shifts through the fabric of space and time, streaks of light twisting around you. But then—*crack*. The engine sputters and suddenly dies. The light around you distorts, and you're thrown into a vast, disorienting void. The ship is drifting, unstable. Warning alarms blare as you struggle to stay upright. The control panel is flickering, showing erratic data—something is seriously wrong.",
+      "choices": [
+        {
+          "text": "Attempt to restart the engine manually from the cockpit.",
+          "next_id": "adventure-2",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 75
+          }
+        },
+        {
+          "text": "Head to the engine room to try and fix the issue at the source.",
+          "next_id": "adventure-3",
+          "skill_check": {
+            "skill": "engineering",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Use the emergency navigation system to try and stabilize your position.",
+          "next_id": "adventure-4",
+          "skill_check": {
+            "skill": "navigation",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Contact the ship's AI for assistance and try to follow its instructions.",
+          "next_id": "adventure-5",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 60
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "You slam your hand against the cockpit’s control panel, trying to force the engine's restart sequence. The flickering lights offer no clue. Your fingers move over the worn keys, but it feels like you’re working against the clock. Sweat beads on your forehead as you focus on restoring the power. There's a rush of electricity and the hum of the engine starts again. But only for a moment. The jump continues to malfunction, and you’re not sure whether it’s a temporary fix.",
+      "choices": [
+        {
+          "text": "Try again, and push harder to stabilize the engine manually.",
+          "next_id": "adventure-6",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 90
+          }
+        },
+        {
+          "text": "Leave the cockpit and head to the engine room for a more direct fix.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Use the emergency navigation system to regain control over the trajectory.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You make your way through the cramped corridors of the ship to the engine room. The flickering lights cast eerie shadows as you enter. The engine is partially functional, but the main energy conduit is short-circuited, and there are sparks flying from the exposed wires. You know that fixing this will take precision and time, but you only have a limited window before the malfunction escalates.",
+      "choices": [
+        {
+          "text": "Attempt to fix the conduit manually, despite the dangerous sparks.",
+          "next_id": "adventure-7",
+          "skill_check": {
+            "skill": "engineering",
+            "difficulty": 85
+          }
+        },
+        {
+          "text": "Find and use a fire extinguisher to reduce the risk of explosion before trying to fix it.",
+          "next_id": "adventure-8",
+          "skill_check": {
+            "skill": "management",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Return to the cockpit and try to restart the engine again.",
+          "next_id": "adventure-2"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You rush to the emergency navigation system, which is still running but unstable. The system suggests a gravitational slingshot maneuver, but the calculations are off due to the engine’s failure. You can attempt to recalibrate the course manually, but it’s risky. If you miscalculate, the ship could spiral into a collision with a nearby celestial body or be lost in limbo forever.",
+      "choices": [
+        {
+          "text": "Attempt to recalibrate the navigation system using your own knowledge.",
+          "next_id": "adventure-9",
+          "skill_check": {
+            "skill": "navigation",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Use the AI’s pre-programmed emergency protocol, despite the risks.",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Abort the maneuver and try to stabilize the ship manually.",
+          "next_id": "adventure-10"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "The ship's AI responds with a calm, synthesized voice, 'Initiating protocol: Fail-safe auto-repair. Please stand by.' The AI begins taking over, locking down the ship's systems and working autonomously to stabilize the jump. While you’re able to relax for a moment, you can’t help but feel uneasy. The AI’s control feels too much like surrendering your agency, and you wonder if trusting it was the right choice.",
+      "choices": [
+        {
+          "text": "Trust the AI to handle the crisis and wait for the system to complete the repair.",
+          "next_id": "adventure-11"
+        },
+        {
+          "text": "Override the AI’s decision and attempt to fix it yourself.",
+          "next_id": "adventure-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "The cockpit's systems flicker again, and you push the control panel to its limits, trying to force a restart with a manual override. The engine groans and then, against all odds, roars back to life. The jump continues, but you feel the ship lurch dangerously. You’ve only partially fixed the issue, and you sense that the ship could break apart at any moment.",
+      "choices": [
+        {
+          "text": "Push forward and complete the jump, hoping that the repairs will hold.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Abort the jump, risking being stranded in the void.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "You dive in to manually fix the energy conduit, carefully rerouting the wires. It’s a risky maneuver, and the sparks flying from the short-circuit make it feel like a matter of life and death. Your hands are shaking, but your focus is sharp. As you finish, the ship lurches, and the hum of the engine resumes, though it’s faint. The jump is far from stable, but you’ve bought the ship more time.",
+      "choices": [
+        {
+          "text": "Attempt to finish the jump, despite the engine’s instability.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Shut down the system and attempt a controlled landing.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-8",
+      "description": "You grab the fire extinguisher and douse the immediate danger area with foam, reducing the risk of a catastrophic fire. As you try to fix the conduit, the system continues to sparking, but you feel more secure knowing that the immediate danger has been mitigated. The engine still feels unstable, but you have a chance to stabilize it.",
+      "choices": [
+        {
+          "text": "Fix the conduit, now that the risk is reduced.",
+          "next_id": "adventure-7"
+        },
+        {
+          "text": "Attempt to stabilize the ship manually and stop the jump.",
+          "next_id": "adventure-9"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-9",
+      "description": "You calculate the slingshot trajectory manually, your heart pounding as you adjust the course. The maneuver feels precise, but there’s an uneasy tension in the air. As you approach the gravitational pull of a nearby star, the ship is pulled into a dangerously tight orbit. It’s not enough to escape the malfunction, but you do avoid a fatal collision.",
+      "choices": [
+        {
+          "text": "Hold steady and hope for the best.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Abort the maneuver and try to manually land.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-10",
+      "description": "You try to stabilize the ship, switching systems and recalibrating the emergency thrusters. The jump is too unstable, and you’re forced to make a decision—continue the jump in hopes that the repairs will hold, or find a way to stop.",
+      "choices": [
+        {
+          "text": "Continue the jump and risk further failure.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Abort the jump and try to safely land.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    }
+  ],
+  "endings": {
+    "good-end": {
+      "description": "You manage to land the ship safely, your hands still trembling from the effort. You know you’ve just escaped death, but for now, you’re alive, and that’s enough."
+    },
+    "neutral-end": {
+      "description": "You’re stranded in the void, and the malfunctioning jump has left you with little hope of recovery. Your chances of survival are slim, but you’ve done what you could."
+    },
+    "bad-end": {
+      "description": "The jump fails catastrophically, and the ship is torn apart. There’s nothing left to do but accept your fate as you’re sucked into the unknown."
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "title": "The Petroshintoist Bombing",
+  "textboxes": [
+    {
+      "id": "bombing-1",
+      "description": "You’ve heard whispers about the Petroshintoist extremists, a radical faction that blends ancient shintoist rituals with modern petrochemical powers. But nothing could prepare you for what you’re seeing now. The streets of New York are eerily calm, as if the city itself is holding its breath. Suddenly, a series of magical explosions shatter the silence, sending magical energy and fire coursing through the city.",
+      "choices": [
+        {
+          "text": "Run toward the source of the explosion to help the injured",
+          "next_id": "bombing-2",
+          "skill_check": {
+            "skill": "empathy",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Stay hidden and gather information about the attack",
+          "next_id": "bombing-3"
+        },
+        {
+          "text": "Call for emergency services and stay out of the conflict",
+          "next_id": "bombing-4"
+        }
+      ]
+    },
+    {
+      "id": "bombing-2",
+      "description": "You rush toward the explosion site, helping those who are injured and trapped in the wreckage. The magical energy lingers in the air, sizzling with dangerous potency. You realize that this isn't just a bombing; it’s an attack designed to destroy both physically and magically. You try to help as many people as possible but need to act fast before more strikes come.",
+      "choices": [
+        {
+          "text": "Use your knowledge of magical barriers to shield the survivors",
+          "next_id": "bombing-5",
+          "skill_check": {
+            "skill": "arcanism",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Warn everyone to flee and save yourself",
+          "next_id": "bombing-6"
+        }
+      ]
+    },
+    {
+      "id": "bombing-3",
+      "description": "You stay back, trying to remain unnoticed as you observe the chaos. From a distance, you spot several individuals dressed in robes, chanting under their breath while manipulating the petrochemical magic in the air. They are the Petroshintoists, and their goal is clear: chaos and destruction, justified by their twisted spiritual beliefs.",
+      "choices": [
+        {
+          "text": "Approach the extremists to try and reason with them",
+          "next_id": "bombing-7",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Take photos and gather evidence to expose them later",
+          "next_id": "bombing-8"
+        },
+        {
+          "text": "Call the authorities and report the extremists",
+          "next_id": "bombing-4"
+        }
+      ]
+    },
+    {
+      "id": "bombing-4",
+      "description": "You quickly call emergency services and alert them to the bombing. While waiting for help to arrive, you hear another explosion in the distance. Panic starts to spread as you realize the full scale of the attack. Time is of the essence.",
+      "choices": [
+        {
+          "text": "Help the injured while waiting for responders",
+          "next_id": "bombing-2"
+        },
+        {
+          "text": "Try to find shelter and avoid the chaos",
+          "next_id": "bombing-9"
+        }
+      ]
+    },
+    {
+      "id": "bombing-5",
+      "description": "You cast a magical barrier, protecting the survivors from more falling debris. The magical energy radiates around you, but the pressure of maintaining the barrier is intense. You can hear the chants of the Petroshintoists getting louder, signaling the next wave of destruction.",
+      "choices": [
+        {
+          "text": "Keep the barrier up but attempt to negotiate with the extremists",
+          "next_id": "bombing-7"
+        },
+        {
+          "text": "Break the barrier and flee to find safety",
+          "next_id": "bombing-6"
+        }
+      ]
+    },
+    {
+      "id": "bombing-6",
+      "description": "You abandon the survivors in an attempt to escape the area. The magical explosions continue to rock the city. You find shelter in a nearby building but can still hear the echoes of destruction in the distance.",
+      "choices": [
+        {
+          "text": "Check the news for more information about the attack",
+          "next_id": "bombing-10"
+        },
+        {
+          "text": "Regret your decision to leave and return to help",
+          "next_id": "bombing-2"
+        }
+      ]
+    },
+    {
+      "id": "bombing-7",
+      "description": "You approach the extremists, hoping to reason with them. The leader, a fierce-looking figure in black robes, notices you and stops chanting. They ask, 'What is it that you want, outsider? Do you not see the truth of our actions?' The atmosphere is tense, and you feel a pressure in the air.",
+      "choices": [
+        {
+          "text": "Tell them that their actions are unjust and need to stop",
+          "next_id": "bombing-11",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Attempt to distract them while trying to disable the magical source",
+          "next_id": "bombing-12",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 70
+          }
+        }
+      ]
+    },
+    {
+      "id": "bombing-8",
+      "description": "You snap several photos, documenting the magical destruction caused by the Petroshintoists. The images might be useful later, but for now, you have to decide what to do with this evidence.",
+      "choices": [
+        {
+          "text": "Submit the photos to the authorities",
+          "next_id": "bombing-4"
+        },
+        {
+          "text": "Post the photos online to expose them",
+          "next_id": "bombing-10"
+        }
+      ]
+    },
+    {
+      "id": "bombing-9",
+      "description": "You find a secure building, locking the door behind you. You’re safe for now, but the city is in chaos, and you don’t know how bad the attack will get. The sound of distant explosions continues.",
+      "choices": [
+        {
+          "text": "Stay in hiding and wait for the responders",
+          "next_id": "bombing-10"
+        },
+        {
+          "text": "Try to escape the city entirely",
+          "next_id": "bombing-13"
+        }
+      ]
+    },
+    {
+      "id": "bombing-10",
+      "description": "You check the news, where it’s reported that the Petroshintoist extremists have launched a series of magical attacks across New York. There’s no clear motive, but the authorities are scrambling to respond. You realize that your decision might have influenced the outcome of the day.",
+      "choices": [
+        {
+          "text": "Continue watching the news for updates",
+          "next_id": "bombing-end"
+        },
+        {
+          "text": "Decide to act further and stop the extremists at all costs",
+          "next_id": "bombing-12"
+        }
+      ]
+    },
+    {
+      "id": "bombing-11",
+      "description": "The extremist leader glares at you. 'You are weak,' they say. 'The world is in ruin, and you stand in the way of our divine work.' A magical force builds up around them, and you realize that negotiation is no longer an option.",
+      "choices": [
+        {
+          "text": "Prepare to defend yourself and fight back",
+          "next_id": "bombing-14",
+          "skill_check": {
+            "skill": "handtohand",
+            "difficulty": 90
+          }
+        },
+        {
+          "text": "Flee and warn others",
+          "next_id": "bombing-6"
+        }
+      ]
+    },
+    {
+      "id": "bombing-12",
+      "description": "You manage to disable the magical device temporarily, but not without a struggle. The extremists notice and start chanting frantically, preparing for their next attack.",
+      "choices": [
+        {
+          "text": "Try to fight them off and stop the magic once and for all",
+          "next_id": "bombing-14",
+          "skill_check": {
+            "skill": "handtohand",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Escape the scene while you can",
+          "next_id": "bombing-6"
+        }
+      ]
+    },
+    {
+      "id": "bombing-13",
+      "description": "You attempt to leave the city entirely, but the roads are blocked by responders and other evacuees. It’s clear that New York will be affected by this attack for some time.",
+      "choices": [
+        {
+         

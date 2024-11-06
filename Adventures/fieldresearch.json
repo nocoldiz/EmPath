@@ -1,0 +1,204 @@
+{
+  "title": "Field Research in the Wilderness",
+  "textboxes": [
+    {
+      "id": "field-1",
+      "description": "You arrive at the research site, a remote wilderness area surrounded by dense forest and rugged hills. Your task is to collect data on the local flora and fauna. You set up your equipment, including a portable lab kit and your notebook. The weather is overcast, with a slight breeze rustling the trees. As you begin to prepare, you notice a strange marking on one of the nearby trees.",
+      "choices": [
+        {
+          "text": "Examine the strange marking on the tree",
+          "next_id": "field-2"
+        },
+        {
+          "text": "Begin collecting plant samples",
+          "next_id": "field-3"
+        }
+      ]
+    },
+    {
+      "id": "field-2",
+      "description": "You approach the tree and notice that the marking looks like some sort of symbol or code. It appears to have been carved into the bark with something sharp. As you inspect it closer, you hear a rustling noise behind you. You turn around, but no one is there. Just the wind. The strange symbol seems to pulse faintly, and your instincts tell you this marking might be more important than you first thought.",
+      "choices": [
+        {
+          "text": "Try to decipher the symbol using your research knowledge",
+          "next_id": "field-4",
+          "skill_check": {
+            "skill": "investigation",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Ignore the symbol and move on to other tasks",
+          "next_id": "field-3"
+        }
+      ]
+    },
+    {
+      "id": "field-3",
+      "description": "You begin collecting plant samples from the surrounding area, carefully cataloging each specimen in your notebook. As you collect the samples, you feel the hairs on the back of your neck rise. There’s an odd silence in the air now, and the usual sounds of wildlife seem to have disappeared. You can’t shake the feeling that something is watching you.",
+      "choices": [
+        {
+          "text": "Continue collecting the plants, focusing on your task",
+          "next_id": "field-5"
+        },
+        {
+          "text": "Look around for signs of wildlife or any unusual activity",
+          "next_id": "field-6",
+          "skill_check": {
+            "skill": "perception",
+            "difficulty": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "field-4",
+      "description": "You manage to decipher part of the symbol using your knowledge of local folklore. It seems to be a marker used by indigenous tribes in the area to warn of an ancient, mystical creature that protects the forest. The legend speaks of a creature that can manipulate the forest itself. As you study the symbol further, the wind picks up again, and the trees seem to shift ominously.",
+      "choices": [
+        {
+          "text": "Search the area for signs of this creature",
+          "next_id": "field-7",
+          "skill_check": {
+            "skill": "survival",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Ignore the legend and continue with your research",
+          "next_id": "field-5"
+        }
+      ]
+    },
+    {
+      "id": "field-5",
+      "description": "You continue your work, but the uneasy feeling doesn’t leave. You finish collecting your samples and pack them up for analysis later. As you begin to head back to your base camp, you spot something in the distance—a large shadow moving between the trees. It's too large to be an animal. You feel a sudden urge to investigate, but you’re not sure if it's wise.",
+      "choices": [
+        {
+          "text": "Investigate the shadow and approach cautiously",
+          "next_id": "field-8",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Return to camp and report your findings",
+          "next_id": "field-9"
+        }
+      ]
+    },
+    {
+      "id": "field-6",
+      "description": "You take a moment to scan the area, and your sharp eyes catch sight of something moving in the underbrush. It’s small, but there’s something unnatural about the way it moves. You get closer and see that it’s a creature, but its body seems... distorted, as though it doesn't fully belong in this world. Before you can react, it scurries off into the forest, leaving you with more questions than answers.",
+      "choices": [
+        {
+          "text": "Follow the creature and see where it leads",
+          "next_id": "field-7",
+          "skill_check": {
+            "skill": "tracking",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Ignore the creature and continue with your task",
+          "next_id": "field-5"
+        }
+      ]
+    },
+    {
+      "id": "field-7",
+      "description": "You decide to follow the strange creature, your curiosity pushing you forward. As you move deeper into the forest, you notice that the trees seem to close in around you, their branches twisting unnaturally. The further you go, the more the forest feels alive, almost sentient. The creature eventually leads you to a clearing, where you spot an ancient stone altar, overgrown with moss and vines. Atop the altar is a glowing, pulsating orb.",
+      "choices": [
+        {
+          "text": "Approach the orb and examine it closely",
+          "next_id": "field-10",
+          "skill_check": {
+            "skill": "arcanism",
+            "difficulty": 75
+          }
+        },
+        {
+          "text": "Leave the orb and return to your research",
+          "next_id": "field-9"
+        }
+      ]
+    },
+    {
+      "id": "field-8",
+      "description": "You carefully approach the shadow, moving silently through the trees. As you get closer, you realize that it’s not a creature at all, but a large, abandoned research facility. It’s been here for years, forgotten and left to nature. The walls are covered in moss, and the windows are shattered. You wonder if this place is connected to your current research.",
+      "choices": [
+        {
+          "text": "Explore the facility and investigate",
+          "next_id": "field-11"
+        },
+        {
+          "text": "Ignore the facility and head back to camp",
+          "next_id": "field-9"
+        }
+      ]
+    },
+    {
+      "id": "field-9",
+      "description": "You return to your camp, a sense of unease still lingering in your mind. You make your way through your notes and samples, preparing your findings for the next phase of research. However, something feels off. The plants you collected earlier start to wilt at an accelerated rate. Something about this area, and your research, feels more dangerous than you first realized.",
+      "choices": [
+        {
+          "text": "Continue your research and analyze the samples",
+          "next_id": "field-12"
+        },
+        {
+          "text": "Pack up and leave the area immediately",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "field-10",
+      "description": "You approach the orb cautiously, and as you touch it, a surge of energy flows through you. A vision flashes before your eyes: a vast, unknown city, with strange creatures and technologies. You feel a connection to the orb, as if it’s calling you to something greater. But as the vision fades, you’re left with more questions and no clear answers. The orb remains in your hand, its pulse steady.",
+      "choices": [
+        {
+          "text": "Take the orb with you",
+          "next_id": "field-12",
+          "reward": {
+            "id": "mystical_orb",
+            "quantity": 1
+          }
+        },
+        {
+          "text": "Leave the orb where it is",
+          "next_id": "field-9"
+        }
+      ]
+    },
+    {
+      "id": "field-11",
+      "description": "You explore the abandoned facility, finding old research papers and broken equipment scattered around. One paper catches your eye—a report detailing the creation of the orb you’ve seen in the forest. It seems like this place was involved in experiments to tap into arcane energy. The facility might hold more secrets than you ever imagined.",
+      "choices": [
+        {
+          "text": "Search for more information on the experiments",
+          "next_id": "field-12"
+        },
+        {
+          "text": "Leave the facility and return to your camp",
+          "next_id": "field-9"
+        }
+      ]
+    },
+    {
+      "id": "field-12",
+      "description": "After all your research, you pack up and prepare to leave the area. The unsettling feeling lingers as you walk away from the site, knowing that there’s still so much left to uncover. The orb you found may hold the key to something far bigger than you realized, but for now, you have to move on.",
+      "choices": [
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    }
+  ],
+  "end": {
+    "description": "You leave the site behind, unsure of what the future holds. The orb may be the key to unraveling greater mysteries, but your research has only just begun. As you make your way back to civilization, you can't shake the feeling that this is only the beginning of a much larger journey. You’ve gained valuable insights, but the unknown still awaits.",
+    "reward": {
+      "id": "arcane_insight",
+      "quantity": 5
+    }
+  }
+}

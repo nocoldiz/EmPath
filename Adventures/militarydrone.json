@@ -1,0 +1,356 @@
+{
+  "title": "The Military Drone",
+  "textboxes": [
+    {
+      "id": "drone-1",
+      "description": "Em and Bubba are driving along a deserted stretch of highway when they notice something unusual: a high-pitched whirring sound in the distance. At first, they ignore it, thinking it's just a passing vehicle, but the sound gets louder. Em glances at Bubba, who is staring at the rearview mirror with a tense look on his face. Something is following them.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Ask Bubba what he thinks it is",
+          "next_id": "drone-2",
+          "skill_check": {
+            "skill": "observation",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Speed up and try to outrun whatever it is",
+          "next_id": "drone-3",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Pull over and try to hide",
+          "next_id": "drone-4",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-2",
+      "description": "Bubba doesn't respond immediately. He keeps glancing nervously at the rearview mirror. Finally, he says, 'I think it’s a drone... a military one. They're using them for surveillance. We need to get off this road.' His voice is shaky, but his suspicion seems grounded.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Ask Bubba what we should do next",
+          "next_id": "drone-5",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 55
+          }
+        },
+        {
+          "text": "Ignore Bubba’s warning and keep driving",
+          "next_id": "drone-6",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Start looking for a way to escape, turning off the highway",
+          "next_id": "drone-7",
+          "skill_check": {
+            "skill": "navigation",
+            "difficulty": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-3",
+      "description": "Em steps on the gas pedal, but the drone seems to match their speed. The whirring grows louder, now closer than ever. Panic rises, but Bubba shouts, 'It’s not going to stop, we need to take a detour!' The drone is gaining on them.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Make a sharp turn off the road",
+          "next_id": "drone-7",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 75
+          }
+        },
+        {
+          "text": "Try to outrun it on the highway, hoping to lose it",
+          "next_id": "drone-6",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Look for a place to hide behind",
+          "next_id": "drone-4",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 70
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-4",
+      "description": "Em pulls over to the side of the road and hides the camper behind some overgrown trees, hoping the drone won’t notice them. The sound of the drone flies over them, dangerously close. Bubba holds his breath, and for a moment, everything is still. But then, the drone circles back.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Stay hidden and wait for the drone to leave",
+          "next_id": "drone-8",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Get back in the camper and try to drive away again",
+          "next_id": "drone-9",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 85
+          }
+        },
+        {
+          "text": "Leave the camper and try to lose it on foot",
+          "next_id": "drone-10",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 75
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-5",
+      "description": "Bubba looks at Em, his eyes filled with fear. 'We need to ditch the camper, find cover, or do something drastic.' His hands are shaking. He seems like he’s been in this situation before, but that doesn’t make it any less terrifying.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Search for a safe place to stop and hide",
+          "next_id": "drone-4",
+          "skill_check": {
+            "skill": "navigation",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Try to drive off-road and lose the drone",
+          "next_id": "drone-7",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 75
+          }
+        },
+        {
+          "text": "Stay on the highway and hope the drone will leave them alone",
+          "next_id": "drone-6",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-6",
+      "description": "Em keeps driving straight ahead, hoping to outrun the drone, but it keeps pace. The sound of the drone intensifies as it flies above them. Panic sets in as it becomes clear that this isn’t a regular drone. This is military-grade surveillance, and it won’t stop.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Make a sharp turn and try to outrun it off-road",
+          "next_id": "drone-7",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Pull over and attempt to hide behind a large structure",
+          "next_id": "drone-4",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 75
+          }
+        },
+        {
+          "text": "Continue driving, hoping the drone loses interest",
+          "next_id": "drone-9",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 90
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-7",
+      "description": "Em takes a sharp turn, driving off-road into a dense forest area. The drone follows relentlessly, but the trees and uneven ground slow it down a little. Bubba curses under his breath, knowing they might not have much time before it calls for reinforcements.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Keep driving through the forest and look for cover",
+          "next_id": "drone-8",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 85
+          }
+        },
+        {
+          "text": "Abandon the camper and try to hide in the woods",
+          "next_id": "drone-10",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Try to disable the drone using the camper’s electronics",
+          "next_id": "drone-11",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 90
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-8",
+      "description": "After navigating through the dense forest, Em and Bubba find themselves in a small clearing. The drone is still hot on their trail, but it’s momentarily confused by the trees. They hold their breath, waiting for it to pass.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Stay still and wait until the drone moves away",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Make a break for it, hoping to escape on foot",
+          "next_id": "drone-10",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 85
+          }
+        },
+        {
+          "text": "Try to disable the drone with a nearby power source",
+          "next_id": "drone-11",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 95
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-9",
+      "description": "Em pushes the pedal to the metal, but the drone is closing in fast. It seems almost as though it has anticipated every move. With only a few seconds left, Em spots a large building in the distance. The drone hovers above them, preparing for the final attack.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Turn into the building and hide",
+          "next_id": "drone-11",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 95
+          }
+        },
+        {
+          "text": "Accelerate and attempt a risky evasive maneuver",
+          "next_id": "drone-7",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 90
+          }
+        },
+        {
+          "text": "Stop and prepare to face the drone head-on",
+          "next_id": "drone-12",
+          "skill_check": {
+            "skill": "firearms",
+            "difficulty": 100
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-10",
+      "description": "In the dense woods, Em and Bubba scramble to find cover. The drone hovers just above them, scanning the area. Bubba is trying to stay as quiet as possible, but the drone's sensors might pick them up any second.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Wait quietly and hope the drone leaves",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Try to climb a tree and hide",
+          "next_id": "drone-11",
+          "skill_check": {
+            "skill": "wrestling",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Run for the nearby rocky area",
+          "next_id": "drone-12",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 85
+          }
+        }
+      ]
+    },
+    {
+      "id": "drone-11",
+      "description": "The drone seems to detect their presence and circles in for an attack. Bubba pulls out a device he found in the camper and tries to jam the drone's signals. The drone hovers menacingly overhead, its sensors whirring.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Keep trying to jam the drone's signal",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Prepare to fight the drone with whatever you have",
+          "next_id": "drone-12",
+          "skill_check": {
+            "skill": "firearms",
+            "difficulty": 90
+          }
+        },
+        {
+          "text": "Hide and hope the signal jammer works",
+          "next_id": "bad-end"
+        }
+      ]
+    }
+  ],
+  "good-end": {
+    "description": "Em and Bubba manage to disable the drone and evade its grasp. They return to the road, shaken but unharmed. They both know that they’ve narrowly escaped danger.",
+    "image": "",
+    "sound": ""
+  },
+  "neutral-end": {
+    "description": "The drone eventually leaves them, but the journey ahead is still filled with fear and uncertainty. Em and Bubba are left wondering if the drone will return.",
+    "image": "",
+    "sound": ""
+  },
+  "bad-end": {
+    "description": "The drone attacks, overwhelming Em and Bubba. They are captured, and the last thing they hear is the sound of military-grade equipment buzzing around them.",
+    "image": "",
+    "sound": ""
+  }
+}

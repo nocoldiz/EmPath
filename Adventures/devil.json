@@ -1,0 +1,151 @@
+{
+  "title": "Encounter with the Devil",
+  "textboxes": [
+    {
+      "id": "devil-1",
+      "description": "As you walk through the dark woods, a strange heat fills the air. A figure stands before you, cloaked in shadows. As he steps forward, his features become clearer—a tall, handsome man with sharp eyes, a wicked grin, and a suit that seems to shimmer with unnatural energy. He looks at you with an unsettling intensity. 'Well, well... what do we have here?' he says in a voice that seems to echo in your mind.",
+      "choices": [
+        {
+          "text": "Ask him who he is",
+          "next_id": "devil-2"
+        },
+        {
+          "text": "Ignore him and keep walking",
+          "next_id": "devil-3"
+        }
+      ]
+    },
+    {
+      "id": "devil-2",
+      "description": "'Who I am?' He chuckles darkly. 'Let’s just say, I’m someone who offers... opportunities. Temptations, if you will.' He smiles wickedly. 'I could give you everything you've ever wanted—wealth, power, fame. All you have to do is accept my offer.' His words are laced with allure, but a cold shiver runs down your spine. There’s something dangerous about him.",
+      "choices": [
+        {
+          "text": "Ask what the catch is",
+          "next_id": "devil-4"
+        },
+        {
+          "text": "Refuse and walk away",
+          "next_id": "devil-3"
+        }
+      ]
+    },
+    {
+      "id": "devil-3",
+      "description": "You turn and continue walking, but something pulls at your mind. The air grows colder, and you feel a pressure behind you. When you glance back, the man is gone. A faint scent of sulfur lingers in the air, but you shake it off and continue on your way. It’s probably nothing.",
+      "choices": [
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "devil-4",
+      "description": "The Devil’s smile widens as you ask the inevitable question. 'The catch? Oh, there’s always a catch.' He steps closer, his eyes glowing faintly. 'You will have to give me something in return. Your soul, your free will, or perhaps your deepest fear. Whatever you value most, it will be mine.' His words are chilling, and your heart races as the weight of his offer sinks in.",
+      "choices": [
+        {
+          "text": "Agree to the deal, intrigued by the power he promises",
+          "next_id": "devil-5",
+          "skill_check": {
+            "skill": "willpower",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Refuse the offer, warning him you’re not so easily fooled",
+          "next_id": "devil-6"
+        }
+      ]
+    },
+    {
+      "id": "devil-5",
+      "description": "You accept the offer, your mind clouded by the temptation. The Devil smiles, and for a moment, everything changes. You feel a surge of power, confidence, and knowledge flooding your senses. He hands you a small, glowing stone. 'This is just the beginning,' he whispers. But as you grasp it, a sharp pain shoots through your chest, as if something is being torn from you.",
+      "choices": [
+        {
+          "text": "Ask what you’ve just given up",
+          "next_id": "devil-7"
+        },
+        {
+          "text": "Try to break the deal and run away",
+          "next_id": "devil-8"
+        }
+      ]
+    },
+    {
+      "id": "devil-6",
+      "description": "The Devil's smile fades as he sees your refusal. 'I’m disappointed,' he says, his voice taking on a cold edge. 'But, if you insist, I will leave you to your insignificant life.' He turns and vanishes into the shadows, leaving you standing alone in the woods. For now, the temptation has passed, but you feel a lingering presence watching you.",
+      "choices": [
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "devil-7",
+      "description": "'You gave up your will,' the Devil says softly, 'your autonomy. Every choice you make now is bound by my power. You will rise to unimaginable heights, but you will never be truly free again.' The weight of his words settles in. Is this worth the price?",
+      "choices": [
+        {
+          "text": "Embrace your new power and live with the consequences",
+          "next_id": "devil-9"
+        },
+        {
+          "text": "Try to resist and find a way to break free from the Devil’s grasp",
+          "next_id": "devil-10"
+        }
+      ]
+    },
+    {
+      "id": "devil-8",
+      "description": "You try to run, but the ground beneath your feet begins to crack open. The Devil’s laughter echoes in your ears as you fall into the abyss. A dark, fiery pit swallows you whole, and you realize too late that you’ve made a terrible mistake. The deal cannot be undone.",
+      "choices": [
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "devil-9",
+      "description": "With your newfound power, you conquer challenges and rise to the top of society, gaining everything you ever wanted. But as the years pass, you start to feel hollow, as if something vital has been drained from you. You are powerful, yes—but you are no longer truly human.",
+      "reward": {
+        "id": "devil-pact",
+        "quantity": 1
+      },
+      "choices": [
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "devil-10",
+      "description": "You struggle against the chains of the Devil’s influence, fighting to regain your will. It’s a long and painful battle, but you manage to break free—at least for now. The Devil’s presence fades, but you know he’s always watching. The price of your defiance may come later.",
+      "choices": [
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "description": "The adventure ends. Depending on your choices, you may have gained power, fallen into a trap, or managed to escape. The Devil’s offer is always there, lurking, waiting for another soul to make a deal.",
+      "choices": [
+        {
+          "text": "Restart adventure",
+          "next_id": "devil-1"
+        },
+        {
+          "text": "End",
+          "next_id": "end"
+        }
+      ]
+    }
+  ],
+  "reward": {
+    "id": "devil-pact",
+    "quantity": 1
+  }
+}

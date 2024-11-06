@@ -1,0 +1,149 @@
+{
+  "title": "Contacting the Prismatic Entity",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "After your careful contemplation, you decide to make contact with the prismatic entity that seems to be the source of your transformation. Its rays shine down from the sky, casting a dazzling light that seems to warp and bend the air around you. With your massive form, you must find a way to approach it without causing further damage to the landscape. Every step sends tremors through the land, and the trees and structures beneath you appear like fragile toys.",
+      "choices": [
+        {
+          "text": "Use your mind to reach out to the entity, attempting to communicate telepathically.",
+          "next_id": "adventure-2",
+          "skill_check": {
+            "skill": "arcanism",
+            "difficulty": 85
+          }
+        },
+        {
+          "text": "Try to speak aloud, hoping that the entity will understand you despite your size.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Move closer to the entity, cautiously stepping through the landscape.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "You focus all of your mental energy, extending your will toward the prismatic entity. The air around you vibrates as you attempt to connect with it, and for a moment, you feel an overwhelming surge of energy. The entity responds, not with words, but with a pulse of light that seems to speak directly into your mind. You sense an understanding from it, a recognition of your dilemma, but also an underlying warning.",
+      "choices": [
+        {
+          "text": "Ask the entity if it can reverse your transformation and return you to your original size.",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Inquire about the nature of the entity and its power over the world.",
+          "next_id": "adventure-6"
+        },
+        {
+          "text": "Warn the entity about the destruction your presence might cause to the world.",
+          "next_id": "adventure-7"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You try to speak aloud, but your voice shakes the very earth beneath you. The force of your words reverberates across the landscape, causing cracks to form in the ground. The prismatic entity flickers, and you can sense its hesitation. The light dims for a moment as if the entity is evaluating whether to respond to you. The risk of destruction is great, but you must try to communicate with it.",
+      "choices": [
+        {
+          "text": "Attempt to speak more calmly, controlling the volume of your voice.",
+          "next_id": "adventure-8"
+        },
+        {
+          "text": "Stop speaking and try to reach the entity with your mind instead.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Ask the entity what it wants from you.",
+          "next_id": "adventure-9"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You take slow, deliberate steps toward the prismatic entity, each footfall shaking the ground. You’re careful not to crush any structures or lifeforms beneath you, but the effort is immense. The entity’s light becomes brighter as you approach, and you feel an almost magnetic pull toward it. As you get closer, the world around you begins to warp, as if it’s bending to accommodate your gigantic form.",
+      "choices": [
+        {
+          "text": "Move slowly and carefully, trying not to cause any further damage.",
+          "next_id": "adventure-10"
+        },
+        {
+          "text": "Stop and try to use your sheer presence to communicate with the entity.",
+          "next_id": "adventure-11"
+        },
+        {
+          "text": "Attempt to touch the entity, hoping that physical contact will trigger a response.",
+          "next_id": "adventure-12"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "The entity responds to your mental plea with a flash of intense light. You feel a wave of energy pulse through you, and the world around you seems to contract and expand all at once. It is clear that the entity has heard your request, but it does not immediately answer. Instead, a new sensation fills your mind: a feeling of connection, of understanding—but also of a profound cost. The entity may be willing to reverse your transformation, but it seems there is a price to pay.",
+      "choices": [
+        {
+          "text": "Ask what the price for your transformation reversal would be.",
+          "next_id": "adventure-13"
+        },
+        {
+          "text": "Accept the entity's offer, hoping the cost is worth it.",
+          "next_id": "adventure-14"
+        },
+        {
+          "text": "Refuse the offer, asking if there is another way to reverse the transformation.",
+          "next_id": "adventure-15"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You inquire about the nature of the prismatic entity and its power. In response, the entity pulses with light, and you feel a flood of images and sensations rush into your mind. You see glimpses of distant realms, of worlds beyond your own, and of forces that shape the fabric of existence. The entity is not merely a being of this world—it is a part of something much greater, a force that has existed for eons, guiding and reshaping reality as it sees fit.",
+      "choices": [
+        {
+          "text": "Ask if the entity has any desire to return to its own dimension.",
+          "next_id": "adventure-16"
+        },
+        {
+          "text": "Ask the entity how its powers could be used to help or harm the world.",
+          "next_id": "adventure-17"
+        },
+        {
+          "text": "Try to learn the entity’s intentions toward you and the world.",
+          "next_id": "adventure-18"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "You warn the entity about the destruction your presence might cause. The light from the entity flickers, and you sense a moment of pause in the vast, cosmic being. It seems to recognize your concern, but it offers no immediate reassurance. The world below you continues to tremble with every movement you make, and you can feel the weight of your transformation bearing down on the land.",
+      "choices": [
+        {
+          "text": "Ask the entity if it can help stabilize the world in its current state.",
+          "next_id": "adventure-19"
+        },
+        {
+          "text": "Request that the entity help you shrink back to your original size.",
+          "next_id": "adventure-20"
+        },
+        {
+          "text": "Tell the entity that you must leave the world behind to protect it.",
+          "next_id": "adventure-21"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

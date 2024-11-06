@@ -1,0 +1,142 @@
+{
+  "title": "The Maddened Preacher",
+  "textboxes": [
+    {
+      "id": "preacher-1",
+      "description": "As you walk through a dimly lit square at dusk, a crowd gathers around a wild-eyed preacher standing atop a crate. His voice echoes through the cobblestone streets: 'The world you know is built on lies! The stars are not silent; they scream the truth of your hidden fears!' His words are half-delirious, but they send shivers through the crowd. You can’t help but feel he knows something deeper, something forgotten or forbidden. People whisper around you—some in awe, others fearful. You wonder if there’s more to his madness.",
+      "choices": [
+        {
+          "text": "Stay and listen to the preacher’s words.",
+          "next_id": "preacher-2"
+        },
+        {
+          "text": "Confront the preacher and demand he explain himself.",
+          "next_id": "preacher-3",
+          "skill_check": {
+            "skill": "intimidation",
+            "difficulty": 45,
+            "fail": "Your voice is drowned out by the preacher's booming sermon, and he doesn’t even seem to notice your challenge."
+          }
+        },
+        {
+          "text": "Blend into the crowd, observing without being noticed.",
+          "next_id": "preacher-4",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 30,
+            "fail": "The preacher’s eyes lock on you as though he’s reading your thoughts. 'Ah! Another seeker of hidden truth!' he shouts."
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "preacher-2",
+      "description": "The preacher’s words grow more intense. 'Your dreams of comfort, of peace, are illusions spun by those in power! The things that lurk in the dark watch you, judging your every move!' He gestures wildly at the sky, as if pointing at unseen beings. The crowd murmurs, some captivated, others disturbed. His rantings feel almost prophetic. You wonder if he’s right—or just deeply disturbed.",
+      "choices": [
+        {
+          "text": "Ask him who he claims to serve.",
+          "next_id": "preacher-5"
+        },
+        {
+          "text": "Take a step back, unsure if you want to hear more.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "preacher-3",
+      "description": "The preacher’s gaze sharpens on you, as if he’s been waiting. 'You seek answers? They will cost you. Knowledge is never free!' He points a bony finger at you, eyes blazing. 'Tell me, do you know who you really are? Do you think they haven’t already seen through you?' The crowd stirs, sensing the tension.",
+      "choices": [
+        {
+          "text": "Admit you’re curious about his message.",
+          "next_id": "preacher-5"
+        },
+        {
+          "text": "Dismiss his words as delusions.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "preacher-4",
+      "description": "You manage to blend into the crowd, unnoticed. The preacher’s voice continues, more frenzied now. 'You know the feeling, don’t you? The dread when you look in the mirror. That’s them watching! They know your hidden guilt, your fears. They wait for you to slip up.' His words sound absurd, yet strike a nerve, leaving you uneasy.",
+      "choices": [
+        {
+          "text": "Continue observing without engaging.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Step forward and ask him what he means.",
+          "next_id": "preacher-5"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "preacher-5",
+      "description": "The preacher leans closer to you, his voice dropping to a rasp. 'You’ve seen them, haven’t you? The watchers. The little coincidences, the shivers, the strange dreams. They’re all real, more real than this crowd, more real than the world you call home.' His eyes are wild but clear, fixed on you. The crowd murmurs, unnerved by the intensity.",
+      "choices": [
+        {
+          "text": "Press him for more specifics about the watchers.",
+          "next_id": "preacher-6",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 50,
+            "fail": "The preacher’s gaze turns distant, as if lost in a trance, and he continues speaking in cryptic riddles."
+          }
+        },
+        {
+          "text": "Dismiss his ramblings and walk away.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "preacher-6",
+      "description": "The preacher’s face twists into a manic grin. 'Ah, you seek knowledge, don’t you? But knowledge is a curse. You’ll lose everything you hold dear to find the truth!' He raises his arms, staring into the sky as if he’s communicating with something beyond sight. 'But if you insist, I’ll tell you where to start... Seek the mirrored lake at midnight. There, you might catch a glimpse of their true form.'",
+      "choices": [
+        {
+          "text": "Thank him and leave, pondering his words.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Challenge him, claiming his story is just fantasy.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "You walk away, the preacher’s cryptic words echoing in your mind. The mirrored lake... a place you’ve heard of in passing but never visited. His rants may be nothing, but a part of you feels an odd compulsion to find the lake and look deeper. Whatever the truth, you feel both exhilarated and unnerved, sensing a path forward you hadn’t seen before.",
+      "reward": {
+        "id": "new_perspective",
+        "quantity": 1
+      },
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "You slip away from the crowd, the preacher’s words leaving a faint sense of unease. Were his statements just the ramblings of a madman, or was there truth in them? You may never know, but the memory of his wild eyes and intense conviction lingers.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "You turn your back on the preacher, dismissing his words as nonsense. But as you walk away, you can’t shake a feeling of dread, as if something unseen is watching you, waiting. For the rest of the night, shadows seem longer, sounds more menacing, and you wonder if you should have listened more carefully.",
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

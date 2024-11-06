@@ -1,0 +1,157 @@
+{
+  "title": "The Choice of Shadows",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "You stand before a massive, ancient gate, etched with symbols of power. The path ahead is shrouded in mist, but you can sense a presence. A low voice emerges from the fog. 'Only the worthy may pass, but at a cost.' As you step closer, a figure materializes—a gaunt man with piercing eyes, dressed in tattered robes. He holds a glowing amulet and gestures for you to approach. 'I am the Keeper of the Gate. To pass, you must choose one of three sacrifices. Your decision will shape your fate.'",
+      "choices": [
+        {
+          "text": "Ask what the sacrifices are, before making any decisions.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Decline and attempt to enter the gate without knowing the cost.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Walk away from the gate entirely, unwilling to risk your future.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "The Keeper gives a slow, deliberate nod. 'The first sacrifice is a loss of time. You will age ten years in an instant, but the knowledge you gain will be worth a lifetime of study. The second sacrifice is the loss of a memory, one that you will never be able to recall, but it will change the course of your future. The third sacrifice is the loss of your closest companion, who will vanish from your life, forgotten by all, including you.' He watches you closely, as if waiting for your reaction.",
+      "choices": [
+        {
+          "text": "Choose the sacrifice of time, believing the knowledge gained is worth it.",
+          "next_id": "adventure-4",
+          "skill_check": {
+            "skill": "wisdom",
+            "difficulty": 65
+          }
+        },
+        {
+          "text": "Choose the sacrifice of a memory, hoping to change your future.",
+          "next_id": "adventure-5",
+          "skill_check": {
+            "skill": "empathy",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Choose the sacrifice of your companion, willing to give them up for your journey.",
+          "next_id": "adventure-6",
+          "skill_check": {
+            "skill": "loyalty",
+            "difficulty": 80
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You try to enter the gate without making a decision, but as you touch the threshold, the mist swirls violently around you. The Keeper’s voice echoes in your mind, 'You cannot pass without sacrifice. The gate will never open without your choice.' The mist grows thicker, and the gate remains closed. Reluctantly, you turn away, knowing that to progress, you must choose.",
+      "choices": [
+        {
+          "text": "Return to the Keeper and choose a sacrifice.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Leave the gate altogether and abandon your quest.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You choose the sacrifice of time. As the Keeper’s amulet glows brighter, a wave of energy washes over you. The years slip away like grains of sand, and your body grows older, wiser. The knowledge you gain fills your mind, but you feel the weight of the time lost. Your body aches with the sudden passage of time, but your mind is clear, and you now possess knowledge that others will never know.",
+      "choices": [
+        {
+          "text": "Use your newfound knowledge to guide your next steps.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Regret your choice, feeling the weight of lost years.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "You choose the sacrifice of a memory. The Keeper’s amulet pulses, and a soft light surrounds you. A single memory fades from your mind—a moment in your past that meant everything, yet it is now gone. You can feel its absence, as though a piece of you has been erased. The future ahead is now open to you, but you will never remember the person, the event, or the emotion you gave up.",
+      "choices": [
+        {
+          "text": "Accept your future and continue forward, embracing the new path.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Mourn the loss, unsure if it was worth the price.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You choose the sacrifice of your closest companion. The Keeper’s amulet glows a deep red as your companion vanishes, their presence erased from reality. No one remembers them, not even you. The pain of losing them is immediate and profound, and the emptiness is something you can never fill. The Keeper watches silently, as you are left with the weight of your choice.",
+      "choices": [
+        {
+          "text": "Continue on your journey, hoping that your companion’s sacrifice will be worth it.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Feel the sting of loss and question if this was the right choice.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "The knowledge gained from your sacrifice guides you to success, and you use it to navigate the trials ahead. Your decision has paid off, and your journey continues with new strength and understanding. The sacrifice of time was great, but the rewards are even greater.",
+      "reward": {
+        "id": "ancient_wisdom",
+        "quantity": 1
+      },
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "The weight of your decision lingers. The memory lost or the companion sacrificed cannot be undone, and the future is unclear. You continue your journey, but with a sense of uncertainty, knowing that you have traded something irreplaceable for the chance to progress.",
+      "reward": {
+        "id": "shadow_mark",
+        "quantity": 1
+      },
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "The sacrifice feels too great to bear. The knowledge or the future gained is not enough to outweigh the cost of what you lost. Whether it was a memory, a companion, or the years of your life, the void left in your heart cannot be filled. You are left questioning your choices, knowing that some sacrifices are too much to bear.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-end",
+      "description": "The Keeper nods as you leave, no matter what path you chose. 'All paths lead forward, but some may haunt you along the way.' Your journey continues, but you will carry the weight of your decision for the rest of your life.",
+      "reward": {
+        "id": "none",
+        "quantity": 0
+      },
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

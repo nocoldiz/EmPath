@@ -1,0 +1,219 @@
+{
+  "title": "The Passing Star",
+  "textboxes": [
+    {
+      "id": "star-1",
+      "description": "As you wake up, the sky above is strange, tinted in hues of violet and gold. Bubba is already outside, his eyes fixed on the horizon. 'Em, you gotta see this. A star's passing right by the planet!' He points to the sky. Sure enough, there is a small, bright object—too bright for a comet, too close for comfort—moving steadily toward Earth. It pulses with a strange, almost rhythmic light. Your heart races. Something feels off.",
+      "choices": [
+        {
+          "text": "Ask Bubba if he knows what the star is.",
+          "next_id": "star-2"
+        },
+        {
+          "text": "Check your equipment in the camper, preparing for the worst.",
+          "next_id": "star-3"
+        },
+        {
+          "text": "Approach the nearest observatory to investigate the phenomenon.",
+          "next_id": "star-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "star-2",
+      "description": "Bubba shrugs, clearly unsure. 'I don't know, but it's not just any star. It's like it's... pulsing, and it's coming in too close. Some folks in the nearby town think it's a sign from the gods.' He stares at it with a mix of awe and concern. 'You think it's something good or bad?' He asks, waiting for your answer.",
+      "choices": [
+        {
+          "text": "Say it might be a bad omen and prepare to leave the area.",
+          "next_id": "star-5"
+        },
+        {
+          "text": "Try to reach out to a nearby scholar for more information on celestial events.",
+          "next_id": "star-6"
+        },
+        {
+          "text": "Suggest investigating the star's properties with the tools in the camper.",
+          "next_id": "star-7"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "star-3",
+      "description": "You rummage through the camper, grabbing scientific equipment, including a portable telescope, sensors, and a few tools to analyze the light frequency. Bubba watches you, a worried expression on his face. 'You're not thinking of doing anything crazy, are you?' The star is getting closer. The light from it intensifies. It's unlike anything you've ever seen.",
+      "choices": [
+        {
+          "text": "Activate the sensors and observe the star's behavior.",
+          "next_id": "star-8",
+          "skill_check": {
+            "skill": "astrophysics",
+            "difficulty": 70,
+            "fail": "The equipment malfunctions under the star's overwhelming energy, leaving you unable to analyze anything further."
+          }
+        },
+        {
+          "text": "Head to the nearest research facility to get a professional opinion.",
+          "next_id": "star-9"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "star-4",
+      "description": "The observatory is buzzing with activity, and the scientists there seem just as stunned as you are. One of them, a young astronomer named Dr. Irwin, explains the phenomenon. 'It’s not just a star,' he says, looking through his telescope. 'This is a mini-star, a stellar object that doesn’t belong in our system. It’s too close. It’s… drawing energy from the planet.' He turns to you. 'We need to figure out what it wants before it's too late.'",
+      "choices": [
+        {
+          "text": "Ask Dr. Irwin if there's anything you can do to prevent the star's influence.",
+          "next_id": "star-10"
+        },
+        {
+          "text": "Tell Bubba to prepare for a quick exit. This might be dangerous.",
+          "next_id": "star-5"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "star-5",
+      "description": "The sky begins to rumble as the miniature star gets even closer. Bubba is already backing up the camper, clearly uneasy. 'This isn't normal, Em. What if it’s some kind of cosmic weapon?' His eyes dart nervously around. The ground begins to shake, and you feel the atmosphere change. There's no escaping this one—something is about to happen.",
+      "choices": [
+        {
+          "text": "Stay and try to analyze the star’s effect with the equipment.",
+          "next_id": "star-8"
+        },
+        {
+          "text": "Escape immediately, hoping you can outrun the event.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "star-6",
+      "description": "You reach out to a few researchers online, but no one seems to know much about this phenomenon. It's as if it's never happened before. Theories range from cosmic entities influencing natural processes to a result of experimental technology gone wrong. The messages only add to the mystery—this isn’t just a star, it’s a force beyond human understanding.",
+      "choices": [
+        {
+          "text": "Accept that you might not be able to solve this and try to flee.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Try to use your equipment to connect to the star’s signal and learn more.",
+          "next_id": "star-8"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "star-7",
+      "description": "You try to measure the star’s light with the equipment. It’s incredibly intense, and the frequency doesn’t match any known patterns. You feel dizzy, almost as if the star is affecting your perception. The world seems to warp and shift with each pulse of light. Bubba looks worried but keeps his distance.",
+      "choices": [
+        {
+          "text": "Keep analyzing it and try to understand its composition.",
+          "next_id": "star-11",
+          "skill_check": {
+            "skill": "astrophysics",
+            "difficulty": 90,
+            "fail": "Your equipment overloads from the sheer power of the light, and you lose all readings, leaving you with no conclusions."
+          }
+        },
+        {
+          "text": "Stop and decide to leave before the star’s influence gets worse.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "star-8",
+      "description": "The star pulses once more, this time with a strange harmonic frequency that resonates deep within your bones. The equipment hums wildly, and suddenly, you’re connected to the star's energy. Images flood your mind—visions of ancient beings, celestial histories, and cosmic power far beyond the scope of human comprehension. You feel both enlightened and terrified. The star has come here to deliver a message, but it may be one that you can’t understand.",
+      "choices": [
+        {
+          "text": "Ask the star what its purpose is.",
+          "next_id": "star-12"
+        },
+        {
+          "text": "Disconnect from the signal and try to block the overwhelming visions.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "star-9",
+      "description": "Dr. Irwin leads you to a special chamber where the research team is attempting to block out the star’s frequency. However, the closer it gets, the more powerful its influence becomes. You feel the walls tremble as if they’re about to break apart. The team is at a loss—nothing seems to be able to stop it. 'We need to understand its message,' Dr. Irwin says, urgency in his voice.",
+      "choices": [
+        {
+          "text": "Try to reach the star's core using your equipment.",
+          "next_id": "star-8"
+        },
+        {
+          "text": "Decide to evacuate before the star’s influence can do more damage.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "star-10",
+      "description": "Dr. Irwin shakes his head. 'There’s nothing we can do to stop it. We’re just observers.' He explains that the star is likely part of a natural cosmic cycle that humanity has never encountered before. 'All we can do is watch and try to learn from it.' The atmosphere grows heavier as the star nears.",
+      "choices": [
+        {
+          "text": "Try to stop the star’s influence yourself, despite the risks.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Watch and learn, understanding that some forces are beyond human control.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "You decide to watch and learn. As the miniature star passes by, you and Bubba are both overwhelmed by its sheer power. However, you also begin to understand its message—a cosmic cycle of rebirth. The star departs, its task complete, and the world returns to its natural state. You’ve gained new knowledge, but at a cost.",
+      "choices": [
+        {
+          "text": "Reflect on what you’ve learned and move on.",
+          "next_id": "end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "In your attempt to stop or flee from the star's influence, things take a tragic turn. The star’s presence is too powerful, warping reality and causing widespread chaos. You and Bubba are caught in the aftermath, unsure of the fate of the world or your own.",
+      "choices": [
+        {
+          "text": "End.",
+          "next_id": "end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "Unable to fully comprehend the star’s purpose, you disconnect from the overwhelming energy, leaving with more questions than answers. The world remains in its natural state, but the event leaves a lasting mark on your perception of the cosmos.",
+      "choices": [
+        {
+          "text": "End.",
+          "next_id": "end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

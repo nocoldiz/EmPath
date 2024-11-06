@@ -1,0 +1,199 @@
+{
+  "title": "Ethereal Hostage Crisis",
+  "textboxes": [
+    {
+      "id": "ethereal-1",
+      "description": "You and Bubba arrive at an old, abandoned library on the outskirts of town, drawn by rumors of hidden knowledge and rare artifacts. As you step inside, a cold chill seeps into the air, and you hear a whispering sound echoing through the empty shelves. Suddenly, shimmering, translucent figures emerge, flickering in and out of view. Their eyes, empty and unblinking, lock onto you and Bubba. 'You are trespassers in the realm of the forgotten,' one whispers. 'We demand an exchange.'",
+      "choices": [
+        {
+          "text": "Attempt to negotiate with the ethereal beings.",
+          "next_id": "ethereal-2",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Try to distract them and create a path to escape with Bubba.",
+          "next_id": "ethereal-3",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 45
+          }
+        },
+        {
+          "text": "Ask what they want in exchange.",
+          "next_id": "ethereal-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "ethereal-2",
+      "description": "Your attempt at negotiation seems to catch the ethereal beings off-guard. They flicker and shift, their gaze intensifying as one of them leans forward, studying you closely. 'If you desire freedom, then one must remain with us,' it hisses. The beings seem insistent, unwilling to let both of you leave.",
+      "choices": [
+        {
+          "text": "Offer to stay behind so Bubba can escape.",
+          "next_id": "ethereal-5"
+        },
+        {
+          "text": "Refuse and demand that you both be allowed to leave.",
+          "next_id": "ethereal-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "ethereal-3",
+      "description": "You signal to Bubba and quietly inch toward an old, dusty shelf, hoping to use it as a cover to escape. Just as you reach the edge of the shelf, a low, whispering voice calls out. 'You cannot hide. This realm sees all,' it hisses, and a flickering light envelops you both. Your plan foiled, the beings surround you, gazing intensely.",
+      "choices": [
+        {
+          "text": "Stand your ground and demand to know what they want.",
+          "next_id": "ethereal-4"
+        },
+        {
+          "text": "Try to reason with them, explaining you mean no harm.",
+          "next_id": "ethereal-2"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "ethereal-4",
+      "description": "The beings shift and murmur among themselves before one of them steps forward. 'We demand a price,' it whispers. 'A memory… a life… or an exchange.' They seem to crave something intangible, something that goes beyond the physical.",
+      "choices": [
+        {
+          "text": "Offer them a memory in exchange for your release.",
+          "next_id": "ethereal-7",
+          "skill_check": {
+            "skill": "spiritism",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Offer them an item of yours instead, hoping it will suffice.",
+          "next_id": "ethereal-8",
+          "skill_check": {
+            "skill": "appraisal",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Refuse and attempt to find another way out.",
+          "next_id": "ethereal-9"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "ethereal-5",
+      "description": "You step forward, offering yourself as a captive so Bubba can leave. The beings murmur and seem pleased with your self-sacrifice. 'One life for another. Accepted,' they say. Bubba, looking conflicted, hesitates but follows your instructions, disappearing into the darkness as the beings draw closer to you.",
+      "choices": [
+        {
+          "text": "Remain composed and brace for whatever they have in store for you.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "ethereal-6",
+      "description": "You demand that they release both of you, asserting your right to leave freely. The beings hiss in anger, their forms distorting as they draw closer. 'Then you shall be prisoners in eternity,' they whisper, their hands reaching toward you both.",
+      "choices": [
+        {
+          "text": "Fight back, refusing to surrender.",
+          "next_id": "ethereal-10",
+          "skill_check": {
+            "skill": "hand-to-hand combat",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Try a last-ditch plea, hoping they will reconsider.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "ethereal-7",
+      "description": "You offer a treasured memory, something deeply personal. As the memory leaves you, you feel a hollow emptiness, as if part of your soul has been taken. The beings seem satisfied, fading into the darkness. You feel a sense of loss, but the price has granted you freedom.",
+      "choices": [
+        {
+          "text": "Leave the library with Bubba, haunted by what you’ve lost.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "ethereal-8",
+      "description": "You pull out a prized possession, hoping it will be enough. The beings look unimpressed at first, but after a moment of consideration, they reach forward, taking the object. 'Accepted,' they whisper, before disappearing into the shadows. Bubba gives you a concerned look as you both hurry to leave.",
+      "choices": [
+        {
+          "text": "Exit quickly with Bubba, grateful to be free.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "ethereal-9",
+      "description": "You refuse to offer anything, determined to escape without making a sacrifice. The beings, displeased, close in around you, their whispers growing louder and more menacing. 'There is always a price,' they hiss, their forms distorting as they prepare to bind you.",
+      "choices": [
+        {
+          "text": "Fight desperately to break free.",
+          "next_id": "ethereal-10",
+          "skill_check": {
+            "skill": "strength",
+            "difficulty": 75
+          }
+        },
+        {
+          "text": "Accept that there’s no escape and surrender.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "ethereal-10",
+      "description": "You struggle against the ethereal beings, but their strength is otherworldly, and they hold fast. Finally, a blinding light fills the room as Bubba manages to trigger a protective rune you hadn’t noticed before. The beings recoil, screaming in pain, before they vanish entirely. The room grows silent once more.",
+      "choices": [
+        {
+          "text": "Leave the library with Bubba, grateful to have escaped unscathed.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "You and Bubba manage to escape the library, your heart racing as you breathe in the cool night air. Though the memory of the encounter lingers, you feel a renewed appreciation for the world around you. Together, you vow to be more cautious in your searches for knowledge.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "You leave the library with Bubba, shaken but unharmed. The beings may have taken something intangible, but you’re relieved to have escaped. You leave with a lesson learned, and perhaps a new fear of the unknown.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "The ethereal beings close in, and as their cold touch envelops you, you feel your consciousness slipping away. Darkness fills your vision as you become one with the shadows, your fate sealed within the haunted walls of the library.",
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

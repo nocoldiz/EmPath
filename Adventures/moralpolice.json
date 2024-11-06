@@ -1,0 +1,308 @@
+{
+  "title": "The Moral Police Chase",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "You wake up to the sound of crackling fire and birds chirping. The sun is just beginning to rise. You’re alone, camped in a secluded area of the woods. The smell of pine trees fills the air, and the fire from last night still burns gently in the embers. You glance around, your heart racing. Something feels off. As you pack your things, a loud, mechanical voice cuts through the air: 'This is the Moral Police. You are in violation of the Morality Code. Surrender immediately.'",
+      "choices": [
+        {
+          "text": "Hide immediately in the woods and hope to avoid detection.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Stand up and confront the police, demanding an explanation.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Quickly gather your things and run towards the nearby road.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "You scramble into the dense woods, hiding behind a large rock. Your breathing is shallow, your heart pounding. Through the trees, you can see the Moral Police drones patrolling, their glowing lights scanning the area. You know they’ll find you if you stay hidden for too long, but your chance of escape is better in the wilderness.",
+      "choices": [
+        {
+          "text": "Try to sneak past the drones, using the cover of the trees.",
+          "next_id": "adventure-5",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Wait quietly and hope they don’t spot you.",
+          "next_id": "adventure-6"
+        },
+        {
+          "text": "Attempt to disable one of the drones using your knowledge of electronics.",
+          "next_id": "adventure-7",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 60
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You step out from behind the campfire and face the police drones head-on. A voice crackles through the air, stern and unyielding. 'You have been found in violation of the Morality Code. Your actions will be reported.' You feel the weight of their gaze, but you remain defiant.",
+      "choices": [
+        {
+          "text": "Argue that the Morality Code is outdated and unfair.",
+          "next_id": "adventure-8"
+        },
+        {
+          "text": "Attempt to appeal to their sense of reason, asking for leniency.",
+          "next_id": "adventure-9"
+        },
+        {
+          "text": "Run into the woods, hoping to outrun them.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You race towards the road, hoping to find help or an escape route. As you sprint, you hear the unmistakable whirring of drones behind you, growing louder with every step. Your legs burn, but you push forward, praying you can make it to the road before they catch up.",
+      "choices": [
+        {
+          "text": "Dive into a ditch by the side of the road, hoping the drones don’t see you.",
+          "next_id": "adventure-10"
+        },
+        {
+          "text": "Keep running towards a nearby building, hoping to find shelter.",
+          "next_id": "adventure-11"
+        },
+        {
+          "text": "Try to hide behind a tree, hoping the drones will pass.",
+          "next_id": "adventure-12"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "You move silently through the trees, keeping to the shadows. You can hear the drones above you, their sensors sweeping the area. You press yourself closer to the bark of a tree and hold your breath, hoping they don’t notice the faint sound of your footsteps. After a tense moment, they fly past, unaware of your presence.",
+      "choices": [
+        {
+          "text": "Continue moving cautiously towards the clearing where you can escape.",
+          "next_id": "adventure-13"
+        },
+        {
+          "text": "Take the chance to make a run for it, hoping to outrun the drones.",
+          "next_id": "adventure-14"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You hold still, hoping they won’t detect you. The drones hover above you, scanning the area. For a moment, it seems like they might pass by. But then, a drone’s sensor pings and focuses on your hiding spot. The drone moves toward you with alarming speed.",
+      "choices": [
+        {
+          "text": "Jump out and try to escape.",
+          "next_id": "adventure-4"
+        },
+        {
+          "text": "Fight back, using any tools you have at hand.",
+          "next_id": "adventure-15"
+        },
+        {
+          "text": "Attempt to trick the drone by throwing a rock to another location.",
+          "next_id": "adventure-16",
+          "skill_check": {
+            "skill": "archery",
+            "difficulty": 40
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "You try to use your knowledge of electronics to disable one of the drones, but you’re not fast enough. The drone spots you before you can finish, and it immediately sends a signal to the others. You’re surrounded.",
+      "choices": [
+        {
+          "text": "Surrender and ask for a chance to explain yourself.",
+          "next_id": "adventure-9"
+        },
+        {
+          "text": "Fight back, knowing there’s no way out.",
+          "next_id": "adventure-15"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-8",
+      "description": "You argue that the Morality Code doesn’t account for the complexity of individual situations and that it shouldn’t dictate your actions. The drones hesitate, as if considering your argument. But the voice crackles again, colder this time: 'You are in violation. Resistance is futile.'",
+      "choices": [
+        {
+          "text": "Appeal to their sense of mercy, asking for understanding.",
+          "next_id": "adventure-9"
+        },
+        {
+          "text": "Fight back, unable to accept their judgment.",
+          "next_id": "adventure-15"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-9",
+      "description": "The Moral Police give you a stern warning and threaten punishment for your defiance. With no further argument to stand on, they give you an ultimatum: follow the Morality Code or face the consequences.",
+      "choices": [
+        {
+          "text": "Agree to follow the code, even if you don’t believe in it.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Refuse to accept their authority and run.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-10",
+      "description": "You leap into the ditch just as the drones fly overhead, narrowly missing you. The cold, wet ground makes it hard to stay still, but you manage to keep quiet. The drones search the area but don’t find you. After what feels like an eternity, they finally move on.",
+      "choices": [
+        {
+          "text": "Wait for a bit before emerging and making your next move.",
+          "next_id": "adventure-13"
+        },
+        {
+          "text": "Stay hidden and hope they never find you.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-11",
+      "description": "You reach the building, but the doors are locked. A few windows are broken, but you don’t have time to climb through. The drones are closing in quickly, and you realize the only option is to hide.",
+      "choices": [
+        {
+          "text": "Hide behind the building, hoping to stay out of sight.",
+          "next_id": "adventure-12"
+        },
+        {
+          "text": "Knock on the door and hope someone opens it.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-12",
+      "description": "You hide behind the building as the drones circle overhead. They don’t seem to notice you. After a tense few minutes, they move on, and you feel a sense of relief.",
+      "choices": [
+        {
+          "text": "Make your way towards the road, hoping to find safety.",
+          "next_id": "adventure-13"
+        },
+        {
+          "text": "Stay hidden for as long as possible, not wanting to risk being found.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-13",
+      "description": "You continue through the woods, knowing you’ve evaded the worst of the danger. The police drones are still out there, but you feel more confident in your ability to outmaneuver them.",
+      "choices": [
+        {
+          "text": "Head towards a town you know is nearby, hoping to blend in.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Find a hidden spot to rest and plan your next move.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-14",
+      "description": "You break from cover, running as fast as you can. The drones pursue you, but you’re faster than they anticipated. Your heart races as you near a town, just barely outrunning them.",
+      "choices": [
+        {
+          "text": "Hide in the town, blending into the crowd.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Try to confront the drones one last time, demanding your freedom.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-15",
+      "description": "You fight back, using any tools you have at hand. It’s a losing battle, but you don’t go down without a fight. The drones overpower you, and you are quickly apprehended.",
+      "choices": [
+        {
+          "text": "Surrender and accept your fate.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Attempt to escape their grip.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-16",
+      "description": "You throw a rock, hoping to distract the drone. The plan works, and the drone flies off in the opposite direction. You take this opportunity to slip away.",
+      "choices": [
+        {
+          "text": "Run towards the road, where you might find safety.",
+          "next_id": "adventure-4"
+        },
+        {
+          "text": "Hide in a nearby cabin, hoping the drones won’t find you.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "You manage to evade capture, finding safety in a nearby town or hidden spot. You breathe a sigh of relief, knowing that for now, you’ve escaped the watchful eyes of the Moral Police.",
+      "choices": []
+    },
+    {
+      "id": "neutral-end",
+      "description": "You find a place to rest, but you’re still on edge. The Moral Police are still searching for you, and you can never be too sure when they’ll catch up again.",
+      "choices": []
+    },
+    {
+      "id": "bad-end",
+      "description": "You’re captured by the Moral Police and taken away for questioning. Your actions are deemed a violation of the code, and you face harsh consequences.",
+      "choices": []
+    }
+  ]
+}

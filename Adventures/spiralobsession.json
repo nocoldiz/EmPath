@@ -1,0 +1,177 @@
+{
+  "title": "The Spiral Obsession",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "It begins innocuously—an image of a spiral you see while walking through the streets, hidden in the cobblestones. At first, it’s just a fleeting thought, but the more you look, the more you notice them everywhere. Spirals. In the architecture, in nature, in the clouds, even in the way people move. You can’t shake the feeling that they’re calling to you, drawing you in. You try to brush it off, but it lingers, gnawing at the edge of your mind. The more you try to ignore it, the stronger the obsession becomes.",
+      "choices": [
+        {
+          "text": "Try to focus on your work, hoping to distract yourself from the spirals.",
+          "next_id": "adventure-2",
+          "skill_check": {
+            "skill": "intuition",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Give in to the obsession and start seeking out more spirals.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Talk to Bubba about what you’re experiencing, seeking advice.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "You try to focus on your work, but the spirals keep invading your thoughts. You see them in every detail—every piece of writing, every object, even in the way your thoughts loop around themselves. The harder you try to concentrate, the more overwhelmed you become. You feel a growing anxiety, as if you’re losing control of your own mind.",
+      "choices": [
+        {
+          "text": "Attempt to ground yourself by focusing on your breath.",
+          "next_id": "adventure-5",
+          "skill_check": {
+            "skill": "meditation",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Give up and start searching for more spirals, letting the obsession take over.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Go for a walk outside, trying to clear your head.",
+          "next_id": "adventure-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You give in, your need to find more spirals growing stronger with every passing moment. You start to seek them out intentionally—on books, in the architecture, in the movements of the people around you. The spirals are everywhere. You become fixated on finding them, to the point where you start losing track of time. Your friends notice your growing obsession and begin to worry. Your behavior starts to become erratic, your thoughts cycling in endless loops.",
+      "choices": [
+        {
+          "text": "Try to distract yourself by focusing on the beauty of the spirals, hoping to calm your mind.",
+          "next_id": "adventure-7"
+        },
+        {
+          "text": "Seek help from a mental health professional to break free from the obsession.",
+          "next_id": "adventure-8"
+        },
+        {
+          "text": "Try to isolate yourself from others, convinced that the spirals are trying to tell you something.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You talk to Bubba about what you’re experiencing. At first, he listens patiently, but as you go on, his expression changes. You can see the concern in his eyes. He suggests that maybe you need to take a break, go on a trip, or focus on something else. But you don’t feel like that will help. The spirals have become too ingrained in your mind. You can see them even in his face, in the way he listens to you. Bubba suggests getting professional help, but you feel a reluctance to accept his offer. You don’t want to stop the obsession; you want to know what the spirals mean.",
+      "choices": [
+        {
+          "text": "Reject Bubba's advice and dive deeper into your obsession.",
+          "next_id": "adventure-9"
+        },
+        {
+          "text": "Accept Bubba’s offer and seek help from a professional.",
+          "next_id": "adventure-8"
+        },
+        {
+          "text": "Take Bubba's advice and try to distract yourself with a hobby.",
+          "next_id": "adventure-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "You try grounding yourself by focusing on your breath. But as you close your eyes, you see spirals there too—on the back of your eyelids, twisting and turning. You can’t escape them. Every time you attempt to breathe deeply, the spirals invade your consciousness more forcefully. The urge to follow them, to understand them, becomes overwhelming. You start to lose track of where you are.",
+      "choices": [
+        {
+          "text": "Try to fight the spirals with sheer willpower, pushing them out of your mind.",
+          "next_id": "adventure-10",
+          "skill_check": {
+            "skill": "willpower",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Give in and start following the spirals wherever they lead.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Find Bubba and ask him to help you stay grounded.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You go for a walk, hoping the fresh air will clear your head. But as you wander through the streets, you can’t help but notice the spirals everywhere you look. Even the wind seems to curl in a spiral pattern. The world itself feels distorted, like it’s turning in on itself. You can’t escape them, and the more you try, the more your mind begins to spiral into confusion. Your grip on reality is slipping.",
+      "choices": [
+        {
+          "text": "Stop and confront the spirals, trying to understand why they haunt you.",
+          "next_id": "adventure-7"
+        },
+        {
+          "text": "Run back to the camper and lock yourself inside.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Go to a secluded place and meditate, trying to reset your mind.",
+          "next_id": "adventure-5"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "You decide to stop and confront the spirals. As you focus on them, you feel a strange sensation—a pull, as though the spirals are guiding you somewhere, showing you something. The more you focus, the clearer it becomes: they’re not just patterns; they’re symbols of something deeper, something that your mind is starting to unravel. You’re on the edge of a revelation, but at what cost?",
+      "choices": [
+        {
+          "text": "Continue to follow the spirals, even if it means losing your grip on reality.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Try to break free from the spirals, fighting against the pull.",
+          "next_id": "adventure-10"
+        },
+        {
+          "text": "Turn to Bubba for help and ask him to bring you back from the edge.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-8",
+      "description": "You seek help from a mental health professional, and after a series of sessions, you start to gain some perspective. The spirals were a manifestation of something deeper within you, a sign of mental fatigue, anxiety, or a need for control. With time, you start to regain your sense of self, and the obsession fades. You still see spirals here and there, but they no longer control you. You’ve learned to live with the patterns in the world and let them be just that—patterns.",
+      "choices": []
+    },
+    {
+      "id": "adventure-9",
+      "description": "You reject Bubba’s advice, diving deeper into your obsession with the spirals. You spend days seeking them out, chasing the mystery they present. But in the end, you lose touch with reality. The spirals consume your mind entirely. You wander aimlessly, forever chasing the elusive answer to their meaning, until you’re nothing more than a ghost lost in the patterns.",
+      "choices": []
+    },
+    {
+      "id": "adventure-10",
+      "description": "With a surge of willpower, you manage to fight the spirals back, at least for now. But you realize that the obsession is far from gone. You’ve bought yourself some time, but the spirals will return, and when they do, you’ll need to confront them once again. The struggle continues, and you know that your mind may never be free of their pull.",
+      "choices": []
+    },
+    {
+      "id": "bad-end",
+      "description": "The spirals overtake your mind entirely. You lose your sense of self, spiraling into madness. Forever trapped in a loop of your own obsession, you become a mere reflection of the patterns you once sought to understand.",
+      "choices": []
+    }
+  ]
+}

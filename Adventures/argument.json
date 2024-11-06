@@ -1,0 +1,204 @@
+{
+  "title": "The Argument",
+  "textboxes": [
+    {
+      "id": "argument-1",
+      "description": "You sit with Bubba in the small camper, the air tense. Bubba has been quiet for days, but now, he’s finally spoken. 'I think I want to try and reconcile with Eris,' he says, his voice hesitant but determined. You feel a surge of anger—Eris, the goddess of discord, who once tore Bubba’s life apart. The idea of him going back to her doesn’t sit well with you.",
+      "choices": [
+        {
+          "text": "Tell him he’s making a mistake and he should stay away from Eris",
+          "next_id": "argument-2",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Stay silent and let him figure it out on his own",
+          "next_id": "argument-3"
+        },
+        {
+          "text": "Ask him why he wants to reconcile and listen to his reasons",
+          "next_id": "argument-4"
+        }
+      ]
+    },
+    {
+      "id": "argument-2",
+      "description": "You snap at Bubba, telling him that going back to Eris is a terrible idea. 'She’ll only hurt you again, Bubba!' you say, your frustration boiling over. Bubba looks at you, his expression sad but resolute. 'I have to try,' he replies quietly.",
+      "choices": [
+        {
+          "text": "Demand that he choose between you and Eris",
+          "next_id": "argument-5",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Apologize for snapping, but still tell him you don’t agree",
+          "next_id": "argument-6"
+        }
+      ]
+    },
+    {
+      "id": "argument-3",
+      "description": "You stay silent, your mind racing. Bubba looks at you, waiting for a response, but you can’t bring yourself to speak. The tension hangs in the air as he waits for your approval or disapproval.",
+      "choices": [
+        {
+          "text": "Finally speak up and tell him how you really feel",
+          "next_id": "argument-2"
+        },
+        {
+          "text": "Walk away, unable to handle the situation",
+          "next_id": "argument-7"
+        }
+      ]
+    },
+    {
+      "id": "argument-4",
+      "description": "You take a deep breath and ask him, 'Why do you want to go back to her? After everything that happened?' Bubba’s face softens, and he looks away for a moment before answering. 'I think I need closure... and maybe I can change things this time.' His words are full of uncertainty, but there’s a spark of hope in his eyes.",
+      "choices": [
+        {
+          "text": "Tell him that closure doesn’t mean going back to Eris",
+          "next_id": "argument-6",
+          "skill_check": {
+            "skill": "empathy",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Agree to help him find closure, but warn him to be careful",
+          "next_id": "argument-8"
+        }
+      ]
+    },
+    {
+      "id": "argument-5",
+      "description": "You demand that Bubba choose between you and Eris. He looks conflicted but shakes his head. 'I can’t make that choice,' he says quietly. The weight of his words hangs heavy in the air, and you realize this might be the breaking point of your relationship.",
+      "choices": [
+        {
+          "text": "Walk away from Bubba, unable to stay in this situation",
+          "next_id": "argument-9"
+        },
+        {
+          "text": "Give him the space to make his decision",
+          "next_id": "argument-10"
+        }
+      ]
+    },
+    {
+      "id": "argument-6",
+      "description": "You apologize for snapping but tell Bubba that you still don’t agree with his decision. He nods, understanding that you’re just trying to protect him. But you can see the conflict in his eyes, torn between his past with Eris and the present with you.",
+      "choices": [
+        {
+          "text": "Give him time to think about his choices",
+          "next_id": "argument-10"
+        },
+        {
+          "text": "Leave him and the camper to clear your mind",
+          "next_id": "argument-7"
+        }
+      ]
+    },
+    {
+      "id": "argument-7",
+      "description": "You walk away from the camper, the cold air biting at your skin. The uncertainty of the situation gnaws at you. Will Bubba go back to Eris? Can your relationship survive this? Only time will tell.",
+      "choices": [
+        {
+          "text": "Sit down and think about everything that’s happened",
+          "next_id": "argument-11"
+        },
+        {
+          "text": "Return to the camper and talk to Bubba again",
+          "next_id": "argument-12"
+        }
+      ]
+    },
+    {
+      "id": "argument-8",
+      "description": "You agree to help Bubba find closure, but you warn him to be cautious. 'Don’t let her manipulate you again,' you say, your voice soft but firm. Bubba nods, grateful for your understanding, but you can see the doubt in his eyes.",
+      "choices": [
+        {
+          "text": "Follow him to meet Eris and ensure he stays safe",
+          "next_id": "argument-13"
+        },
+        {
+          "text": "Stay back and let him handle this on his own",
+          "next_id": "argument-14"
+        }
+      ]
+    },
+    {
+      "id": "argument-9",
+      "description": "You walk away, feeling a deep sense of loss. Bubba calls out to you, but you can’t bring yourself to turn around. This could be the end of your relationship, and it hurts more than you expected.",
+      "choices": [
+        {
+          "text": "Keep walking, leaving everything behind",
+          "next_id": "argument-end"
+        },
+        {
+          "text": "Stop and talk to Bubba one last time",
+          "next_id": "argument-10"
+        }
+      ]
+    },
+    {
+      "id": "argument-10",
+      "description": "You give Bubba the space he needs, but the silence between you both is deafening. He’s torn, and so are you. The future of your relationship seems uncertain, but you both know that a decision has to be made.",
+      "choices": [
+        {
+          "text": "Accept whatever decision he makes, even if it means losing him",
+          "next_id": "argument-end"
+        },
+        {
+          "text": "Push him to make a choice now, before it’s too late",
+          "next_id": "argument-5"
+        }
+      ]
+    },
+    {
+      "id": "argument-11",
+      "description": "You sit in silence, trying to sort through the feelings swirling in your mind. Bubba’s decision to reconcile with Eris has shaken you to your core, and you’re not sure how to move forward. The future feels uncertain, but you’re determined to face whatever comes next.",
+      "choices": [
+        {
+          "text": "Call Bubba and tell him you’re ready to talk",
+          "next_id": "argument-12"
+        },
+        {
+          "text": "Decide to let go and move on",
+          "next_id": "argument-end"
+        }
+      ]
+    },
+    {
+      "id": "argument-12",
+      "description": "You return to the camper and approach Bubba, who is sitting in silence, staring out the window. 'I don’t know what to do,' he says quietly. You sit down beside him, ready to have the difficult conversation.",
+      "choices": [
+        {
+          "text": "Tell him that you need clarity before you can move forward",
+          "next_id": "argument-13"
+        },
+        {
+          "text": "Tell him that you love him and want to support him, no matter what",
+          "next_id": "argument-14"
+        }
+      ]
+    },
+    {
+      "id": "argument-13",
+      "description": "You go with Bubba to meet Eris, determined to ensure he doesn’t fall into her manipulative grasp. The tension in the air is palpable as you wait for her to appear. When she does, her gaze is as cold and calculating as you remember.",
+      "choices": [
+        {
+          "text": "Confront Eris and demand she leave Bubba alone",
+          "next_id": "argument-15"
+        },
+        {
+          "text": "Let Bubba speak with her alone and stay back",
+          "next_id": "argument-16"
+        }
+      ]
+    },
+    {
+      "id": "argument-14",
+      "description": "You stay back as Bubba approaches Eris, your heart heavy with uncertainty. Will he come back

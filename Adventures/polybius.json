@@ -1,0 +1,183 @@
+{
+  "title": "Polybius Encounter",
+  "textboxes": [
+    {
+      "id": "polybius-1",
+      "description": "You’re exploring an abandoned warehouse, its shadowed corners filled with relics of the past: dusty shelves, shattered windows, and the faint hum of a long-forgotten power source. As you round a corner, an old arcade machine flickers to life. The screen pulses hypnotically, the name *Polybius* flashing in strange, shifting colors. You feel an unsettling draw, like the machine is pulling at something deep within you.",
+      "choices": [
+        {
+          "text": "Approach the machine and examine it closely.",
+          "next_id": "polybius-2"
+        },
+        {
+          "text": "Step back, sensing something off about it.",
+          "next_id": "polybius-3"
+        },
+        {
+          "text": "Look for a power source to turn it off.",
+          "next_id": "polybius-4",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 45
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "polybius-2",
+      "description": "The machine hums louder as you draw closer. Its screen shows strange, pixelated shapes that seem to shift and change each time you look. Words flash briefly—“Play Me”—and you feel a strange urge to comply. It’s as though the machine itself is aware of you.",
+      "choices": [
+        {
+          "text": "Resist the urge and walk away.",
+          "next_id": "polybius-5",
+          "skill_check": {
+            "skill": "willpower",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Sit down and press the ‘Start’ button.",
+          "next_id": "polybius-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "polybius-3",
+      "description": "You back away from the machine, feeling its eerie pull lessen. But just as you turn to leave, you notice something strange on the walls nearby: symbols and spirals, almost hypnotic in their design. They seem to pull you back toward the machine, whispering something indecipherable in your mind.",
+      "choices": [
+        {
+          "text": "Investigate the symbols on the walls.",
+          "next_id": "polybius-7",
+          "skill_check": {
+            "skill": "cryptography",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Try to block out the pull and leave the room.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "polybius-4",
+      "description": "You search the area, eventually finding a panel with frayed wires leading to a breaker box. With some tinkering, you think you can cut off the machine’s power, though it’s risky in its dilapidated state.",
+      "choices": [
+        {
+          "text": "Cut the power.",
+          "next_id": "good-end",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Leave the machine on and examine it further.",
+          "next_id": "polybius-2"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "polybius-5",
+      "description": "You fight the strange urge, stepping back from the machine. The lights on the screen flicker, flashing faster as if angered by your resistance. Suddenly, the machine lets out a loud, pulsing hum that fills the entire room.",
+      "choices": [
+        {
+          "text": "Turn and run out of the room.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Glance back at the machine, curiosity getting the better of you.",
+          "next_id": "polybius-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "polybius-6",
+      "description": "You press ‘Start’ and instantly feel a rush of energy, as though something from the machine is entering your mind. Images, words, and memories not your own flash across your vision, and a cold, mechanical voice speaks: 'Welcome, Player.' The game begins, strange patterns emerging that almost feel alive.",
+      "choices": [
+        {
+          "text": "Try to focus and master the game’s patterns.",
+          "next_id": "polybius-8",
+          "skill_check": {
+            "skill": "logic",
+            "difficulty": 75
+          }
+        },
+        {
+          "text": "Pull your hand back, breaking contact with the machine.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "polybius-7",
+      "description": "You study the symbols on the walls, realizing they’re a language of sorts, a coded warning left behind. They speak of minds lost to the machine, of players who were never seen again. You feel a growing sense of dread.",
+      "choices": [
+        {
+          "text": "Decipher the symbols further and try to disable the machine.",
+          "next_id": "polybius-4"
+        },
+        {
+          "text": "Decide it’s too dangerous and leave.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "polybius-8",
+      "description": "You focus, matching the flashing symbols and navigating the labyrinthine patterns. Just as you feel the machine pulling deeper into your mind, you hit a wall in the game that seems impossible to pass, almost like it was designed that way.",
+      "choices": [
+        {
+          "text": "Push past, forcing your mind to the limit.",
+          "next_id": "good-end",
+          "skill_check": {
+            "skill": "willpower",
+            "difficulty": 85
+          }
+        },
+        {
+          "text": "Accept defeat and end the game.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "You break through the game’s final barrier, and the machine lets out a high-pitched whine, powering down. You feel an intense release, like a weight has lifted from your mind. In the aftermath, you find a strange token inside the machine—a small, glowing artifact, pulsating with a faint light. Perhaps it holds a secret of its own.",
+      "reward": {
+        "id": "glowing_artifact",
+        "quantity": 1
+      },
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "You walk away from the machine, feeling the pull lessen as you put distance between yourself and the eerie screen. The haunting sound fades, but a strange sense of unfinished business remains. You may have avoided danger, but some questions linger, unanswered.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "As you pull away, the machine’s lights flash erratically. Your mind reels, feeling fractured, as though something foreign has latched onto you. You stumble from the room, but a lingering thought remains, as if the machine’s influence still echoes within you. The memory of that screen haunts you, and you’re not sure if you’ll ever fully escape it.",
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

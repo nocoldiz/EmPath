@@ -1,0 +1,322 @@
+[
+  {
+    "id": "conspiracy-1",
+    "description": "As Em drives through a quiet stretch of highway, the old camper's radio crackles to life. A distorted voice begins speaking, interrupting the static. The voice warns of a 'global event' unfolding, something that involves powerful figures pulling the strings behind the scenes.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Try to tune the radio to get a clearer signal",
+        "next_id": "conspiracy-2",
+        "skill_check": {
+          "skill": "electronics",
+          "difficulty": 30
+        }
+      },
+      {
+        "text": "Listen closely to catch more details from the distorted message",
+        "next_id": "conspiracy-3",
+        "skill_check": {
+          "skill": "observation",
+          "difficulty": 40
+        }
+      },
+      {
+        "text": "Turn off the radio, thinking it's just a glitch",
+        "next_id": "conspiracy-4"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-2",
+    "description": "You fiddle with the radio dial, adjusting the frequencies, but the voice only grows clearer. It speaks of a network of influential figures who control global events, manipulating everything from economics to politics. The message then abruptly cuts out, replaced by static again.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Keep adjusting the radio, hoping to catch another signal",
+        "next_id": "conspiracy-5",
+        "skill_check": {
+          "skill": "electronics",
+          "difficulty": 50
+        }
+      },
+      {
+        "text": "Record the message and try to analyze it later",
+        "next_id": "conspiracy-6"
+      },
+      {
+        "text": "Ignore the message and continue driving",
+        "next_id": "conspiracy-7"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-3",
+    "description": "You strain to hear the voice through the static, catching fragments of information. It talks about secret meetings in darkened rooms, global leaders exchanging power behind closed doors. You realize that this might be more than just a conspiracy—it could be the truth.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Write down what you heard, determined to investigate further",
+        "next_id": "conspiracy-8"
+      },
+      {
+        "text": "Look for a nearby town to investigate further, hoping to find answers",
+        "next_id": "conspiracy-9"
+      },
+      {
+        "text": "Turn off the radio, unsure of what to make of it all",
+        "next_id": "conspiracy-4"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-4",
+    "description": "You decide it's best to ignore the strange message, but as you turn off the radio, a nagging feeling gnaws at you. Could there be something to the message? Was it a warning, or a lie meant to distract you?",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Turn the radio back on and try to catch more information",
+        "next_id": "conspiracy-10"
+      },
+      {
+        "text": "Go back to your journey, hoping to forget about the voice",
+        "next_id": "conspiracy-11"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-5",
+    "description": "You manage to get a clear enough signal to hear more of the message. The voice repeats its warning: 'They know you're listening, and soon the truth will be revealed.' The radio suddenly turns off on its own, leaving you in eerie silence.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Start searching for any information that might connect to the conspiracy",
+        "next_id": "conspiracy-8"
+      },
+      {
+        "text": "Ignore the message and drive on, dismissing it as a prank",
+        "next_id": "conspiracy-7"
+      },
+      {
+        "text": "Attempt to fix the radio, wondering if the message was tampered with",
+        "next_id": "conspiracy-12",
+        "skill_check": {
+          "skill": "electronics",
+          "difficulty": 50
+        }
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-6",
+    "description": "You quickly record the distorted message, unsure of its significance. Later, you listen back to the recording, realizing the voice mentions names you recognize—leaders, politicians, and figures from powerful corporations.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Research the names mentioned in the message, looking for connections",
+        "next_id": "conspiracy-13",
+        "skill_check": {
+          "skill": "history",
+          "difficulty": 60
+        }
+      },
+      {
+        "text": "Show the recording to Bubba, hoping for a second opinion",
+        "next_id": "conspiracy-14"
+      },
+      {
+        "text": "Keep the recording to yourself and move on with your life",
+        "next_id": "conspiracy-7"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-7",
+    "description": "You shake off the unease and continue on your journey, but the thoughts of the voice linger in your mind. Was it just a crazy person, or was it a warning? You can't shake the feeling that something bigger is happening.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Investigate the strange message further once you find more clues",
+        "next_id": "conspiracy-8"
+      },
+      {
+        "text": "Let it go, assuming it's just a trick or coincidence",
+        "next_id": "conspiracy-15"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-8",
+    "description": "You dig into the details of the names from the message, finding odd coincidences between them. Some were involved in major world events, others have ties to shadowy organizations. Could they really be connected in a larger conspiracy?",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Pursue the investigation, determined to uncover the truth",
+        "next_id": "conspiracy-16"
+      },
+      {
+        "text": "Show your findings to a trusted friend for advice",
+        "next_id": "conspiracy-17"
+      },
+      {
+        "text": "Dismiss the evidence as coincidence and drop the investigation",
+        "next_id": "conspiracy-15"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-9",
+    "description": "You head to the nearby town, looking for any more information about the strange radio message. As you approach the town square, you see flyers with cryptic symbols, all referencing a 'global awakening.' It's getting harder to ignore.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Ask locals about the flyers and their meaning",
+        "next_id": "conspiracy-18"
+      },
+      {
+        "text": "Continue looking for clues around town",
+        "next_id": "conspiracy-19"
+      },
+      {
+        "text": "Leave the town, fearing you’re getting too close to something dangerous",
+        "next_id": "conspiracy-15"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-10",
+    "description": "You turn the radio back on, but now it's silent, no signal coming through. The static is unnerving, and you wonder if someone—or something—wants you to stop listening.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Try to pick up the signal again, refusing to give up",
+        "next_id": "conspiracy-12",
+        "skill_check": {
+          "skill": "electronics",
+          "difficulty": 60
+        }
+      },
+      {
+        "text": "Drive on, leaving the mysterious radio behind",
+        "next_id": "conspiracy-15"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-11",
+    "description": "You continue on your journey, but the nagging feeling lingers. The voice may have been a sign that something much larger is at play. Maybe the truth will find you eventually.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Investigate the strange message further once you find more clues",
+        "next_id": "conspiracy-8"
+      },
+      {
+        "text": "Dismiss it and never think about it again",
+        "next_id": "conspiracy-15"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-12",
+    "description": "You manage to get the radio working again. The message now seems more frantic, warning of a major event set to unfold soon. The voice repeats: 'The truth will be revealed.' You start to feel paranoid, wondering if someone is watching you.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Go to the nearest town to find out more",
+        "next_id": "conspiracy-9"
+      },
+      {
+        "text": "Start making plans to protect yourself from what’s coming",
+        "next_id": "conspiracy-20"
+      }
+    ]
+  },
+  {
+    "id": "conspiracy-13",
+    "description": "After investigating the names in the message, you uncover a web of connections, leading you to dark secrets about the global elite. The more you find, the more dangerous it becomes.",
+    "image": "",
+    "sound": "",
+    "choices": [
+      {
+        "text": "Continue your investigation, determined to bring the truth to light",
+        "next_id": "conspiracy-16"
+      },
+      {
+        "text": "Tell the authorities, but be prepared for the consequences",
+        "next_id": "conspiracy-21"
+      },
+      {
+        "text": "Drop it, realizing how dangerous the truth can be",
+        "next_id": "conspiracy-15"
+      }
+    ]
+  },
+
+  {
+    "id": "conspiracy-15",
+    "description": "The investigation ends here. You've decided that the truth is too dangerous to pursue or perhaps too elusive to uncover. The world continues as it was before, but you'll always wonder if something bigger was at play.",
+    "image": "",
+    "sound": "sad",
+    "end": "bad"
+  },
+
+  {
+    "id": "conspiracy-16",
+    "description": "You uncover undeniable proof of a global conspiracy and expose it to the world. The truth shocks the public, and although it brings about change, it comes at a personal cost. Em is now marked by powerful enemies, but she finds peace in knowing that the truth was revealed.",
+    "image": "",
+    "sound": "victorious",
+    "end": "good"
+  },
+
+  {
+    "id": "conspiracy-17",
+    "description": "You show your findings to a friend, and they advise you to step back. However, they can't protect you forever. As you investigate further, the conspiracy starts to unravel in dangerous ways. The truth will be exposed, but at what cost?",
+    "image": "",
+    "sound": "tense",
+    "end": "neutral"
+  },
+
+  {
+    "id": "conspiracy-18",
+    "description": "The locals seem hesitant to talk, but you learn that they're aware of the global awakening. They’ve seen the signs and are preparing for what’s to come. You're not alone in your pursuit of the truth, and together, you might just survive the coming storm.",
+    "image": "",
+    "sound": "determined",
+    "end": "good"
+  },
+
+  {
+    "id": "conspiracy-19",
+    "description": "You keep searching for more clues, but they lead to nothing concrete. Slowly, the trail goes cold, and you start to doubt whether the conspiracy even exists. Did you just imagine the whole thing?",
+    "image": "",
+    "sound": "doubt",
+    "end": "bad"
+  },
+
+  {
+    "id": "conspiracy-20",
+    "description": "Em prepares for what she believes is an impending event, gathering resources and allies. The truth may not come immediately, but she's ready for whatever happens. No one will catch her off guard again.",
+    "image": "",
+    "sound": "resolute",
+    "end": "neutral"
+  },
+
+  {
+    "id": "conspiracy-21",
+    "description": "You tell the authorities, but they don't believe you. In fact, they seem to be part of the conspiracy. Em is forced to flee, hunted by those she tried to expose. The truth is dangerous, and now she's paying the price.",
+    "image": "",
+    "sound": "pursued",
+    "end": "bad"
+  }
+]

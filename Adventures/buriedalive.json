@@ -1,0 +1,200 @@
+{
+  "title": "Buried Alive",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "You wake up in complete darkness, your body pressed tightly from all sides. Panic rises as you struggle to move. Dirt, cold and heavy, presses down on your chest and face. The air is thick, stale, and faint. You can’t see anything—*only* hear the muffled sound of your own breathing. Your arms are pinned to your sides, and you feel the weight of the earth suffocating you. You’re buried alive, and the thought sends a shiver down your spine. Your survival depends on your next move.",
+      "choices": [
+        {
+          "text": "Try to move your arms and free yourself from the dirt.",
+          "next_id": "adventure-2",
+          "skill_check": {
+            "skill": "strength",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Use your surroundings to calm yourself and think carefully.",
+          "next_id": "adventure-3",
+          "skill_check": {
+            "skill": "meditation",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Shout for help, hoping someone will hear you.",
+          "next_id": "adventure-4",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 50
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "You muster all your strength and push against the weight of the dirt. Your arms ache, but the pressure is overwhelming, and your movements are slow and uncoordinated. You can feel the earth shifting around you, but you're not making progress fast enough. Your breath comes in shallow gasps as you panic more, your hope fading.",
+      "choices": [
+        {
+          "text": "Push harder, risking exhaustion.",
+          "next_id": "adventure-5",
+          "skill_check": {
+            "skill": "strength",
+            "difficulty": 90
+          }
+        },
+        {
+          "text": "Stop and conserve energy, trying to think of a plan.",
+          "next_id": "adventure-3"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You take a moment to center yourself, attempting to breathe deeply and calm your mind. The panic begins to subside, and with clarity, you recall your training. You know that pushing too hard could lead to exhaustion, but waiting too long could suffocate you. You need a plan. The air is thin, and every breath feels like it might be your last.",
+      "choices": [
+        {
+          "text": "Try to shift your position and find a pocket of air.",
+          "next_id": "adventure-6",
+          "skill_check": {
+            "skill": "exploration",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Focus on your breath and wait for a moment of clarity.",
+          "next_id": "adventure-7"
+        },
+        {
+          "text": "Continue pushing against the dirt with all your strength.",
+          "next_id": "adventure-2"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You shout as loudly as you can, your voice muffled by the weight of the dirt. It’s hard to gauge if anyone can hear you, but you continue, hoping that someone will come. The seconds drag into minutes. The panic starts to return as you realize that there’s no guarantee anyone will find you. Your situation grows more dire with each passing moment.",
+      "choices": [
+        {
+          "text": "Keep shouting, hoping for a response.",
+          "next_id": "adventure-8",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Stop shouting and try to shift the earth around you.",
+          "next_id": "adventure-6"
+        },
+        {
+          "text": "Resign yourself to your fate and conserve energy.",
+          "next_id": "adventure-7"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "You push yourself to the brink of exhaustion, but the weight of the earth keeps you trapped. You feel your energy draining, and you start to panic again. The air is running out. Your heart beats in your chest like a drum, and with each breath, the world seems to close in tighter. You fear you won’t make it.",
+      "choices": [
+        {
+          "text": "Give one last push with everything you’ve got.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Stop and try to conserve your energy before it’s too late.",
+          "next_id": "adventure-7"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You shift your body, trying to find a pocket of air. It’s difficult, but after a few tense moments, you find a small space where the dirt is less dense. You breathe in deeply, the air feeling like a life-saving breath. The space is small, but it gives you a new sense of hope. You still need to escape, but at least you’re not suffocating.",
+      "choices": [
+        {
+          "text": "Try to wriggle free, using the small space to your advantage.",
+          "next_id": "adventure-9",
+          "skill_check": {
+            "skill": "strength",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Wait and hope for someone to find you.",
+          "next_id": "adventure-8"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "You stop moving, waiting for the air to calm, for the dust to settle. Your breaths are shallow, but your mind is starting to clear. You know that wasting too much energy could be deadly, but you also know that you can't stay still forever. The minutes stretch on. Every moment feels like an eternity.",
+      "choices": [
+        {
+          "text": "Try to move again, using your energy wisely.",
+          "next_id": "adventure-9"
+        },
+        {
+          "text": "Resign to fate and hope for a miracle.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-8",
+      "description": "Your voice falters as you shout again, but there is no response. The seconds stretch into unbearable minutes. You can no longer hear anything but the pounding of your heart and the rushing of blood in your ears. The darkness is complete. The world is suffocating.",
+      "choices": [
+        {
+          "text": "Keep shouting, though you feel your strength waning.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Give up and try to find a way to escape with the remaining energy.",
+          "next_id": "adventure-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-9",
+      "description": "You twist your body, using the narrow gap to wedge yourself free. Slowly, painstakingly, you begin to slide through the dirt, inch by inch. The pressure eases as you push upward, struggling to breathe, but making slow progress. Finally, after what feels like an eternity, you break through the surface—covered in dirt, but alive.",
+      "choices": [
+        {
+          "text": "Run as fast as you can, away from the grave.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Rest for a moment, too exhausted to continue.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    }
+  ],
+  "endings": {
+    "good-end": {
+      "description": "You run, the feeling of freedom overwhelming. Your limbs are sore, and your breath is ragged, but you’re free. You’ve escaped the grave that nearly consumed you. For now, you live to see another day."
+    },
+    "neutral-end": {
+      "description": "You lay there for a while, unsure of whether to move forward. Though you’ve escaped immediate death, the danger of your environment still lingers. There’s no certainty in what happens next."
+    },
+    "bad-end": {
+      "description": "The darkness consumes you, and with each breath, you grow weaker. The earth closes in, and your chances of escape fade. In the end, you are buried alive, a silent, forgotten soul."
+    }
+  }
+}

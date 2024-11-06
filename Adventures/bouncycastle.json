@@ -1,0 +1,202 @@
+{
+  "id": "bouncy-castle-1",
+  "description": "Em is walking through a quiet park when she spots something odd in the distance — a massive, inflatable bouncy castle. Intrigued, she decides to check it out, but as she gets closer, she realizes that the castle is far more dangerous than she anticipated. It’s filled with bouncing, monstrous creatures.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Enter the bouncy castle cautiously, trying to avoid the monsters",
+      "next_id": "bouncy-castle-2",
+      "skill_check": {
+        "skill": "stealth",
+        "difficulty": 20
+      }
+    },
+    {
+      "text": "Stay outside and try to observe from a distance",
+      "next_id": "bouncy-castle-3",
+      "skill_check": {
+        "skill": "observation",
+        "difficulty": 25
+      }
+    },
+    {
+      "text": "Leave the area and find another way around",
+      "next_id": "bouncy-castle-4"
+    }
+  ]
+},
+{
+  "id": "bouncy-castle-2",
+  "description": "Em steps lightly into the bouncy castle, moving quietly between the large inflatable walls. The creatures, bouncy and wild, seem to ignore her for now. She must move quickly, or they’ll notice her.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Find a place to hide and wait for the monsters to pass",
+      "next_id": "bouncy-castle-5",
+      "skill_check": {
+        "skill": "stealth",
+        "difficulty": 35
+      }
+    },
+    {
+      "text": "Look for a way to trap the monsters inside the castle",
+      "next_id": "bouncy-castle-6",
+      "skill_check": {
+        "skill": "engineering",
+        "difficulty": 40
+      }
+    }
+  ]
+},
+{
+  "id": "bouncy-castle-3",
+  "description": "Em stands at a safe distance, watching the creatures bounce around. They’re unpredictable, and every time they slam into the walls, the whole structure shakes. The whole situation feels odd, like it’s too surreal to be real.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Try to lure the monsters away from the castle with a loud noise",
+      "next_id": "bouncy-castle-7",
+      "skill_check": {
+        "skill": "bluffing",
+        "difficulty": 30
+      }
+    },
+    {
+      "text": "Run to find help or a way to destroy the castle",
+      "next_id": "bouncy-castle-4"
+    }
+  ]
+},
+{
+  "id": "bouncy-castle-4",
+  "description": "Em decides that the bouncy castle is far too dangerous. She quickly leaves the area, hearing the sound of the bouncing monsters echoing in the distance as she walks away.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Find another way to complete your journey",
+      "next_id": "neutral-end"
+    }
+  ]
+},
+{
+  "id": "bouncy-castle-5",
+  "description": "Em hides behind a large inflatable column, hoping the monsters won’t notice her. After several minutes of tense waiting, she sees one of the creatures bounce right past her, oblivious to her presence.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Continue hiding until the coast is clear",
+      "next_id": "bouncy-castle-8"
+    },
+    {
+      "text": "Take a chance and move deeper into the castle",
+      "next_id": "bouncy-castle-9"
+    }
+  ]
+},
+{
+  "id": "bouncy-castle-6",
+  "description": "Em spots a set of release valves that could possibly deflate part of the bouncy castle, trapping the creatures inside. It’ll take some work to activate them, but it might be the safest option.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Attempt to activate the release valves and trap the creatures",
+      "next_id": "bouncy-castle-8",
+      "skill_check": {
+        "skill": "engineering",
+        "difficulty": 50
+      }
+    },
+    {
+      "text": "Give up and try to find an exit from the castle",
+      "next_id": "bouncy-castle-10"
+    }
+  ]
+},
+{
+  "id": "bouncy-castle-7",
+  "description": "Em throws a rock into the distance, hoping to distract the monsters. Unfortunately, the noise only draws them towards her. Now she has to escape quickly before they catch her.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Dodge and run for cover",
+      "next_id": "bouncy-castle-9",
+      "skill_check": {
+        "skill": "acrobatics",
+        "difficulty": 30
+      }
+    },
+    {
+      "text": "Try to fight off the monsters",
+      "next_id": "bouncy-castle-10",
+      "skill_check": {
+        "skill": "wrestling",
+        "difficulty": 40
+      }
+    }
+  ]
+},
+{
+  "id": "bouncy-castle-8",
+  "description": "Em succeeds in activating the release valves, and the bouncy castle begins to deflate slowly. The creatures inside are trapped, unable to bounce around anymore. Em can now safely escape.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Leave the castle safely and continue on your journey",
+      "next_id": "good-end"
+    }
+  ]
+},
+{
+  "id": "bouncy-castle-9",
+  "description": "Em tries to move deeper into the castle, but the monsters start bouncing towards her at full speed. She has no choice but to run, narrowly avoiding their wild attacks.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Dodge one last attack and find an exit",
+      "next_id": "bad-end",
+      "skill_check": {
+        "skill": "acrobatics",
+        "difficulty": 50
+      }
+    }
+  ]
+},
+{
+  "id": "bouncy-castle-10",
+  "description": "Em attempts to fight off the bouncy monsters, but their unpredictable movements make it nearly impossible. She’s overwhelmed by their relentless bouncing and has to make a hasty retreat.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Flee the castle and escape with your life",
+      "next_id": "bad-end"
+    }
+  ]
+},
+{
+  "id": "good-end",
+  "description": "Em successfully deflates the bouncy castle and escapes the dangerous creatures inside. She continues her journey, grateful for the close call.",
+  "image": "",
+  "sound": ""
+},
+{
+  "id": "bad-end",
+  "description": "Em narrowly escapes the bouncy castle, but not without a few bruises. The monsters are still bouncing around inside, and she feels the rush of danger as she moves on.",
+  "image": "",
+  "sound": ""
+},
+{
+  "id": "neutral-end",
+  "description": "Em leaves the bouncy castle behind and decides it’s best to avoid such places in the future. She takes a moment to catch her breath before continuing on her journey.",
+  "image": "",
+  "sound": ""
+}

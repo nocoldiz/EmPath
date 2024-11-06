@@ -1,0 +1,218 @@
+{
+  "title": "A Stroll Through the Dream Garden",
+  "textboxes": [
+    {
+      "id": "dream-1",
+      "description": "You find yourself in a vast, surreal garden filled with glowing plants, softly humming flowers, and a sky that shifts between colors with each step you take. You don’t remember how you got here, but it all feels oddly peaceful.",
+      "choices": [
+        {
+          "text": "Smell one of the strange, shimmering flowers",
+          "next_id": "dream-2",
+          "skill_check": {
+            "skill": "botany",
+            "difficulty": 10
+          }
+        },
+        {
+          "text": "Walk down a path lined with iridescent stones",
+          "next_id": "dream-3",
+          "skill_check": {
+            "skill": "navigation",
+            "difficulty": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "dream-2",
+      "description": "The flower has a soft, nostalgic scent, bringing memories of places you've never been. You feel a deep connection to the garden, almost as if it’s alive. One of the flowers seems to be watching you closely, curious and inviting.",
+      "choices": [
+        {
+          "text": "Talk to the flower",
+          "next_id": "dream-4",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 15
+          }
+        },
+        {
+          "text": "Pick the flower gently",
+          "next_id": "dream-5",
+          "skill_check": {
+            "skill": "gardening",
+            "difficulty": 15
+          }
+        }
+      ]
+    },
+    {
+      "id": "dream-3",
+      "description": "As you walk down the path, the stones seem to glow under your feet. They hum softly, creating a tune that shifts with your movements. You feel like you’re being led somewhere. The path splits into two directions: one lined with silver, the other with golden leaves.",
+      "choices": [
+        {
+          "text": "Take the path with silver leaves",
+          "next_id": "dream-6",
+          "skill_check": {
+            "skill": "intuition",
+            "difficulty": 10
+          }
+        },
+        {
+          "text": "Take the path with golden leaves",
+          "next_id": "dream-7",
+          "skill_check": {
+            "skill": "music",
+            "difficulty": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "dream-4",
+      "description": "You speak softly to the flower, and it responds in a melodic voice, asking if you seek wisdom or companionship. Its petals sway gently, waiting for your answer.",
+      "choices": [
+        {
+          "text": "Ask for wisdom",
+          "next_id": "dream-8"
+        },
+        {
+          "text": "Ask for companionship",
+          "next_id": "dream-9"
+        }
+      ]
+    },
+    {
+      "id": "dream-5",
+      "description": "You gently pick the flower, feeling its warmth in your hand. It hums a little tune before quieting, leaving you with a sense of calm. The world around you shimmers, and a path of stars appears, leading you onward.",
+      "next_id": "dream-10",
+      "reward": {
+        "id": "dream_flower",
+        "quantity": 1
+      }
+    },
+    {
+      "id": "dream-6",
+      "description": "The path of silver leaves brings you to a pond with water so clear you can see galaxies reflected in it. You feel as if you could step into it and swim among the stars.",
+      "choices": [
+        {
+          "text": "Take a gentle dip in the pond",
+          "next_id": "dream-11",
+          "skill_check": {
+            "skill": "swimming",
+            "difficulty": 10
+          }
+        },
+        {
+          "text": "Gaze deeply into the water",
+          "next_id": "dream-12",
+          "skill_check": {
+            "skill": "observation",
+            "difficulty": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "dream-7",
+      "description": "The golden path leads you to a towering tree covered in glowing fruits. They sway slightly, as though beckoning to be plucked.",
+      "choices": [
+        {
+          "text": "Pick a fruit",
+          "next_id": "dream-13",
+          "skill_check": {
+            "skill": "cleaning",
+            "difficulty": 5
+          }
+        },
+        {
+          "text": "Climb up to see the view from the top",
+          "next_id": "dream-14",
+          "skill_check": {
+            "skill": "acrobatics",
+            "difficulty": 15
+          }
+        }
+      ]
+    },
+    {
+      "id": "dream-8",
+      "description": "The flower whispers advice on life, love, and a reminder to water plants more often. The knowledge is soothing, leaving you feeling wiser.",
+      "next_id": "end",
+      "reward": {
+        "id": "wisdom",
+        "quantity": 5
+      }
+    },
+    {
+      "id": "dream-9",
+      "description": "The flower hums a warm tune, and you feel a gentle presence by your side. It stays with you as you walk further through the dream, providing comfort and cheer.",
+      "next_id": "end"
+    },
+    {
+      "id": "dream-10",
+      "description": "Following the path of stars, you arrive at a clearing where the air is filled with twinkling lights. You feel weightless, as though you could drift away into the sky.",
+      "choices": [
+        {
+          "text": "Float up into the sky",
+          "next_id": "dream-15",
+          "skill_check": {
+            "skill": "meditation",
+            "difficulty": 10
+          }
+        },
+        {
+          "text": "Lie down and gaze at the stars",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "dream-11",
+      "description": "You dip into the pond and feel yourself surrounded by stars. For a moment, you float through constellations, connected to the universe. When you resurface, you feel rejuvenated.",
+      "next_id": "end",
+      "reward": {
+        "id": "serenity",
+        "quantity": 5
+      }
+    },
+    {
+      "id": "dream-12",
+      "description": "Staring into the pond, you see flashes of forgotten memories and hidden knowledge. The images are comforting and inspiring.",
+      "next_id": "end",
+      "reward": {
+        "id": "inspiration",
+        "quantity": 5
+      }
+    },
+    {
+      "id": "dream-13",
+      "description": "You pick a fruit and wipe it clean, marveling at its radiant colors. As you hold it, it fills you with warmth and light.",
+      "next_id": "end",
+      "reward": {
+        "id": "dream_fruit",
+        "quantity": 1
+      }
+    },
+    {
+      "id": "dream-14",
+      "description": "Climbing to the top, you see the dream garden stretching endlessly. The sky is filled with a thousand colors, and the view is breathtaking.",
+      "next_id": "end",
+      "reward": {
+        "id": "dreamview",
+        "quantity": 5
+      }
+    },
+    {
+      "id": "dream-15",
+      "description": "You float up, becoming one with the stars. Everything around you sparkles, and you feel at peace. Slowly, you drift back to the garden, feeling a profound sense of joy.",
+      "next_id": "end"
+    }
+  ],
+  "end": {
+    "description": "As you continue to walk through the dream garden, the colors slowly fade. You feel a gentle pull back to reality, bringing with you a sense of calm, joy, and perhaps even a new insight.",
+    "reward": {
+      "id": "peace",
+      "quantity": 10
+    }
+  }
+}

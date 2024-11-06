@@ -1,0 +1,182 @@
+{
+  "title": "The Infinite Library",
+  "textboxes": [
+    {
+      "id": "library-1",
+      "description": "You push open a large, creaking door and find yourself in an enormous library packed wall-to-wall with beings from countless worlds. Every aisle and corner is teeming with life—celestial beings, ethereal spirits, shadowy figures, and people just like you. They’re all shuffling, talking, or furiously reading. Ahead lies the main information desk, nearly impossible to reach through the throngs of people. Somewhere in this library, there’s a book rumored to hold deep, ancient knowledge. You’ll need to push through this surreal crowd to find it.",
+      "choices": [
+        {
+          "text": "Try to move towards the information desk.",
+          "next_id": "library-2",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 40,
+            "fail": "Your polite requests are ignored as towering beings brush past you, nearly knocking you over."
+          }
+        },
+        {
+          "text": "Attempt to weave through the crowd discreetly.",
+          "next_id": "library-3",
+          "skill_check": {
+            "skill": "stealth",
+            "difficulty": 35,
+            "fail": "You slip and bump into a shimmering creature, who hisses, drawing the attention of others."
+          }
+        },
+        {
+          "text": "Ask a nearby person for directions to the ancient texts section.",
+          "next_id": "library-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "library-2",
+      "description": "You make some headway towards the information desk, but the crowd is relentless. A towering figure with spiral-like tattoos and glowing eyes blocks your way, looking down with mild curiosity. 'You seek knowledge beyond your understanding, human?' he says with a sneer.",
+      "choices": [
+        {
+          "text": "Try to talk your way past him.",
+          "next_id": "library-5",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 50,
+            "fail": "He laughs, and you’re pushed back as he turns to speak with a friend, obstructing your path further."
+          }
+        },
+        {
+          "text": "Take a detour to the left through a narrow aisle.",
+          "next_id": "library-3"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "library-3",
+      "description": "You attempt to squeeze through a narrow aisle filled with floating tomes and occupied by several other beings. It’s difficult to see where you’re going, and the crowd grows denser with every step.",
+      "choices": [
+        {
+          "text": "Keep pushing forward, hoping for a clearing.",
+          "next_id": "library-6",
+          "skill_check": {
+            "skill": "intuition",
+            "difficulty": 45,
+            "fail": "You misjudge the crowd's flow, getting briefly trapped against a shelf as a stream of creatures squeezes past."
+          }
+        },
+        {
+          "text": "Look around for a staircase or sign that could help guide you.",
+          "next_id": "library-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "library-4",
+      "description": "A short person in a shimmering cloak hears your question and gestures to the right. 'Follow the aisle until you reach the black pillars, then take a left. Ancient texts are stored in a separate wing,' they say hurriedly, before disappearing back into the crowd.",
+      "choices": [
+        {
+          "text": "Follow the directions towards the black pillars.",
+          "next_id": "library-6"
+        },
+        {
+          "text": "Thank them and ask if there’s a quicker route.",
+          "next_id": "library-5"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "library-5",
+      "description": "The towering figure laughs again but gestures in the general direction of the restricted wing. 'Seek beyond the black pillars. If you can handle the pressure there,' he says, his eyes glinting with amusement.",
+      "choices": [
+        {
+          "text": "Proceed towards the black pillars.",
+          "next_id": "library-6"
+        },
+        {
+          "text": "Express gratitude and move on.",
+          "next_id": "library-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "library-6",
+      "description": "You finally spot the black pillars. As you approach, the air grows tense, and fewer people seem willing to enter this section. The ceiling looms low, and it’s almost entirely silent here, unlike the chaos of the main area. A row of dusty, ancient books lies on a towering shelf in front of you.",
+      "choices": [
+        {
+          "text": "Search for the rumored book of ancient knowledge.",
+          "next_id": "library-7",
+          "skill_check": {
+            "skill": "observation",
+            "difficulty": 55,
+            "fail": "The rows of dusty spines blur together, and you accidentally knock a heavy tome to the floor, causing a minor commotion."
+          }
+        },
+        {
+          "text": "Take a moment to rest before examining the shelf closely.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "library-7",
+      "description": "As you scan the shelves, your eyes catch an elaborate, ancient tome bound in a strange, shimmering leather. The title glows faintly in a script you don’t recognize, yet somehow you understand its meaning: 'The Wisdom of Infinity.' Just as you reach for it, you feel a presence behind you—a ghostly figure reaches out, attempting to take the book first.",
+      "choices": [
+        {
+          "text": "Try to grab the book before the ghostly figure.",
+          "next_id": "good-end",
+          "skill_check": {
+            "skill": "agility",
+            "difficulty": 60,
+            "fail": "The ghostly figure slips through your hand, seizing the book with an ethereal chuckle and disappearing with it."
+          }
+        },
+        {
+          "text": "Politely ask the ghostly figure if you could share the knowledge within.",
+          "next_id": "neutral-end",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 50,
+            "fail": "The figure turns away, clutching the book closer and fading into the shadows."
+          }
+        },
+        {
+          "text": "Step back, allowing the figure to take the book.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "With a swift motion, you grab the book just before the ghostly figure does. It hovers, nodding in acceptance, and vanishes, leaving you with the tome. The book pulses in your hands, a sense of limitless knowledge flowing into your mind. This book will open new doors you hadn’t imagined.",
+      "reward": {
+        "id": "ancient_knowledge",
+        "quantity": 1
+      },
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "The ghostly figure hesitates, then nods, gesturing to you to read a few pages together. As you scan the tome, fragments of ancient wisdom flicker through your mind, though the figure eventually closes the book and departs. You leave with fragments of knowledge, but the sense of a mystery still unsolved.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "You step back, letting the ghostly figure take the book. It smirks, vanishing with a sense of triumph. You’re left feeling an emptiness—a missed opportunity that might haunt you. The whispers of otherworldly knowledge fade, leaving the aisle quiet and unyielding.",
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

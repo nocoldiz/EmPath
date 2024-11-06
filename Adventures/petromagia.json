@@ -1,0 +1,162 @@
+{
+  "title": "Petro Magia's Offer",
+  "textboxes": [
+    {
+      "id": "petromagia-1",
+      "description": "As you're reviewing quarterly reports in your office, your phone rings with an unfamiliar number. You pick it up, and a smooth voice says, 'Good afternoon, Ms. Em. This is Petro Magia. We have a business proposition that could be very profitable for someone in your... unique position.'",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Listen to the proposition",
+          "next_id": "petromagia-2"
+        },
+        {
+          "text": "Politely decline",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "petromagia-2",
+      "description": "The voice continues, 'We need someone with financial clout to help us acquire a rare magical resource, a fuel that enhances spells exponentially. We're talking about an exclusive supply deal — you’ll have access to our reserves for a price. Are you interested?'",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Ask for more details about the investment",
+          "next_id": "petromagia-3"
+        },
+        {
+          "text": "Agree to discuss terms",
+          "next_id": "petromagia-4",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Insist on a face-to-face meeting",
+          "next_id": "petromagia-5"
+        }
+      ]
+    },
+    {
+      "id": "petromagia-3",
+      "description": "'We’re asking for an investment of 500,000,' the voice says. 'Your contribution will secure you a portion of the profits and a priority share in any magical resources we obtain. It’s a rare opportunity — and one not everyone can afford.'",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Accept and wire the money",
+          "next_id": "petromagia-6",
+          "skill_check": {
+            "skill": "management",
+            "difficulty": 50
+          },
+          "cost": {
+            "money": 500000
+          }
+        },
+        {
+          "text": "Negotiate for a smaller investment",
+          "next_id": "petromagia-7",
+          "skill_check": {
+            "skill": "economics",
+            "difficulty": 45
+          }
+        },
+        {
+          "text": "Turn down the deal",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "petromagia-4",
+      "description": "Your confidence impresses the representative. 'We can expedite the deal for a partner as seasoned as you. A one-time investment of 500,000 will give you access to our entire Petro Magia supply chain, plus a preferred partnership.'",
+      "image": "",
+      "sound": "",
+      "next_id": "petromagia-6",
+      "reward": {
+        "id": "prestige_points",
+        "quantity": 10
+      }
+    },
+    {
+      "id": "petromagia-5",
+      "description": "'A face-to-face meeting? Bold request,' says the voice. After a pause, they agree to arrange it in a high-security location. 'But remember, in-person deals are non-negotiable.'",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Attend the meeting",
+          "next_id": "petromagia-8"
+        },
+        {
+          "text": "Decline the offer",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "petromagia-6",
+      "description": "You transfer the funds and receive a confirmation. 'Welcome to Petro Magia, Ms. Em. This partnership will open doors you didn’t even know existed.' You feel a surge of power — and the weight of a substantial investment.",
+      "image": "",
+      "sound": "",
+      "next_id": "end",
+      "reward": {
+        "id": "petromagia_access",
+        "quantity": 1
+      }
+    },
+    {
+      "id": "petromagia-7",
+      "description": "You push back on the amount, presenting an alternative offer. After a tense pause, the voice replies, 'Very well. 300,000. But the terms will be less favorable. Are you in?'",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Agree to invest 300,000",
+          "next_id": "petromagia-6",
+          "cost": {
+            "money": 300000
+          }
+        },
+        {
+          "text": "Decline the reduced offer",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "petromagia-8",
+      "description": "You arrive at a high-security, glass-walled office. A figure in a tailored suit greets you, offering a hand. 'Let’s make history together,' they say with a grin.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Seal the deal with a handshake",
+          "next_id": "end",
+          "reward": {
+            "id": "strategic_alliance",
+            "quantity": 1
+          }
+        },
+        {
+          "text": "Request further contract details",
+          "next_id": "end",
+          "reward": {
+            "id": "insight_bonus",
+            "quantity": 5
+          }
+        }
+      ]
+    }
+  ],
+  "end": {
+    "description": "With Petro Magia’s partnership secured, you feel a mix of excitement and caution. Only time will tell if this investment brings prosperity... or peril.",
+    "image": "",
+    "sound": ""
+  }
+}

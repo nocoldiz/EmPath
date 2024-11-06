@@ -1,0 +1,195 @@
+{
+  "title": "The Mimic Cave",
+  "textboxes": [
+    {
+      "id": "mimic-1",
+      "description": "You find yourself standing at the entrance of a dark, foreboding cave. The air is thick with moisture, and you can hear the distant echo of dripping water. The cave looks ancient, with jagged rocks lining the walls. Something about the place feels... off. The entrance seems almost too smooth, too perfectly round. You step inside, your footsteps muffled by the thick layer of dust on the floor.",
+      "choices": [
+        {
+          "text": "Enter the cave cautiously",
+          "next_id": "mimic-2"
+        },
+        {
+          "text": "Turn back and leave",
+          "next_id": "mimic-3"
+        }
+      ]
+    },
+    {
+      "id": "mimic-2",
+      "description": "As you venture deeper into the cave, you notice something unsettling: the walls. They look too uniform, too polished. You reach out to touch one, but before your fingers make contact, the rock quivers, and suddenly, the wall opens into a gaping maw filled with sharp teeth. It's a mimic, and it's hungry.",
+      "choices": [
+        {
+          "text": "Fight the mimic",
+          "next_id": "mimic-4",
+          "skill_check": {
+            "skill": "handtohand",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Try to escape",
+          "next_id": "mimic-5",
+          "skill_check": {
+            "skill": "agility",
+            "difficulty": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "mimic-3",
+      "description": "You turn back, but as you take a step away from the cave, the ground beneath your feet begins to shift. The earth trembles, and before you can react, the entrance collapses, trapping you inside. The cave wasn't meant to let anyone leave.",
+      "choices": [
+        {
+          "text": "Explore deeper inside",
+          "next_id": "mimic-2"
+        }
+      ]
+    },
+    {
+      "id": "mimic-4",
+      "description": "You face the mimic head-on, swinging your weapon. The creature shifts and lashes out with its jagged maw, but you manage to land a solid blow, causing it to retreat momentarily. However, the mimic quickly reforms and charges again. It’s clear that fighting it might not be enough.",
+      "choices": [
+        {
+          "text": "Keep fighting, focusing on its weak spots",
+          "next_id": "mimic-6",
+          "skill_check": {
+            "skill": "handtohand",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Try to reason with it, hoping it will leave you alone",
+          "next_id": "mimic-7",
+          "skill_check": {
+            "skill": "empathy",
+            "difficulty": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "mimic-5",
+      "description": "You try to escape, but the cave shifts as if it's alive. The walls close in on you, the ground twists beneath your feet. You're caught in a labyrinth of shifting stone. There's no clear way out. The mimic behind you is closing in.",
+      "choices": [
+        {
+          "text": "Fight the mimic while trying to find an exit",
+          "next_id": "mimic-6",
+          "skill_check": {
+            "skill": "handtohand",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Try to find a hidden exit in the cave",
+          "next_id": "mimic-8",
+          "skill_check": {
+            "skill": "investigation",
+            "difficulty": 80
+          }
+        }
+      ]
+    },
+    {
+      "id": "mimic-6",
+      "description": "You defeat the mimic, but as it falls, its body melts into a puddle of strange goo. Before you can catch your breath, the ground beneath you begins to rumble. A nearby stalactite shakes and detaches, landing with a loud thud. But something is wrong. The stalactite begins to twitch, its form slowly shifting into a hideous mockery of a creature.",
+      "choices": [
+        {
+          "text": "Fight the new mimic",
+          "next_id": "mimic-9",
+          "skill_check": {
+            "skill": "handtohand",
+            "difficulty": 80
+          }
+        },
+        {
+          "text": "Run away as fast as you can",
+          "next_id": "mimic-10",
+          "skill_check": {
+            "skill": "agility",
+            "difficulty": 70
+          }
+        }
+      ]
+    },
+    {
+      "id": "mimic-7",
+      "description": "You try to reason with the mimic, but it only growls in response, clearly uninterested in your pleas. It lunges at you, forcing you to dodge or be consumed by its jaws.",
+      "choices": [
+        {
+          "text": "Fight the mimic with everything you have",
+          "next_id": "mimic-6",
+          "skill_check": {
+            "skill": "handtohand",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Try to escape while it's distracted",
+          "next_id": "mimic-5",
+          "skill_check": {
+            "skill": "agility",
+            "difficulty": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "mimic-8",
+      "description": "You desperately search for an exit, but every path you try leads to another mimic or a dead end. The walls close in tighter, and the ground shifts. The cave feels like it’s alive, actively trapping you within its walls.",
+      "choices": [
+        {
+          "text": "Keep searching for an exit",
+          "next_id": "mimic-5"
+        }
+      ]
+    },
+    {
+      "id": "mimic-9",
+      "description": "You fight with everything you have, but the mimic is relentless. It keeps shifting and reforming, making it impossible to land a decisive blow. Exhausted, you realize that this cave, and everything in it, is one giant trap. There may be no escape.",
+      "choices": [
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "mimic-10",
+      "description": "You run as fast as you can, but the cave seems to shift and warp with every step you take. It feels as if the walls are closing in around you, and no matter how fast you run, you can’t escape. Eventually, the path leads to a dead end, and you turn around to find the mimic only a few steps behind you.",
+      "choices": [
+        {
+          "text": "Fight the mimic one last time",
+          "next_id": "mimic-6",
+          "skill_check": {
+            "skill": "handtohand",
+            "difficulty": 90
+          }
+        },
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "description": "You’ve come to the end of your journey in the mimic cave. Whether you were consumed by the mimics or found a way out, the cave will always remain a trap. It’s a place where nothing is as it seems, and everything—walls, doors, and treasures—could be another mimic waiting to consume you.",
+      "choices": [
+        {
+          "text": "Restart adventure",
+          "next_id": "mimic-1"
+        },
+        {
+          "text": "End",
+          "next_id": "end"
+        }
+      ]
+    }
+  ],
+  "reward": {
+    "id": "mimic-slayer-token",
+    "quantity": 1
+  }
+}

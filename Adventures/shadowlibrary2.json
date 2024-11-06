@@ -1,0 +1,219 @@
+{
+  "title": "Realm of Forgotten Shadows",
+  "textboxes": [
+    {
+      "id": "shadows-1",
+      "description": "You awaken in a world of fog and whispers, an endless landscape of shadows and fading memories. Bubba is by your side, his face pale and solemn. 'It seems… we didn't make it out,' he murmurs, his voice filled with regret. The ethereal beings appear around you, their translucent forms flickering. 'You belong to us now,' they say in unison. A figure steps forward, its eyes like hollow voids. 'However… you may earn your freedom—if you prove worthy.'",
+      "choices": [
+        {
+          "text": "Accept their challenge to try and regain your freedom.",
+          "next_id": "shadows-2"
+        },
+        {
+          "text": "Refuse, deciding to explore this strange place and learn its secrets.",
+          "next_id": "shadows-3"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-2",
+      "description": "The beings nod and reveal a glistening, ethereal lockbox floating in mid-air. 'Inside, there is something you value most—a tether to your past life,' they explain. 'Retrieve it, and you may return. Fail, and you are ours forever.' The lockbox fades from view, reappearing somewhere within the misty ruins. You feel an odd pull, as if the box is calling you.",
+      "choices": [
+        {
+          "text": "Head towards the direction of the pull.",
+          "next_id": "shadows-4",
+          "skill_check": {
+            "skill": "exploration",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Ask Bubba if he can sense anything as well.",
+          "next_id": "shadows-5"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-3",
+      "description": "You wander through the fog with Bubba, noting the surreal landscape that seems to stretch and shift with every step. Strange shapes flicker in the corners of your vision—people, creatures, things that once were and now are forgotten. Bubba whispers, 'I wonder if all these… memories… are like us, trapped.'",
+      "choices": [
+        {
+          "text": "Try to communicate with the forgotten memories around you.",
+          "next_id": "shadows-6",
+          "skill_check": {
+            "skill": "spiritism",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Keep moving forward, searching for a way out.",
+          "next_id": "shadows-7"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-4",
+      "description": "You feel a faint pull guiding you through the fog. As you approach, a towering shadow appears—a creature made of smoke and whispers, blocking your path. It seems to guard the ethereal lockbox. It stares at you with hollow eyes, challenging your approach.",
+      "choices": [
+        {
+          "text": "Attempt to banish the creature.",
+          "next_id": "shadows-8",
+          "skill_check": {
+            "skill": "arcanism",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Try to reason with the creature, appealing to its past life.",
+          "next_id": "shadows-9",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 60
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-5",
+      "description": "Bubba closes his eyes, concentrating. After a moment, he nods, pointing forward. 'I think I can feel it… the lockbox is ahead, but something dark guards it. We’ll need a plan.'",
+      "choices": [
+        {
+          "text": "Move forward, prepared to confront whatever lies ahead.",
+          "next_id": "shadows-4"
+        },
+        {
+          "text": "Ask Bubba if he has any other suggestions.",
+          "next_id": "shadows-10"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-6",
+      "description": "You reach out, speaking softly to the shadowy figures around you. They respond in fragmented voices, whispers of their lives before this realm. Some were once scholars, others warriors, all drawn to forgotten places. They murmur about an ancient gateway—a path that might lead out of this place.",
+      "choices": [
+        {
+          "text": "Seek the gateway they mentioned.",
+          "next_id": "shadows-11"
+        },
+        {
+          "text": "Thank them and return to your search for the lockbox.",
+          "next_id": "shadows-2"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-7",
+      "description": "Moving through the fog, you feel time slipping away as the shadows close in around you, their whispers growing louder. You see a glimmer in the distance—possibly the lockbox. But just as you approach, a figure blocks your path.",
+      "choices": [
+        {
+          "text": "Stand your ground and confront the figure.",
+          "next_id": "shadows-4"
+        },
+        {
+          "text": "Look for another path around the figure.",
+          "next_id": "shadows-12"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-8",
+      "description": "You muster your arcane energy, attempting to banish the creature. It wavers and hisses, its form distorting. After a fierce struggle, it fades into nothingness, leaving the path to the lockbox clear.",
+      "choices": [
+        {
+          "text": "Approach the lockbox.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-9",
+      "description": "You appeal to the creature’s lost humanity, speaking to it with empathy. It hesitates, memories flickering in its hollow eyes, before stepping aside. The path to the lockbox is now clear.",
+      "choices": [
+        {
+          "text": "Retrieve the lockbox.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-10",
+      "description": "Bubba takes a deep breath. 'We could try to deceive it. Perhaps we can make it think we’re here to help rather than take.' His voice is hopeful, but he glances at you, unsure if it will work.",
+      "choices": [
+        {
+          "text": "Attempt to deceive the guardian creature.",
+          "next_id": "shadows-9"
+        },
+        {
+          "text": "Face the creature directly.",
+          "next_id": "shadows-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-11",
+      "description": "You search for the gateway the spirits mentioned, eventually finding a door made of dark, swirling mist. The figures tell you it leads out—but it may require another sacrifice.",
+      "choices": [
+        {
+          "text": "Step through, willing to take the risk.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Turn back and continue searching for the lockbox.",
+          "next_id": "shadows-2"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "shadows-12",
+      "description": "You search for a way around, but the fog thickens, and the figure blocks every path. It seems you’ll need to confront it.",
+      "choices": [
+        {
+          "text": "Challenge the creature head-on.",
+          "next_id": "shadows-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "You open the lockbox, revealing a piece of yourself—a memory from before. The ethereal beings whisper in disappointment, but they release their hold on you. The world of shadows fades, and you wake in the real world, Bubba beside you, free but forever changed.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "You step through the misty doorway, feeling a strange tug at your soul. You find yourself back in the real world, but something feels off, as though a part of you stayed behind. Free, but incomplete, you and Bubba leave the library, forever haunted.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "You fail to retrieve the lockbox in time. The fog thickens, and the beings tighten their grip. You and Bubba are absorbed into the realm of shadows, becoming yet another whisper in the endless fog, lost and forgotten forever.",
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "title": "Encounter with Totti",
+  "textboxes": [
+    {
+      "id": "totti-1",
+      "description": "As you stroll through a bustling Italian piazza, you suddenly spot a familiar face in the crowd. It’s Francesco Totti, the legendary football player, signing autographs and chatting with fans. A group of excited onlookers surrounds him.",
+      "choices": [
+        {
+          "text": "Approach and ask for an autograph",
+          "next_id": "totti-2"
+        },
+        {
+          "text": "Stay back and just observe",
+          "next_id": "totti-3"
+        },
+        {
+          "text": "Challenge him to a friendly penalty kick",
+          "next_id": "totti-4",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "totti-2",
+      "description": "You manage to slip through the crowd and catch Totti’s attention. He grins, signs a card for you, and asks if you’d like a quick photo.",
+      "choices": [
+        {
+          "text": "Accept and pose with Totti",
+          "next_id": "totti-5",
+          "reward": {
+            "id": "photo_with_totti",
+            "quantity": 1
+          }
+        },
+        {
+          "text": "Ask him for tips on handling the press",
+          "next_id": "totti-6"
+        }
+      ]
+    },
+    {
+      "id": "totti-3",
+      "description": "You watch from a distance, enjoying the sight of Totti interacting with his fans. He seems down-to-earth and genuine, a true hero to those around him.",
+      "choices": [
+        {
+          "text": "Walk up and join the fans",
+          "next_id": "totti-2"
+        },
+        {
+          "text": "Move on and explore the rest of the piazza",
+          "next_id": "totti-end"
+        }
+      ]
+    },
+    {
+      "id": "totti-4",
+      "description": "You confidently challenge Totti to a penalty kick competition. He laughs, clearly amused, and agrees to give it a shot. A small crowd gathers to watch.",
+      "choices": [
+        {
+          "text": "Take the first kick",
+          "next_id": "totti-7",
+          "skill_check": {
+            "skill": "athletics",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Let him go first",
+          "next_id": "totti-8"
+        }
+      ]
+    },
+    {
+      "id": "totti-5",
+      "description": "Totti puts his arm around you as you both smile for a quick snapshot. As you step away, he gives you a friendly nod.",
+      "choices": [
+        {
+          "text": "Thank him and wish him well",
+          "next_id": "totti-end"
+        }
+      ]
+    },
+    {
+      "id": "totti-6",
+      "description": "Totti chuckles and shares a few insights on handling public attention. His words are practical, and he seems genuinely interested in giving helpful advice.",
+      "choices": [
+        {
+          "text": "Thank him and take his advice to heart",
+          "next_id": "totti-end",
+          "reward": {
+            "id": "charisma",
+            "quantity": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "totti-7",
+      "description": "You kick the ball with all your might. The crowd cheers as the ball sails toward the goal. It’s close, but you nearly miss!",
+      "choices": [
+        {
+          "text": "Laugh it off and let Totti try",
+          "next_id": "totti-8"
+        },
+        {
+          "text": "Challenge him to a rematch",
+          "next_id": "totti-9"
+        }
+      ]
+    },
+    {
+      "id": "totti-8",
+      "description": "Totti takes his shot, sending the ball soaring with incredible skill. The crowd erupts in cheers. He grins at you, clearly enjoying the friendly competition.",
+      "choices": [
+        {
+          "text": "Congratulate him",
+          "next_id": "totti-end",
+          "reward": {
+            "id": "sportsmanship",
+            "quantity": 5
+          }
+        },
+        {
+          "text": "Ask him for football tips",
+          "next_id": "totti-10"
+        }
+      ]
+    },
+    {
+      "id": "totti-9",
+      "description": "You challenge Totti to another round. With a playful smile, he agrees, ready to give it another go. This time, you focus and kick with precision.",
+      "choices": [
+        {
+          "text": "Try to score this time",
+          "next_id": "totti-end",
+          "reward": {
+            "id": "athletics",
+            "quantity": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "totti-10",
+      "description": "Totti takes a moment to show you a few football tips, his experience evident in every word. You feel inspired by his dedication to the sport.",
+      "choices": [
+        {
+          "text": "Thank him and head on your way",
+          "next_id": "totti-end",
+          "reward": {
+            "id": "athletics",
+            "quantity": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "totti-end",
+      "description": "As you leave, you feel a strange sense of accomplishment and warmth. Meeting a legend like Totti was a once-in-a-lifetime experience, and you can’t help but smile as you walk away, already inspired by the encounter.",
+      "choices": []
+    }
+  ]
+}

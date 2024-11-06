@@ -1,0 +1,154 @@
+{
+  "title": "Learning C++",
+  "textboxes": [
+    {
+      "id": "cpp-1",
+      "description": "One evening, you sit down at your desk, determined to finally learn C++. You open your laptop, pull up a beginner's guide, and stare at the blank code editor. 'Alright, let's do this,' you mutter to yourself.",
+      "choices": [
+        {
+          "text": "Start with the basics",
+          "next_id": "cpp-2"
+        },
+        {
+          "text": "Look up videos on C++",
+          "next_id": "cpp-3",
+          "skill_check": {
+            "skill": "research",
+            "difficulty": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "cpp-2",
+      "description": "You start by writing a simple 'Hello, World!' program. It seems easy enough. The guide explains each line, but it feels a bit overwhelming as you try to understand what '#include <iostream>' and 'std::cout' actually mean.",
+      "choices": [
+        {
+          "text": "Focus and keep going",
+          "next_id": "cpp-4",
+          "skill_check": {
+            "skill": "willpower",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Take a break and watch a video explanation",
+          "next_id": "cpp-3"
+        }
+      ]
+    },
+    {
+      "id": "cpp-3",
+      "description": "You find a video explaining the basics of C++, and it breaks down each part of the code step by step. Slowly, it begins to make sense. You feel a bit more confident to try coding on your own again.",
+      "choices": [
+        {
+          "text": "Go back to coding",
+          "next_id": "cpp-4"
+        }
+      ]
+    },
+    {
+      "id": "cpp-4",
+      "description": "Returning to the code, you start writing basic arithmetic operations. However, you hit an error and feel frustrated. The error message is cryptic: 'error: expected ';' before '}' token'.",
+      "choices": [
+        {
+          "text": "Check the code carefully",
+          "next_id": "cpp-5",
+          "skill_check": {
+            "skill": "problem-solving",
+            "difficulty": 35
+          }
+        },
+        {
+          "text": "Look up common C++ errors",
+          "next_id": "cpp-6",
+          "skill_check": {
+            "skill": "research",
+            "difficulty": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "cpp-5",
+      "description": "You carefully go over each line, and finally, you find the missing semicolon. Placing it in the right spot, you run the code again. This time, it works! You feel a small victory.",
+      "choices": [
+        {
+          "text": "Celebrate and move on to the next lesson",
+          "next_id": "cpp-7"
+        }
+      ]
+    },
+    {
+      "id": "cpp-6",
+      "description": "You read about common errors, and one of them is missing semicolons. Sure enough, you check your code and find a missing semicolon. Fixing it, you run the program again, and it works!",
+      "choices": [
+        {
+          "text": "Move to the next lesson",
+          "next_id": "cpp-7"
+        }
+      ]
+    },
+    {
+      "id": "cpp-7",
+      "description": "Feeling confident, you decide to take on a more challenging project: a simple calculator program. This involves creating functions and using variables. You type out the first few lines, but soon realize that functions are trickier than they seemed.",
+      "choices": [
+        {
+          "text": "Dive into learning functions",
+          "next_id": "cpp-8",
+          "skill_check": {
+            "skill": "logic",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Take a break and review the basics again",
+          "next_id": "cpp-2"
+        }
+      ]
+    },
+    {
+      "id": "cpp-8",
+      "description": "You manage to create basic addition and subtraction functions, but you're still confused about how to handle inputs and outputs. The concepts feel a bit abstract.",
+      "choices": [
+        {
+          "text": "Keep experimenting",
+          "next_id": "cpp-9",
+          "skill_check": {
+            "skill": "problem-solving",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Ask for help online",
+          "next_id": "cpp-10"
+        }
+      ]
+    },
+    {
+      "id": "cpp-9",
+      "description": "After several attempts, you finally get the functions to work correctly. The calculator adds and subtracts as expected! It’s basic, but you’ve created a real program from scratch.",
+      "choices": [
+        {
+          "text": "End the lesson on a high note",
+          "next_id": "cpp-11"
+        }
+      ]
+    },
+    {
+      "id": "cpp-10",
+      "description": "You post a question in a programming forum, and someone responds with helpful advice. Using their tips, you manage to fix your calculator program. It works perfectly now!",
+      "choices": [
+        {
+          "text": "Finish up feeling accomplished",
+          "next_id": "cpp-11"
+        }
+      ]
+    },
+    {
+      "id": "cpp-11",
+      "description": "You save your work and close the laptop, feeling both tired and satisfied. C++ was challenging, but you’ve made progress. Maybe, just maybe, you can tackle even bigger coding projects in the future.",
+      "choices": []
+    }
+  ]
+}

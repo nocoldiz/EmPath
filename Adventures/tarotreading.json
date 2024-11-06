@@ -1,0 +1,180 @@
+{
+  "title": "The Tarot Reading",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "You find yourself in a dimly lit room, the air thick with incense. A small, round table sits in front of you, draped with a velvet cloth. In the center lies a deck of tarot cards, their designs shimmering under the candlelight. Bubba, ever the skeptic, sits off to the side, watching with an amused smile as the tarot reader, an old woman with a deep gaze, gestures for you to sit.",
+      "choices": [
+        {
+          "text": "Sit down at the table and let the reader begin.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Ask the reader about her methods before you begin.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Decide to leave, feeling skeptical about the whole thing.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "The reader shuffles the cards with practiced hands, her eyes closed as she concentrates. 'A question,' she says in a soft voice. 'Ask your question, and I will reveal the path that lies before you.' You think carefully about what to ask.",
+      "choices": [
+        {
+          "text": "Ask about your future, hoping for guidance.",
+          "next_id": "adventure-4"
+        },
+        {
+          "text": "Ask about a specific relationship in your life.",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Ask about something more personal, like your purpose or destiny.",
+          "next_id": "adventure-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You lean forward, eyeing the tarot reader with curiosity. 'How do you know what the cards will reveal?' you ask. She gives you a knowing smile and leans back. 'The cards do not predict the future,' she explains. 'They reflect your energy and intentions. It is your soul that speaks through the cards.' Bubba raises an eyebrow from his seat but says nothing.",
+      "choices": [
+        {
+          "text": "Decide to trust the reader and let her proceed.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Still unsure, you decide to leave.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You ask about your future, and the reader begins to lay the cards out one by one in front of you. The first card reveals The Fool, representing a journey or new beginning. The second card is The Tower, signifying chaos or unexpected change. Finally, The Sun appears, a sign of success and clarity after a storm. The reader looks at you with a knowing gaze.",
+      "choices": [
+        {
+          "text": "Ask her to clarify the meaning of The Tower card.",
+          "next_id": "adventure-7"
+        },
+        {
+          "text": "Take her words as they are, feeling somewhat reassured.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Express doubt, wondering if these cards really mean anything.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "You ask about your relationship with Bubba, wondering what the cards might say. The first card drawn is The Lovers, representing a deep bond or union. The second is The Devil, symbolizing temptation, bondage, or unhealthy attachments. The third card is The Star, a sign of hope and guidance. The reader watches you closely as you process the cards.",
+      "choices": [
+        {
+          "text": "Ask her if this means Bubba and you will face a challenge together.",
+          "next_id": "adventure-8"
+        },
+        {
+          "text": "Feel a bit nervous about what the cards say and ask to end the reading.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Laugh it off, thinking it's just a coincidence.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You ask the cards about your purpose in life. The reader lays down The Hermit first, representing solitude and introspection. Next, The Empress appears, symbolizing creativity, nurturing, and abundance. Finally, The Wheel of Fortune is drawn, signaling change and destiny. The reader looks up at you, her eyes full of quiet wisdom.",
+      "choices": [
+        {
+          "text": "Ask her what The Wheel of Fortune means for your future.",
+          "next_id": "adventure-9"
+        },
+        {
+          "text": "Take the cards as a sign to reflect more deeply on your own journey.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Dismiss the reading as too vague and irrelevant.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "The reader nods, her fingers tracing the edges of The Tower card. 'This card represents upheaval. It might seem chaotic at first, but sometimes destruction must come before rebuilding. It is a necessary step in your journey.' You nod thoughtfully, considering her words carefully.",
+      "choices": [
+        {
+          "text": "Ask if you can avoid the chaos or if it’s inevitable.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Thank her for the insight and take a moment to reflect.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-8",
+      "description": "The reader nods slowly at your question. 'The cards are not predicting a future challenge, but rather reflecting the dynamic of your bond. The Lovers card suggests that your connection with Bubba will guide you both through whatever comes next, even if temptation or hardship arises.' Bubba looks at you, raising an eyebrow as if considering her words.",
+      "choices": [
+        {
+          "text": "Thank the reader for her wisdom and appreciate Bubba’s presence.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Question if this means there will be a trial ahead, and if you’re ready.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-9",
+      "description": "The reader’s eyes twinkle as she explains, 'The Wheel of Fortune signifies that your purpose is tied to forces beyond your control. You may not know what lies ahead, but rest assured, the universe will guide you to where you need to be.' Her words resonate with you, leaving you with a sense of peace and acceptance.",
+      "choices": [
+        {
+          "text": "Accept the guidance and reflect on your place in the world.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Dismiss her explanation as too philosophical and unhelpful.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    }
+  ],
+  "endings": {
+    "good-end": {
+      "description": "The reading leaves you feeling calm and reflective, as though you've gained insight into your future and purpose. You thank the reader, feeling more at ease about whatever may come."
+    },
+    "neutral-end": {
+      "description": "The reading is thought-provoking but leaves you with more questions than answers. You thank the reader politely, unsure if you fully understand the messages of the cards, but at least you have something to consider."
+    },
+    "bad-end": {
+      "description": "The reading leaves you feeling uncomfortable and skeptical. You decide to leave, uncertain about whether there was any truth to what the cards revealed. Bubba looks at you with an amused smirk, clearly not convinced either."
+    }
+  }
+}

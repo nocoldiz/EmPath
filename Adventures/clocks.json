@@ -1,0 +1,178 @@
+{
+  "title": "The Clockmaker's Enigma",
+  "textboxes": [
+    {
+      "id": "clock-1",
+      "description": "You enter a dimly lit room filled with the faint ticking of countless clocks. The air is thick with the scent of old wood and metal polish. In the center of the room stands an ancient, elaborate clock with dials you’ve never seen before, surrounded by smaller clocks of varying sizes. A note rests on the workbench: 'Repair them all before the hour strikes.' A sense of urgency fills the air as you feel the clocks ticking down.",
+      "choices": [
+        {
+          "text": "Examine the main clock first.",
+          "next_id": "clock-2",
+          "skill_check": {
+            "skill": "observation",
+            "difficulty": 35,
+            "fail": "You misinterpret the arrangement of gears, and the clock emits a loud chime, briefly disorienting you."
+          }
+        },
+        {
+          "text": "Inspect the smaller clocks around the room.",
+          "next_id": "clock-3"
+        },
+        {
+          "text": "Look for tools that could help with the repairs.",
+          "next_id": "clock-4",
+          "skill_check": {
+            "skill": "scavenging",
+            "difficulty": 25,
+            "fail": "You struggle to find useful tools amidst the clutter, wasting valuable time."
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "clock-2",
+      "description": "As you examine the main clock, you notice its internal gears are unlike anything you've seen before. One of the gears seems to be missing, leaving the mechanism incomplete. You feel like this clock is the key to the room’s mystery, but fixing it will be complex.",
+      "choices": [
+        {
+          "text": "Try to replace the missing gear with one from a smaller clock.",
+          "next_id": "clock-5",
+          "skill_check": {
+            "skill": "mechanics",
+            "difficulty": 50,
+            "fail": "The replacement gear grinds loudly, damaging the internal workings. The clock's ticking slows ominously."
+          }
+        },
+        {
+          "text": "Study the missing gear’s function and search the workshop for a better replacement.",
+          "next_id": "clock-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "clock-3",
+      "description": "You inspect the smaller clocks, noticing each one has a slightly different mechanism. Some of them are ticking in reverse, while others have hands that seem to jump erratically. They appear to be connected somehow, as if in a strange synchronization. It feels like fixing even one might influence the others.",
+      "choices": [
+        {
+          "text": "Attempt to fix a small clock with the jumping hands.",
+          "next_id": "clock-7",
+          "skill_check": {
+            "skill": "mechanics",
+            "difficulty": 40,
+            "fail": "The clock resists your adjustments, and a spring pops out, nearly hitting you in the face."
+          }
+        },
+        {
+          "text": "Ignore the small clocks for now and focus on the main clock.",
+          "next_id": "clock-2"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "clock-4",
+      "description": "You search through drawers and cabinets, finding an assortment of strange tools. Among them, you locate a set of intricate, fine-tipped screwdrivers and a magnifying lens that might be useful for the repairs.",
+      "choices": [
+        {
+          "text": "Use the tools to examine the clocks more closely.",
+          "next_id": "clock-2"
+        },
+        {
+          "text": "Focus on the main clock, using the new tools to help with precision.",
+          "next_id": "clock-5"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "clock-5",
+      "description": "You carefully insert the replacement gear into the main clock, but it’s still not ticking correctly. You realize there’s another misaligned gear that’s interfering. Adjusting it requires steady hands and focus.",
+      "choices": [
+        {
+          "text": "Attempt a delicate adjustment of the misaligned gear.",
+          "next_id": "clock-8",
+          "skill_check": {
+            "skill": "mechanics",
+            "difficulty": 65,
+            "fail": "The misalignment worsens, and the clock jerks forward, its ticking becoming irregular and ominous."
+          }
+        },
+        {
+          "text": "Step back and analyze the entire mechanism before continuing.",
+          "next_id": "clock-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "clock-6",
+      "description": "Studying the mechanism, you notice a faint etching on the side of the clock: 'Only in harmony do they strike true.' It dawns on you that the smaller clocks might need to be synchronized to get the main clock working.",
+      "choices": [
+        {
+          "text": "Attempt to synchronize the smaller clocks one by one.",
+          "next_id": "clock-7",
+          "skill_check": {
+            "skill": "observation",
+            "difficulty": 50,
+            "fail": "The clocks refuse to align, their ticking becoming louder and more erratic with each attempt."
+          }
+        },
+        {
+          "text": "Focus only on the main clock and ignore the smaller clocks.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "clock-7",
+      "description": "You manage to synchronize two of the smaller clocks, their ticking merging in a harmonious rhythm. The room’s tension lessens slightly, as if you’re getting closer to unlocking the mystery.",
+      "choices": [
+        {
+          "text": "Continue synchronizing the remaining clocks.",
+          "next_id": "good-end",
+          "skill_check": {
+            "skill": "mechanics",
+            "difficulty": 55,
+            "fail": "A sudden clang echoes as a gear falls out of one clock, throwing off the synchronization entirely."
+          }
+        },
+        {
+          "text": "Focus on adjusting the main clock now that some are synchronized.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "With the smaller clocks synchronized, you make one final adjustment to the main clock. It ticks smoothly, then chimes in a hauntingly beautiful melody. A hidden compartment opens, revealing an intricate silver pocket watch, still gleaming as if brand new. You feel it holds a special power—perhaps time itself.",
+      "reward": {
+        "id": "silver_pocket_watch",
+        "quantity": 1
+      },
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "You leave the clocks partially synchronized. The main clock ticks more steadily, but a sense of incompletion remains. The room’s tension fades, but you can’t shake the feeling you missed something important. You leave with lingering questions, unsure if the mystery was fully resolved.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "Ignoring the smaller clocks, you make adjustments to the main clock. Suddenly, all the clocks chime loudly, creating an overwhelming cacophony. The sound warps your sense of time, leaving you disoriented. You stumble out of the room, but the strange ticking echoes in your mind, a haunting reminder of the encounter.",
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

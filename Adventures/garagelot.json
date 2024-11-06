@@ -1,0 +1,157 @@
+{
+  "title": "Garage Lot Auction",
+  "textboxes": [
+    {
+      "id": "auction-1",
+      "description": "While driving through a sleepy town, you spot a handmade sign reading 'Garage Lot Auction Today!' Curious, you decide to pull over and check it out. The lot is filled with various items — some dusty, some broken, and some that look intriguingly valuable.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Approach the auctioneer",
+          "next_id": "auction-2"
+        },
+        {
+          "text": "Browse the items on your own",
+          "next_id": "auction-3"
+        }
+      ]
+    },
+    {
+      "id": "auction-2",
+      "description": "The auctioneer, a sharp-eyed man in a worn-out suit, greets you with a nod. 'Lookin' to bid, huh?' he asks. He gestures to an old box labeled 'Mystery Lot #13'. 'Some interesting stuff in there. Might be valuable... might be junk.'",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Inspect Mystery Lot #13 more closely",
+          "next_id": "auction-4",
+          "skill_check": {
+            "skill": "appraisal",
+            "difficulty": 20
+          }
+        },
+        {
+          "text": "Ask the auctioneer about other interesting lots",
+          "next_id": "auction-5"
+        }
+      ]
+    },
+    {
+      "id": "auction-3",
+      "description": "You begin to wander around, inspecting the items strewn across tables and shelves. Amidst old tools, faded photographs, and boxes of knick-knacks, you notice a strange, sealed crate tucked away in the corner, marked with a symbol you’ve never seen before.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Examine the crate more closely",
+          "next_id": "auction-6",
+          "skill_check": {
+            "skill": "cryptography",
+            "difficulty": 15
+          }
+        },
+        {
+          "text": "Ask around about the crate",
+          "next_id": "auction-7"
+        }
+      ]
+    },
+    {
+      "id": "auction-4",
+      "description": "As you inspect Mystery Lot #13, you catch sight of a shimmering object beneath the dust and rubble. Could it be... a vintage compass? Or maybe a rare artifact? You’re not sure, but it could be worth a lot.",
+      "image": "",
+      "sound": "",
+      "next_id": "auction-8",
+      "reward": {
+        "id": "rare_compass",
+        "quantity": 1
+      }
+    },
+    {
+      "id": "auction-5",
+      "description": "The auctioneer shrugs and points out another curious box marked 'Collector's Lot'. 'Some old stuff from overseas. People say it's haunted,' he chuckles. The items look ancient, but there’s no telling their real value without a closer look.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Take a chance and bid on Collector's Lot",
+          "next_id": "auction-9",
+          "skill_check": {
+            "skill": "intuition",
+            "difficulty": 25
+          }
+        },
+        {
+          "text": "Back away, feeling suspicious",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "auction-6",
+      "description": "As you study the crate’s symbol, you notice it resembles an ancient rune. With some effort, you decipher its meaning: 'The Past Lies Within.' Intrigued, you wonder if this crate holds secrets of the town’s history.",
+      "image": "",
+      "sound": "",
+      "next_id": "auction-10",
+      "reward": {
+        "id": "ancient_scroll",
+        "quantity": 1
+      }
+    },
+    {
+      "id": "auction-7",
+      "description": "You ask an elderly man nearby about the crate. He tells you a story about a family who mysteriously vanished years ago. 'They say their secrets were buried, but no one knows where,' he whispers. This only makes you more curious.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Bid on the crate",
+          "next_id": "auction-10"
+        },
+        {
+          "text": "Move on to something else",
+          "next_id": "end"
+        }
+      ]
+    },
+    {
+      "id": "auction-8",
+      "description": "You bid on and win Mystery Lot #13! As you open the box, you discover it contains a rare, collectible compass with an intricate design. It feels powerful, almost as if it holds some unknown energy.",
+      "image": "",
+      "sound": "",
+      "next_id": "end",
+      "reward": {
+        "id": "rare_compass",
+        "quantity": 1
+      }
+    },
+    {
+      "id": "auction-9",
+      "description": "You bid on Collector’s Lot and win. When you open it, you find a collection of odd artifacts, including a peculiar-looking amulet. Suddenly, you feel a chill run down your spine. It’s eerie but valuable.",
+      "image": "",
+      "sound": "",
+      "next_id": "end",
+      "reward": {
+        "id": "haunted_amulet",
+        "quantity": 1
+      }
+    },
+    {
+      "id": "auction-10",
+      "description": "You win the bid on the mysterious crate. When you pry it open, you uncover an ancient scroll with strange symbols. You sense its connection to old magic and the town's buried past.",
+      "image": "",
+      "sound": "",
+      "next_id": "end",
+      "reward": {
+        "id": "ancient_scroll",
+        "quantity": 1
+      }
+    }
+  ],
+  "end": {
+    "description": "With your new treasure in hand, you leave the auction with a sense of mystery. Whatever you’ve uncovered, it’s bound to have a story all its own.",
+    "image": "",
+    "sound": ""
+  }
+}

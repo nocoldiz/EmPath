@@ -1,0 +1,247 @@
+{
+  "title": "The Fungal Disease",
+  "textboxes": [
+    {
+      "id": "fungus-1",
+      "description": "You’ve been traveling through the dense woods for hours when you stumble upon an abandoned campsite. The air smells damp and earthy. As you approach, you notice something odd. The ground is covered in a strange fungal growth, pulsating slightly, almost alive. Bubba, who’s with you, looks at it nervously. 'This place gives me the creeps. That stuff doesn't look right.'",
+      "choices": [
+        {
+          "text": "Investigate the fungal growth closely",
+          "next_id": "fungus-2"
+        },
+        {
+          "text": "Tell Bubba to stay away while you investigate alone",
+          "next_id": "fungus-3"
+        },
+        {
+          "text": "Leave the campsite and move on",
+          "next_id": "fungus-end"
+        }
+      ]
+    },
+    {
+      "id": "fungus-2",
+      "description": "You kneel down to inspect the fungi. It’s like nothing you’ve ever seen before—large, bulbous growths with intricate, glowing patterns. As you get closer, one of the bulbs bursts open, releasing a cloud of spores. You cough and stumble back, but the spores fill the air around you. Bubba starts to cough violently as well. Something tells you this isn’t just any normal fungus.",
+      "choices": [
+        {
+          "text": "Cover your mouth and try to collect a sample of the spores",
+          "next_id": "fungus-4",
+          "skill_check": {
+            "skill": "chemistry",
+            "difficulty": 45
+          }
+        },
+        {
+          "text": "Leave the area immediately, the spores are too dangerous",
+          "next_id": "fungus-5"
+        },
+        {
+          "text": "Help Bubba, who seems to be struggling to breathe",
+          "next_id": "fungus-6"
+        }
+      ]
+    },
+    {
+      "id": "fungus-3",
+      "description": "You tell Bubba to stay behind and cautiously move closer to the fungal growths. As you get a better look, you realize that the fungi appear to have spread over the entire campsite, as if consuming everything in sight. One of the larger growths begins to twitch as you approach, releasing a faint buzzing sound. This isn’t a natural occurrence.",
+      "choices": [
+        {
+          "text": "Take a sample of the fungus to study it later",
+          "next_id": "fungus-7",
+          "skill_check": {
+            "skill": "chemistry",
+            "difficulty": 55
+          }
+        },
+        {
+          "text": "Leave the area immediately and return to Bubba",
+          "next_id": "fungus-5"
+        },
+        {
+          "text": "Try to burn the fungus using a lighter",
+          "next_id": "fungus-8"
+        }
+      ]
+    },
+    {
+      "id": "fungus-4",
+      "description": "You manage to collect a sample of the spores in a small vial, but you start to feel dizzy. The spores seem to be having an immediate effect on your body, and your skin begins to itch. Bubba grabs you and pulls you back, his face pale and covered in sweat. 'What did you do?! We need to get out of here!'",
+      "choices": [
+        {
+          "text": "Try to identify the fungus using your sample and knowledge of diseases",
+          "next_id": "fungus-9",
+          "skill_check": {
+            "skill": "biology",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Run away from the campsite, unsure of the fungus' effects",
+          "next_id": "fungus-5"
+        }
+      ]
+    },
+    {
+      "id": "fungus-5",
+      "description": "You and Bubba make your way out of the area, but the air still feels thick with spores. Bubba is wheezing now, his breathing shallow. The two of you head back to your camper as fast as possible. When you finally arrive, you notice your skin has developed red blotches, similar to what Bubba is experiencing. The fungal disease seems to be spreading.",
+      "choices": [
+        {
+          "text": "Look for a way to treat the fungal infection",
+          "next_id": "fungus-10"
+        },
+        {
+          "text": "Try to contact a medical professional for advice",
+          "next_id": "fungus-11"
+        },
+        {
+          "text": "Wait and see if the symptoms subside on their own",
+          "next_id": "fungus-end"
+        }
+      ]
+    },
+    {
+      "id": "fungus-6",
+      "description": "You try to help Bubba, but the spores seem to be taking their toll on him quickly. His eyes are glassy, and his skin is turning a sickly shade of green. You grab him by the arm and try to drag him to safety, but he stumbles and falls. The fungal infection is moving fast. You’ll need to act quickly if you’re going to save him.",
+      "choices": [
+        {
+          "text": "Take Bubba to the camper and attempt to treat his symptoms",
+          "next_id": "fungus-10"
+        },
+        {
+          "text": "Search the area for any possible antidote or cure",
+          "next_id": "fungus-12"
+        }
+      ]
+    },
+    {
+      "id": "fungus-7",
+      "description": "You manage to carefully extract a piece of the fungus and seal it in a container. But as you turn to head back to Bubba, the ground shakes again, and a strange vibration hums through your body. It feels like the fungus is aware of you. It’s growing rapidly, and you can see it starting to spread farther into the woods.",
+      "choices": [
+        {
+          "text": "Leave the sample and return to Bubba immediately",
+          "next_id": "fungus-5"
+        },
+        {
+          "text": "Head back to the camper with the sample and analyze it",
+          "next_id": "fungus-9"
+        }
+      ]
+    },
+    {
+      "id": "fungus-8",
+      "description": "You attempt to burn the fungus, but it only seems to grow more aggressive. The flames spread to the nearby trees, which quickly catch fire. You’ve unwittingly caused a wildfire. Bubba looks terrified as the smoke starts to fill the air. The situation is quickly escalating out of control.",
+      "choices": [
+        {
+          "text": "Put out the fire and try to stop the fungus from spreading",
+          "next_id": "fungus-12"
+        },
+        {
+          "text": "Run and leave the area before the fire gets worse",
+          "next_id": "fungus-end"
+        }
+      ]
+    },
+    {
+      "id": "fungus-9",
+      "description": "Using your knowledge of biology, you determine that the fungus is a highly contagious and aggressive pathogen. It spreads rapidly through spores, and the infection may cause severe neurological damage if not treated immediately. You’re not sure what kind of antidote could work, but there’s a small chance the spores may be neutralized with the right chemical treatment.",
+      "choices": [
+        {
+          "text": "Search for ingredients in the camper to create a neutralizer",
+          "next_id": "fungus-10",
+          "skill_check": {
+            "skill": "chemistry",
+            "difficulty": 65
+          }
+        },
+        {
+          "text": "Try to contact someone for medical help",
+          "next_id": "fungus-11"
+        }
+      ]
+    },
+    {
+      "id": "fungus-10",
+      "description": "You manage to create a chemical compound to treat the infection. Bubba starts to feel better after a few doses, and the redness on your skin begins to fade. The fungus’s effects are still a threat, but it looks like you’ve neutralized the worst of it for now.",
+      "choices": [
+        {
+          "text": "Continue looking for a permanent cure",
+          "next_id": "fungus-13"
+        },
+        {
+          "text": "Head to the nearest town and seek medical help",
+          "next_id": "fungus-end"
+        }
+      ]
+    },
+    {
+      "id": "fungus-11",
+      "description": "You manage to contact a medical professional, who informs you that the infection is highly dangerous. They advise you to get to a hospital as soon as possible. But the nearest town is hours away, and the fungus seems to be spreading faster. You have a limited amount of time.",
+      "choices": [
+        {
+          "text": "Rush to the nearest town for medical assistance",
+          "next_id": "fungus-end"
+        },
+        {
+          "text": "Try to treat the infection with available resources",
+          "next_id": "fungus-10"
+        }
+      ]
+    },
+    {
+      "id": "fungus-12",
+      "description": "You find a small stash of medicine hidden in an abandoned cabin, but it may not be enough to fully treat the infection. Bubba’s condition worsens, and the air is thick with spores. You’ll need to act quickly before things spiral out of control.",
+      "choices": [
+        {
+          "text": "Administer the medicine to Bubba and hope it’s enough",
+          "next_id": "fungus-13"
+        },
+        {
+          "text": "Use the medicine on yourself and try to escape the area with Bubba",
+          "next_id": "fungus-end"
+        }
+      ]
+    },
+    {
+      "id": "fungus-13",
+      "description": "You manage to stabilize Bubba with the medicine, but the spores in the air are still a major threat. The fungal infection appears to be a deeply invasive and evolving organism, and you’re not sure how long you’ll be safe. As you pack your things and prepare to leave, you feel the weight of the situation pressing on you.",
+      "choices": [
+        {
+          "text": "Get in the camper and drive to the nearest hospital for further treatment",
+          "next_id": "fungus-end"
+        },
+        {
+          "text": "Stay and try to continue researching the fungus, hoping to find a permanent cure",
+          "next_id": "fungus-14"
+        }
+      ]
+    },
+    {
+      "id": "fungus-14",
+      "description": "You decide to stay and try to investigate the fungus further. However, as you dig deeper into the woods, you begin to feel the weight of your decision. The fungal spores are everywhere, and despite your best efforts, the infection begins to spread to your own body. The fungus seems to be using you as a host, and the situation quickly escalates beyond your control.",
+      "choices": [
+        {
+          "text": "Try to contain the infection by using all your remaining resources",
+          "next_id": "fungus-end"
+        },
+        {
+          "text": "Flee the area and seek help, hoping it's not too late",
+          "next_id": "fungus-end"
+        }
+      ]
+    },
+    {
+      "id": "fungus-end",
+      "description": "The situation ends here. You’ve managed to survive the fungal infection for now, but the spores still haunt your steps. Whether you find a cure or not, the experience changes you forever. The true nature of the fungus remains a mystery, and its consequences may have only just begun.",
+      "choices": [
+        {
+          "text": "End adventure",
+          "next_id": "end"
+        }
+      ]
+    }
+  ],
+  "reward": {
+    "id": "fungus-antidote",
+    "quantity": 1
+  }
+}

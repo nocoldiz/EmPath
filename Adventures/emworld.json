@@ -1,0 +1,158 @@
+{
+  "title": "The World of Em",
+  "textboxes": [
+    {
+      "id": "emworld-1",
+      "description": "You wake up in your camper to the sound of bustling voices outside. Groggy and disoriented, you get up and head to a nearby café. As you walk down the street, you notice something strange: every face, every voice, every person around you seems... familiar. Too familiar. They all look like you. Some are smiling, some are frowning, but each one is unmistakably you. People greet each other casually, seemingly unaware of the oddity. You stop in your tracks, a sense of growing dread tugging at you. Is this a dream?",
+      "choices": [
+        {
+          "text": "Approach someone and ask them what’s going on.",
+          "next_id": "emworld-2",
+          "skill_check": {
+            "skill": "intuition",
+            "difficulty": 25,
+            "fail": "You fumble for words, unable to articulate the strangeness, and the other Em gives you a blank look before continuing on her way."
+          }
+        },
+        {
+          "text": "Silently observe, hoping for answers.",
+          "next_id": "emworld-3"
+        },
+        {
+          "text": "Shout, 'What is happening?! Why does everyone look like me?'",
+          "next_id": "emworld-4",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 35,
+            "fail": "Your shout only draws confused glances, and everyone seems to shrug it off as if nothing unusual is happening."
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "emworld-2",
+      "description": "The Em you approached raises an eyebrow, looking at you as if you’re the strange one. 'What do you mean?' she says, her voice echoing your own perfectly. 'This is just the way things are. You’re... not feeling okay?' The question sends a chill down your spine. Her tone seems innocent, but you can’t shake the feeling that this other Em might know more than she lets on.",
+      "choices": [
+        {
+          "text": "Demand she explain what’s happening.",
+          "next_id": "emworld-5",
+          "skill_check": {
+            "skill": "intimidation",
+            "difficulty": 45,
+            "fail": "She simply shrugs, unfazed, and continues walking as if nothing strange has happened."
+          }
+        },
+        {
+          "text": "Ask her if she remembers what you look like.",
+          "next_id": "emworld-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "emworld-3",
+      "description": "You continue watching, trying to find any difference among the people around you. Each person, though speaking in different tones or wearing unique clothing, has your face, your voice, your mannerisms. Even the way they drink coffee or cross the street feels oddly familiar. A creeping sensation grows in your gut—what if this is some reflection of yourself, amplified to an impossible degree?",
+      "choices": [
+        {
+          "text": "Look in a mirror to confirm your own appearance.",
+          "next_id": "emworld-7"
+        },
+        {
+          "text": "Find a quiet corner and try to collect your thoughts.",
+          "next_id": "emworld-8"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "emworld-4",
+      "description": "Your shout echoes down the street, but the other Ems barely bat an eye. Instead, they exchange confused glances and murmur to each other, as if you’re the only one out of sync. 'Are you okay?' one Em asks, her eyes reflecting a strange pity. A part of you realizes that if they see themselves as normal, then maybe… maybe you’re the one out of place?",
+      "choices": [
+        {
+          "text": "Insist that they recognize the strangeness.",
+          "next_id": "emworld-5"
+        },
+        {
+          "text": "Try to wake up, convinced this is a dream.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "emworld-5",
+      "description": "The other Em tilts her head, watching you with a hint of sorrow. 'What are you talking about? This is who we are—who you are.' Her words send a jolt through you. She seems sincere, but her expression is unsettling, as though she knows a truth that even you don’t. Behind her, others watch you, their faces unreadable yet identical to yours.",
+      "choices": [
+        {
+          "text": "Turn and run, desperate for a way out.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Demand to know if she’s the 'real' Em.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "emworld-6",
+      "description": "The Em looks at you, puzzled. 'Of course I remember. You’re me. I’m you. Isn’t that how it’s always been?' Her voice is calm, almost soothing, yet the words feel deeply wrong. The conviction in her tone makes you question your own memory—has it always been this way?",
+      "choices": [
+        {
+          "text": "Leave, disturbed by her response.",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Demand proof that she remembers anything different.",
+          "next_id": "preacher-7"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "emworld-7",
+      "description": "You find a reflective window and gaze into it. The face that stares back is yours, just as you expected. But as you stare, you realize you’ve never felt more like a stranger to yourself. This face, so familiar, suddenly seems foreign. Behind you, the other Ems move as if in a mirror, each action eerily synchronized.",
+      "choices": [
+        {
+          "text": "Break the mirror, desperate to disrupt the illusion.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Step back and take a deep breath, determined to stay calm.",
+          "next_id": "good-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "You calm yourself, realizing that perhaps the truth is more profound than it seems. You walk through the street, accepting that you may never know why everyone is you, but sensing that maybe there’s a reason, something you’re meant to learn about yourself. As you leave, you feel a new peace, even in the midst of strangeness.",
+      "reward": {
+        "id": "new_perspective",
+        "quantity": 1
+      },
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "neutral-end",
+      "description": "You step away, unable to fully grasp what’s happening, but determined not to let it shake you. You walk through the town, accepting the eerie reality but choosing to focus on your own sense of self. As strange as it is, you feel a peculiar comfort in knowing you’re not alone.",
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "bad-end",
+      "description": "Panicked, you flee, but every corner, every face is yours. You can’t escape the feeling that you’re trapped in an endless mirror, doomed to live surrounded by reflections of yourself. The world feels smaller, like it’s closing in on you, and you can’t help but wonder if you’ll ever escape.",
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

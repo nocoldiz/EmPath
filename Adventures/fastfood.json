@@ -1,0 +1,190 @@
+{
+  "title": "The Fast Food Repayment",
+  "textboxes": [
+    {
+      "id": "fastfood-1",
+      "description": "After a disastrous experiment involving explosives, Em accidentally blows up a portion of the roof at a fast food restaurant. The manager, furious but also oddly understanding, gives her a chance to work off the damage. She steps into the greasy world of fast food, ready to face the consequences of her actions.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Ask for the manager’s instructions on where to start",
+          "next_id": "fastfood-2",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Head straight to the kitchen and start working",
+          "next_id": "fastfood-3",
+          "skill_check": {
+            "skill": "cooking",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Try to convince the manager to reduce the punishment",
+          "next_id": "fastfood-4",
+          "skill_check": {
+            "skill": "bluffing",
+            "difficulty": 50
+          }
+        }
+      ]
+    },
+    {
+      "id": "fastfood-2",
+      "description": "The manager gives Em a list of tasks to complete. She starts by sweeping the floor, then moves to dishwashing, and finally making fries. The greasy, fast-paced environment isn’t as easy as it looks, and Em can feel the pressure mounting.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Take a deep breath and focus on the tasks one by one",
+          "next_id": "fastfood-5",
+          "skill_check": {
+            "skill": "meditation",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Work quickly but make some mistakes, hoping to finish faster",
+          "next_id": "fastfood-6",
+          "skill_check": {
+            "skill": "observation",
+            "difficulty": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "fastfood-3",
+      "description": "Em heads into the kitchen, where the smell of grease and fryers fills the air. She starts making burgers, but the kitchen is chaotic, with orders piling up quickly. The heat and noise are overwhelming, and she struggles to keep up.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Focus on making the perfect burger to impress the manager",
+          "next_id": "fastfood-7",
+          "skill_check": {
+            "skill": "cooking",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Quickly make a few mistakes, trying to get through the work faster",
+          "next_id": "fastfood-8",
+          "skill_check": {
+            "skill": "cooking",
+            "difficulty": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "fastfood-4",
+      "description": "Em tries to convince the manager to cut her some slack. She uses charm and persuasion, but the manager is firm. It’s clear that Em has to prove herself by working hard, not by talking her way out of it.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Accept the challenge and start working",
+          "next_id": "fastfood-5",
+          "skill_check": {
+            "skill": "diplomacy",
+            "difficulty": 30
+          }
+        },
+        {
+          "text": "Attempt to convince the manager again with a different approach",
+          "next_id": "fastfood-4",
+          "skill_check": {
+            "skill": "bluffing",
+            "difficulty": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "fastfood-5",
+      "description": "Em takes a deep breath and gets to work, slowly building up a rhythm. The floor gets swept, the dishes get washed, and the fries keep coming out perfectly. She can tell the manager is watching her but stays focused and calm.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Continue focusing and finish all the tasks",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Get distracted and accidentally cause a mess",
+          "next_id": "bad-end"
+        }
+      ]
+    },
+    {
+      "id": "fastfood-6",
+      "description": "Em rushes through the tasks, but the mistakes start to pile up. The fries burn, the floor gets dirtier, and the manager starts to frown. She’s not impressing anyone with her speed, and now the pressure is even worse.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Slow down and focus on doing the tasks properly",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Continue rushing, hoping to make up for it later",
+          "next_id": "bad-end"
+        }
+      ]
+    },
+    {
+      "id": "fastfood-7",
+      "description": "Em focuses on making the best burger she can, paying close attention to every detail. Her efforts pay off as the burger comes out perfectly cooked and presented. The manager gives her an approving nod, and the stress of the situation lifts slightly.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Take a break and let the manager acknowledge your hard work",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Push on and keep working hard to finish the tasks",
+          "next_id": "neutral-end"
+        }
+      ]
+    },
+    {
+      "id": "fastfood-8",
+      "description": "Em rushes through the kitchen, but a few mistakes are inevitable. The manager shakes their head as burgers get burnt, and the orders start to pile up. The heat of the kitchen is unbearable now, and Em feels herself starting to lose focus.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Slow down and focus on correcting the mistakes",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Accept that mistakes happen and try to recover later",
+          "next_id": "bad-end"
+        }
+      ]
+    }
+  ],
+  "endings": {
+    "good-end": {
+      "description": "Em finishes all the tasks with precision and care. The manager acknowledges her hard work and even compliments her on the perfect burger. She has successfully repaid her debt and learned a valuable lesson in patience and perseverance.",
+      "image": "",
+      "sound": ""
+    },
+    "neutral-end": {
+      "description": "Em gets through the tasks, but she makes a few mistakes along the way. The manager isn’t entirely pleased, but they acknowledge her efforts. She’s still got a lot of work to do before she can consider herself forgiven.",
+      "image": "",
+      "sound": ""
+    },
+    "bad-end": {
+      "description": "Em fails to keep up with the fast pace of the kitchen, and the mistakes pile up. The manager is not pleased, and Em has to face the consequences of her carelessness. The debt is far from paid.",
+      "image": "",
+      "sound": ""
+    }
+  }
+}

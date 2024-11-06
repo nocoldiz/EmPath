@@ -1,0 +1,183 @@
+{
+  "title": "Limestone Secrets",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "You find yourself standing at the entrance of a vast cavern, its walls glistening with the pale glow of mineral deposits. The smell of damp earth and stone fills the air. You’ve heard rumors of a hidden vein of limestone deeper inside, a vein said to have extraordinary properties. This could be your chance to uncover something truly unique, but the cavern seems dangerous, and you don’t know what secrets lie within.",
+      "choices": [
+        {
+          "text": "Enter the cavern cautiously and begin your exploration.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Inspect the entrance more closely before entering, looking for any signs of danger.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Leave the area and return to the surface, unsure of what you might encounter.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "As you step deeper into the cavern, the air grows heavier, and the faint glow of phosphorescent minerals illuminates the path ahead. The limestone walls seem to stretch endlessly, twisting and turning into narrow passages. After a while, you come across a natural formation in the shape of an archway, made entirely of limestone. It looks almost too perfect. There's something unusual about it, but you're not sure what.",
+      "choices": [
+        {
+          "text": "Examine the limestone archway closely, looking for any hidden markings or inscriptions.",
+          "next_id": "adventure-4",
+          "skill_check": {
+            "skill": "archaeology",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Ignore the archway and continue down the cavern, hoping to find the vein of limestone.",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Turn back and leave the cavern, sensing that this place holds more danger than you anticipated.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You decide to inspect the entrance more carefully. The cavern’s mouth is adorned with faint limestone carvings that seem to depict ancient symbols. The carvings appear old, worn down by time, but they may hold clues to what lies deeper within. The air here is still, and you feel a sense of foreboding. You consider whether to proceed.",
+      "choices": [
+        {
+          "text": "Study the carvings closely, trying to decipher their meaning.",
+          "next_id": "adventure-4",
+          "skill_check": {
+            "skill": "linguistics",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Leave the carvings for now and enter the cavern cautiously.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Decide that the carvings are too cryptic and leave the area entirely.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "As you inspect the limestone archway, you notice subtle carvings etched into the surface. They are worn but still legible, depicting an ancient ritual. The limestone here feels almost warm to the touch. You realize that the archway isn’t just a natural formation—it's likely man-made, or at least shaped by something other than natural forces. The ritual seems to have been associated with the extraction or reverence of limestone.",
+      "choices": [
+        {
+          "text": "Try to activate the archway, hoping it will reveal the hidden limestone vein.",
+          "next_id": "adventure-6",
+          "skill_check": {
+            "skill": "transmutation",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Leave the archway alone and continue down the cavern in search of the limestone vein.",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Leave the cavern, now convinced that the archway may be dangerous.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "Ignoring the archway, you continue down the cavern. As you go deeper, the temperature drops and the air grows thicker. You come to a large chamber where the limestone walls glimmer with a bright, unnatural light. At the center of the chamber, you see a massive deposit of limestone. It's pure and white, but something about it feels off. There are no signs of the usual geological processes you would expect in such a large deposit.",
+      "choices": [
+        {
+          "text": "Investigate the deposit, trying to understand why it’s so unusual.",
+          "next_id": "adventure-7",
+          "skill_check": {
+            "skill": "geology",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Leave the deposit alone and return to the surface, feeling uneasy.",
+          "next_id": "adventure-end"
+        },
+        {
+          "text": "Try to extract a small sample from the deposit for further study.",
+          "next_id": "adventure-8",
+          "skill_check": {
+            "skill": "mining",
+            "difficulty": 50
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You reach out and attempt to activate the archway. The air around you crackles with energy, and the limestone seems to shift under your touch. Suddenly, the archway begins to glow brightly, and the ground trembles. You hear a low hum emanating from deep within the cavern. Something ancient is awakening. The limestone around the archway begins to break away, revealing a hidden chamber filled with more mysterious formations.",
+      "choices": [
+        {
+          "text": "Enter the chamber that has been revealed, wondering what you’ll find.",
+          "next_id": "adventure-9"
+        },
+        {
+          "text": "Quickly back away from the archway, unsure of what you've unleashed.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "You approach the glowing limestone deposit and examine it carefully. As you touch the surface, the rock hums with a faint vibration. It feels almost alive, like it’s resonating with the very energy of the earth. A sudden realization hits you: this is no ordinary limestone. It holds a power unlike anything you’ve ever encountered, perhaps tied to the ancient ritual you’ve seen etched on the archway.",
+      "choices": [
+        {
+          "text": "Try to extract some of the limestone to study it further.",
+          "next_id": "adventure-8",
+          "skill_check": {
+            "skill": "mining",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Leave the deposit alone, fearing the unknown consequences of disturbing it.",
+          "next_id": "adventure-10"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-8",
+      "description": "You extract a small sample from the limestone deposit. The moment you do, the light in the cavern flickers, and a low rumble shakes the ground beneath you. The limestone begins to crack, and a strange energy pulses from the core of the chamber. The air grows heavier, and you feel a strange connection to the stone. Something in the rock seems to call to you, but whether it’s a blessing or a curse is unclear.",
+      "choices": [
+        {
+          "text": "Examine the sample closely to learn more about its properties.",
+          "next_id": "adventure-11"
+        },
+        {
+          "text": "Flee the cavern before the situation escalates further.",
+          "next_id": "adventure-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-end",
+      "description": "You leave the cavern, unsure of what secrets it holds. The limestone, with its mysterious properties, remains untouched. Perhaps you’ll return one day to uncover its full potential—or perhaps not. The world is full of untold mysteries, and sometimes, it’s best to leave them buried.",
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

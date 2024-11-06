@@ -1,0 +1,244 @@
+{
+  "title": "The CIA's Silent Snatch",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "You wake up to the sound of birds chirping, the camper rocking gently in the morning breeze. It’s a quiet, peaceful morning in the woods, but something feels off. You rub your eyes and stretch, feeling the cool air hit your skin. You step outside the camper, but Bubba is nowhere to be found. His usual spot by the fire is empty, and the fire’s smoldering remains give no sign of him. Panic starts to rise as you hear distant voices—faint, but unmistakable. They're not familiar. Then you notice something else: the tire tracks near the camper.",
+      "choices": [
+        {
+          "text": "Run towards the distant voices, hoping to find Bubba.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Search the area around the camper for clues about Bubba's disappearance.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Stay inside the camper and try to call for help.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "You sprint through the woods, dodging branches and tripping over roots, your heart racing. The voices grow louder, and you spot a black SUV parked near a hidden clearing. You hide behind a large tree, trying to make sense of the situation. A group of men in dark suits are loading Bubba into the back of the SUV. They’re talking in low voices, but you can hear them clearly enough: 'We’ve got him. Let’s move out before anyone notices.' One of the men glances in your direction, but doesn’t seem to notice you. You have to act fast.",
+      "choices": [
+        {
+          "text": "Rush in and try to rescue Bubba by force.",
+          "next_id": "adventure-4"
+        },
+        {
+          "text": "Sneak closer to gather more information before acting.",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Retreat and plan your next move from a safer distance.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You scan the area around the camper, hoping to find some clue as to what happened. As you search the ground, you find a few broken branches, a torn piece of fabric, and a strange symbol etched into the dirt—something unfamiliar, almost military in design. The tire tracks lead towards the woods, disappearing deeper into the forest. It looks like Bubba was taken by force. The sound of an approaching vehicle confirms your worst fear.",
+      "choices": [
+        {
+          "text": "Follow the tire tracks into the forest, hoping to find Bubba.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Try to use the fabric and symbol to gather more information.",
+          "next_id": "adventure-6"
+        },
+        {
+          "text": "Stay hidden and wait for the vehicle to pass.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You burst out from your hiding spot, charging toward the men as fast as you can. They turn in surprise, but before you can reach Bubba, one of them pulls out a tranquilizer dart gun. The shot strikes you in the shoulder, and you feel your legs give way beneath you. As your vision fades, you hear the men talking, 'We can’t afford any witnesses. Knock them out.' The world goes black.",
+      "choices": [
+        {
+          "text": "Try to wake up and escape the situation.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Wait for the right moment to fight back once you regain consciousness.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "You crouch low and sneak closer, moving silently through the underbrush. From behind a thick bush, you can hear their conversation more clearly. One of the men says, 'We’re taking him to the base. They’ll want to interrogate him there.' Another responds, 'The orders are clear—he's a priority. Make sure no one gets in the way.' It’s clear now that Bubba’s kidnapping is part of something bigger, and you're not just dealing with ordinary thugs. You’ll need to be smart about your next move.",
+      "choices": [
+        {
+          "text": "Wait for the men to leave and follow them stealthily.",
+          "next_id": "adventure-7"
+        },
+        {
+          "text": "Ambush the men as they load Bubba into the SUV.",
+          "next_id": "adventure-8"
+        },
+        {
+          "text": "Leave the area and get help from a nearby town.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You kneel down and inspect the symbol, tracing your fingers over the markings. It seems to be an insignia of some kind, though it doesn’t match any military symbol you know. The fabric looks like part of a uniform. You realize these are no ordinary kidnappers—they’re highly trained operatives. The symbol seems to suggest some connection to the CIA, but you can't be sure. Your options are limited, and time is running out.",
+      "choices": [
+        {
+          "text": "Follow the tire tracks and investigate further.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Take the fabric and symbol to the nearest town for help.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Wait and observe, hoping to learn more before acting.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "You wait until the men finish their conversation, then silently follow them at a distance. As they begin to drive away in the SUV, you carefully move along the same path, avoiding detection. You stay hidden behind trees and rocks, watching the vehicle speed through the forest. After some time, they stop at a secluded facility hidden in the mountains, heavily guarded and surrounded by high fences. Bubba is being escorted inside by two armed men.",
+      "choices": [
+        {
+          "text": "Attempt to sneak into the facility through the fence.",
+          "next_id": "adventure-9"
+        },
+        {
+          "text": "Find a way to sabotage their communication and cause a distraction.",
+          "next_id": "adventure-10"
+        },
+        {
+          "text": "Go back to the camper and gather more resources before acting.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-8",
+      "description": "You charge at the men, taking them by surprise. One of them reaches for his gun, but you tackle him first, knocking him unconscious. The others react quickly, but you manage to disarm one and take him down. However, before you can free Bubba, more agents appear from the trees, surrounding you. One of them pulls out a gun and says, 'That’s enough. We’re not going to let you mess with this operation.' You’re outnumbered.",
+      "choices": [
+        {
+          "text": "Fight until the end, hoping for a miracle.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Surrender and try to bargain for Bubba’s release.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-9",
+      "description": "You find a small, unguarded section of the fence and manage to squeeze through. Inside, the facility is filled with high-tech security systems, but you find a shadowed corridor that leads deeper into the complex. You spot Bubba, sitting in a small interrogation room, surrounded by a few armed guards. You have to act fast.",
+      "choices": [
+        {
+          "text": "Launch a surprise attack on the guards and free Bubba.",
+          "next_id": "adventure-11"
+        },
+        {
+          "text": "Look for a way to disable the facility’s security systems first.",
+          "next_id": "adventure-12"
+        },
+        {
+          "text": "Try to gather more intel before making your move.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-10",
+      "description": "You manage to sneak around the facility, finding a power grid and shutting down the electricity temporarily. It causes chaos, and you use the opportunity to get inside undetected. You find Bubba being guarded by a single agent, who seems unprepared for your arrival. Now's your chance to act.",
+      "choices": [
+        {
+          "text": "Confront the guard and free Bubba.",
+          "next_id": "adventure-11"
+        },
+        {
+          "text": "Leave quietly with Bubba and escape before anyone notices.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Search for more clues about the CIA operation.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-11",
+      "description": "You burst into the room, disarming the guard in a split second. Bubba, surprised but grateful, stands up, ready to fight. You both make a run for it, dodging the guards who begin to rush in. The sound of alarms fills the air as you escape the facility and run through the woods. You reach the safety of the nearby town, but the shadow of the CIA still looms large over you.",
+      "choices": [
+        {
+          "text": "Hide in the town and plan your next move.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Leave the town and head into the wilderness to avoid detection.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-12",
+      "description": "You attempt to hack into the security system, but your time is running out. Before you can disable the security, more guards arrive and surround you. Realizing you've been spotted, you fight bravely, but they overpower you. You’re captured and thrown into a dark room, the sound of the facility’s locking systems echoing around you.",
+      "choices": [
+        {
+          "text": "Plan your escape while in captivity.",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Try to bargain with the guards for a second chance.",
+          "next_id": "bad-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "good-end",
+      "description": "You escape the CIA’s grasp and return to the wilderness, free from their pursuit—for now. Bubba is safe, and you both can start over.",
+      "choices": []
+    },
+    {
+      "id": "neutral-end",
+      "description": "Though you've evaded capture, the CIA’s watchful eye remains. You and Bubba find a quiet spot in the wilderness to hide, but the threat of pursuit never quite disappears.",
+      "choices": []
+    },
+    {
+      "id": "bad-end",
+      "description": "The CIA has taken control, and you’ve been caught in their web. You and Bubba are locked away in their clutches, with no escape in sight.",
+      "choices": []
+    }
+  ]
+}

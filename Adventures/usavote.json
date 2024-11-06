@@ -1,0 +1,92 @@
+{
+  "title": "Voting Day",
+  "textboxes": [
+    {
+      "id": "voting-1",
+      "description": "You arrive at the local voting pool, a long line of citizens waiting to cast their votes. The election is crucial, and the candidates are well-known: Hillary Clinton and George Bush. You know that your choice matters, and you're ready to make your voice heard.",
+      "choices": [
+        {
+          "text": "Vote for Hillary Clinton",
+          "next_id": "voting-2",
+          "reward": {
+            "id": "political-awareness",
+            "quantity": 5
+          }
+        },
+        {
+          "text": "Vote for George Bush",
+          "next_id": "voting-3",
+          "reward": {
+            "id": "political-awareness",
+            "quantity": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "voting-2",
+      "description": "You cast your vote for Hillary Clinton, feeling the weight of the decision. You understand the importance of the upcoming years and hope your choice will make a difference.",
+      "choices": [
+        {
+          "text": "Leave the voting pool and head home",
+          "next_id": "voting-end"
+        },
+        {
+          "text": "Talk to a fellow voter about your choice",
+          "next_id": "voting-4"
+        }
+      ]
+    },
+    {
+      "id": "voting-3",
+      "description": "You cast your vote for George Bush, feeling confident in your decision. You know that this election could shape the future and hope for positive changes.",
+      "choices": [
+        {
+          "text": "Leave the voting pool and head home",
+          "next_id": "voting-end"
+        },
+        {
+          "text": "Talk to a fellow voter about your choice",
+          "next_id": "voting-4"
+        }
+      ]
+    },
+    {
+      "id": "voting-4",
+      "description": "You turn to the person next to you and start a conversation about the election. They share their views passionately, and you feel engaged in the political process. Despite differences, the exchange is respectful and enlightening.",
+      "choices": [
+        {
+          "text": "Thank them and leave",
+          "next_id": "voting-end"
+        },
+        {
+          "text": "Continue the conversation and debate further",
+          "next_id": "voting-5",
+          "skill_check": {
+            "skill": "charisma",
+            "difficulty": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "voting-5",
+      "description": "The conversation turns heated, but you manage to keep your cool. The person seems to respect your opinions, even if they disagree. You both leave the voting pool with a sense of mutual understanding.",
+      "choices": [
+        {
+          "text": "Leave the voting pool and head home",
+          "next_id": "voting-end",
+          "reward": {
+            "id": "charisma",
+            "quantity": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "voting-end",
+      "description": "You’ve cast your vote and had an engaging conversation. Whether or not your candidate wins, you feel like you’ve done your part in the democratic process.",
+      "choices": []
+    }
+  ]
+}

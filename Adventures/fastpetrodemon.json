@@ -1,0 +1,206 @@
+{
+  "title": "The Petro-demon's Wrath",
+  "textboxes": [
+    {
+      "id": "demon-1",
+      "description": "Em and Bubba are driving along a lonely stretch of road when suddenly the camper lurches violently. Bubba slams on the brakes as the vehicle shakes. Through the rearview mirror, Em spots something fast and fiery darting towards them. It's a Petro-demon — a creature of pure burning energy and fury, known to exceed the 'rule of 80' when enraged. Bubba curses under his breath.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Try to outrun the Petro-demon",
+          "next_id": "demon-2",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Seek shelter in the woods nearby",
+          "next_id": "demon-3",
+          "skill_check": {
+            "skill": "exploration",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Use the camper's emergency system to activate countermeasures",
+          "next_id": "demon-4",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "demon-2",
+      "description": "Bubba floors the gas pedal, speeding up in an attempt to outrun the demon. The camper rattles as the creature closes in. Its fiery aura blazes brighter, leaving scorch marks in its wake. Em feels the heat intensify as the Petro-demon gains on them. Bubba swerves, narrowly avoiding a fiery tail swipe.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Keep accelerating, hoping to lose it",
+          "next_id": "demon-5",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 70
+          }
+        },
+        {
+          "text": "Attempt to take a sharp turn to lose the demon",
+          "next_id": "demon-6",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 80
+          }
+        }
+      ]
+    },
+    {
+      "id": "demon-3",
+      "description": "Em instructs Bubba to veer off the road and into the dense woods. They speed through the trees, the engine roaring, but the demon follows, its fiery form streaking through the air like a comet. The woods are not enough to slow it down. Bubba knows they can’t outrun it on foot.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Look for an abandoned structure to hide in",
+          "next_id": "demon-7",
+          "skill_check": {
+            "skill": "exploration",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Try to use the terrain to your advantage and set a trap",
+          "next_id": "demon-8",
+          "skill_check": {
+            "skill": "camping",
+            "difficulty": 75
+          }
+        }
+      ]
+    },
+    {
+      "id": "demon-4",
+      "description": "In a moment of desperation, Em activates the camper's emergency systems. The countermeasures engage, but the demon’s speed and power exceed the systems' capacity. It crashes into the camper’s side, causing the emergency systems to overload. Sparks fly, and the air turns thick with smoke.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Grab fire extinguishers and try to fight the flames",
+          "next_id": "demon-9",
+          "skill_check": {
+            "skill": "management",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Escape the camper and attempt to outrun the demon",
+          "next_id": "demon-2"
+        }
+      ]
+    },
+    {
+      "id": "demon-5",
+      "description": "The camper roars down the road, but the Petro-demon matches its speed. Bubba can feel the heat rising as the demon closes in. The camper’s tires screech in protest, but Bubba keeps his foot on the gas. The demon’s energy bursts, igniting the ground behind them, causing the camper to swerve dangerously.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Use a risky maneuver to get ahead",
+          "next_id": "good-end",
+          "skill_check": {
+            "skill": "driving",
+            "difficulty": 90
+          }
+        },
+        {
+          "text": "Give up and brace for impact",
+          "next_id": "bad-end"
+        }
+      ]
+    },
+    {
+      "id": "demon-6",
+      "description": "Bubba takes a sharp turn, the camper’s tires screeching as the demon's fiery breath scorches the air. The camper flips on its side, throwing Em and Bubba across the interior. The Petro-demon careens past them, its fire just missing.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Try to right the camper and escape",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Wait for the demon to pass and try to fight back",
+          "next_id": "bad-end"
+        }
+      ]
+    },
+    {
+      "id": "demon-7",
+      "description": "The woods offer no protection as the demon rips through them. Bubba frantically scans for an old cabin or structure, but the demon is already too close. He swerves the camper into a clearing, but the creature’s fiery breath is just behind them.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Jump out of the camper and take a stand",
+          "next_id": "bad-end"
+        },
+        {
+          "text": "Keep running and find a safer hiding spot",
+          "next_id": "neutral-end"
+        }
+      ]
+    },
+    {
+      "id": "demon-8",
+      "description": "Bubba quickly sets up a makeshift trap using nearby logs and rocks. He prepares to spring the trap, but the demon is too fast, its fiery speed making it difficult to trick. The trap only partially works, slowing the creature but not stopping it.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Continue to fight with whatever tools are available",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Run, knowing the trap wasn’t enough",
+          "next_id": "bad-end"
+        }
+      ]
+    },
+    {
+      "id": "demon-9",
+      "description": "Em and Bubba scramble to put out the flames with fire extinguishers, but the fire keeps spreading. The camper’s systems are overloaded, and the interior begins to melt under the heat. The demon is getting closer, and they’re running out of time.",
+      "image": "",
+      "sound": "",
+      "choices": [
+        {
+          "text": "Escape the camper and attempt to outrun the demon",
+          "next_id": "neutral-end"
+        },
+        {
+          "text": "Use the remaining emergency equipment to fight the demon directly",
+          "next_id": "bad-end"
+        }
+      ]
+    }
+  ],
+  "endings": {
+    "good-end": {
+      "description": "With a last-ditch maneuver, Bubba manages to outrun the demon, saving both himself and Em. They escape the fiery hell of the creature’s wrath and make it to safety, shaken but alive.",
+      "image": "",
+      "sound": ""
+    },
+    "neutral-end": {
+      "description": "The Petro-demon is momentarily slowed by the terrain, giving Em and Bubba just enough time to get away. They manage to escape, but their camper is wrecked, and they’re left to survive the aftermath in the wilderness.",
+      "image": "",
+      "sound": ""
+    },
+    "bad-end": {
+      "description": "The demon’s power is too overwhelming. Despite their best efforts, Bubba and Em are overwhelmed by the sheer force of the creature, succumbing to its fiery wrath.",
+      "image": "",
+      "sound": ""
+    }
+  }
+}

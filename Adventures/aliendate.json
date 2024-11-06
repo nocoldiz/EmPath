@@ -1,0 +1,203 @@
+{
+  "title": "Dinner with an Alien",
+  "textboxes": [
+    {
+      "id": "alien-date-1",
+      "description": "You’re sitting across from a striking alien girl in a dimly lit restaurant. Her skin glimmers with a faint hue of violet under the soft lighting, and her eyes, large and expressive, shimmer like two stars. She smiles as she looks at the menu, her antennae twitching slightly. 'I’ve never had Earth food before,' she says with curiosity. 'I wonder what I should try.' She glances at you expectantly. 'What do you recommend?'",
+      "choices": [
+        {
+          "text": "Recommend something safe, like pasta, to ease her into Earth cuisine.",
+          "next_id": "alien-date-2"
+        },
+        {
+          "text": "Encourage her to try something more exotic, like spicy curry, for an adventurous experience.",
+          "next_id": "alien-date-3"
+        },
+        {
+          "text": "Suggest they share a variety of dishes, to experience many flavors.",
+          "next_id": "alien-date-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-2",
+      "description": "You suggest the pasta, explaining how it’s a staple of Earth cuisine and widely liked. She looks at the dish with interest and then at you. 'I see. You’re recommending the simplest for me. How thoughtful.' She laughs softly, but there’s a hint of disappointment in her voice. 'I suppose this Earth food is more tame than I expected.' She gives a polite smile. 'What else do you do for fun here?'",
+      "choices": [
+        {
+          "text": "Tell her about some of your favorite hobbies, like exploring new places or reading.",
+          "next_id": "alien-date-5"
+        },
+        {
+          "text": "Invite her to an Earth activity that you enjoy, like stargazing or visiting a museum.",
+          "next_id": "alien-date-6"
+        },
+        {
+          "text": "Ask her about her home world and the kinds of things she enjoys doing there.",
+          "next_id": "alien-date-7"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-3",
+      "description": "She looks at you with wide eyes when you suggest something spicy. 'Spicy? I’ve never tried anything like that before!' But after a moment of hesitation, she smiles, excited by the challenge. 'I’ll take your word for it.' The waiter brings over a steaming bowl of curry, and she takes a cautious first bite. Her antennae flick nervously. 'It’s… fiery! But I like it. Tell me, what do Earthlings do for fun?'",
+      "choices": [
+        {
+          "text": "Describe an exciting Earth activity, like skydiving or rollercoasters.",
+          "next_id": "alien-date-5"
+        },
+        {
+          "text": "Ask her what her idea of fun is, curious to hear about life on her planet.",
+          "next_id": "alien-date-7"
+        },
+        {
+          "text": "Suggest taking a more relaxing approach, like a walk in a peaceful park or by the ocean.",
+          "next_id": "alien-date-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-4",
+      "description": "You suggest sharing a few dishes. She smiles at your thoughtful approach, and soon the table is filled with small plates, each offering a different flavor and texture. You both sample the dishes together. 'This is better,' she admits, 'more variety. It makes me feel like I’m getting to know Earth more.' She looks at you with curiosity. 'What do you find interesting about my people?'",
+      "choices": [
+        {
+          "text": "Explain how her people are fascinating, and you’re eager to learn more about them.",
+          "next_id": "alien-date-5"
+        },
+        {
+          "text": "Ask her about her experiences on Earth so far, and what she finds strange or beautiful.",
+          "next_id": "alien-date-7"
+        },
+        {
+          "text": "Talk about how different cultures around the universe are both strange and beautiful.",
+          "next_id": "alien-date-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-5",
+      "description": "She listens attentively, clearly interested in your hobbies and what makes you happy. 'It’s so strange,' she says, 'to hear that people enjoy such simple things. Back home, we have many... different ways of experiencing pleasure.' She glances around at the restaurant, its bustling atmosphere. 'But I’m glad you’re showing me how Earthlings unwind.'",
+      "choices": [
+        {
+          "text": "Ask her about what her world is like, and how people relax there.",
+          "next_id": "alien-date-8"
+        },
+        {
+          "text": "Suggest doing something that allows both of you to unwind and relax together, like a quiet evening walk.",
+          "next_id": "alien-date-9"
+        },
+        {
+          "text": "Continue talking about your Earthly hobbies, trying to make the connection more personal.",
+          "next_id": "alien-date-10"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-6",
+      "description": "She smiles warmly as you suggest stargazing or visiting a museum. 'I think I’d like that,' she says softly, her eyes glowing faintly in the light. 'Back home, we have a different way of looking at the stars, but I think I could learn a lot from the Earth’s view.' You both share a quiet moment, enjoying the connection despite the cultural differences. 'I think we’ll get along just fine,' she adds, her smile growing.",
+      "choices": [
+        {
+          "text": "Continue with the evening, walking through the city or discussing life beyond Earth.",
+          "next_id": "alien-date-9"
+        },
+        {
+          "text": "Invite her to a specific stargazing spot that you enjoy.",
+          "next_id": "alien-date-10"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-7",
+      "description": "You ask her about her world, and she begins to tell you of her distant home. 'We don’t experience time in the same way. For us, everything is interconnected—thoughts, experiences, even the stars themselves.' She pauses, gazing at the ceiling. 'But Earth... you have something here. Something I can’t explain. Maybe it’s the way your people care about the little things.' She smiles at you with a knowing look.",
+      "choices": [
+        {
+          "text": "Ask her to tell you more about her people’s connection with the universe.",
+          "next_id": "alien-date-8"
+        },
+        {
+          "text": "Offer to show her some of the simpler pleasures of Earth, and how humans connect in their own way.",
+          "next_id": "alien-date-9"
+        },
+        {
+          "text": "Share your own perspective on how humans view the world, comparing it to her experience.",
+          "next_id": "alien-date-10"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-8",
+      "description": "Her eyes glow brighter as she shares more about her planet, and you find yourself intrigued by her unique way of perceiving reality. 'We communicate not just with words, but with... everything. Feelings, thoughts, even gestures can hold meaning.' She looks at you curiously. 'I think, perhaps, that’s why I wanted to meet you. You seem open to understanding all of it.'",
+      "choices": [
+        {
+          "text": "Ask her if she would like to teach you more about her culture.",
+          "next_id": "alien-date-10"
+        },
+        {
+          "text": "Offer to teach her more about Earth’s human ways, in a similar exchange of knowledge.",
+          "next_id": "alien-date-9"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-9",
+      "description": "The conversation continues smoothly as the evening progresses. You both share a meaningful connection, despite coming from vastly different worlds. 'This has been one of the most interesting dinners I’ve had in a long time,' she admits. 'Thank you for showing me Earth from your perspective.'",
+      "choices": [
+        {
+          "text": "Suggest another outing, perhaps to explore more of the city or share a quiet moment together.",
+          "next_id": "alien-date-10"
+        },
+        {
+          "text": "Wrap up the evening with a simple goodbye, knowing you’ll meet again soon.",
+          "next_id": "alien-date-11"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-10",
+      "description": "As the evening winds down, you both reflect on your unique connection. 'It’s rare to find someone who listens so closely,' she says, smiling warmly. 'I think we’ve only scratched the surface, don’t you?'",
+      "choices": [
+        {
+          "text": "Agree, and propose meeting again to explore each other’s worlds further.",
+          "next_id": "alien-date-11"
+        },
+        {
+          "text": "Express your appreciation for the evening and suggest going your separate ways for now.",
+          "next_id": "alien-date-12"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-11",
+      "description": "You part ways, both with the promise of future meetings. As you walk away, you feel a sense of warmth, knowing that this was only the beginning of a deeper understanding between two beings from different worlds.",
+      "choices": [],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "alien-date-12",
+      "description": "The night ends with a quiet goodbye, and though the connection felt strong, you understand that sometimes good things need time to grow.",
+      "choices": [],
+      "image": "",
+      "sound": ""
+    }
+  ]
+}

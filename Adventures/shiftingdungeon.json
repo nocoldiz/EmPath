@@ -1,0 +1,228 @@
+{
+  "id": "shifting-dungeon-1",
+  "description": "You stand before the entrance of a massive, ancient dungeon. The stone door creaks open, revealing a dark and labyrinthine maze within. As you step forward, the door slams shut behind you, sealing you inside. The walls seem to pulse, and you can feel the dungeon shifting subtly beneath your feet. There's no clear path, and the only sounds are the faint whispers of distant echoes.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Examine the environment for any clues or markings that may indicate a path",
+      "next_id": "shifting-dungeon-2",
+      "skill_check": {
+        "skill": "observation",
+        "difficulty": 30
+      }
+    },
+    {
+      "text": "Try to use your instincts and choose a random direction to walk",
+      "next_id": "shifting-dungeon-3"
+    },
+    {
+      "text": "Look for any magical disturbances that might be manipulating the dungeon",
+      "next_id": "shifting-dungeon-4",
+      "skill_check": {
+        "skill": "arcanism",
+        "difficulty": 50
+      }
+    }
+  ]
+},
+{
+  "id": "shifting-dungeon-2",
+  "description": "You take a moment to observe your surroundings carefully. The walls are covered in faint, shifting symbols that seem to change the closer you look. You notice a faint pattern of footprints in the dust, leading into the darkness. As you begin following them, the air grows colder, and you hear distant rumblings.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Follow the footprints and see where they lead",
+      "next_id": "shifting-dungeon-5"
+    },
+    {
+      "text": "Investigate the shifting symbols on the walls to understand their meaning",
+      "next_id": "shifting-dungeon-6",
+      "skill_check": {
+        "skill": "cryptography",
+        "difficulty": 60
+      }
+    },
+    {
+      "text": "Search the floor for any hidden mechanisms or traps",
+      "next_id": "shifting-dungeon-7",
+      "skill_check": {
+        "skill": "observation",
+        "difficulty": 40
+      }
+    }
+  ]
+},
+{
+  "id": "shifting-dungeon-3",
+  "description": "You decide to trust your instincts and choose a random path. The further you walk, the more you notice subtle changes in the dungeon. The air shifts, and the walls seem to close in on you. A distant rumble shakes the floor, and you feel as though the dungeon is reacting to your choices.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Pause and observe the changes, trying to deduce a pattern",
+      "next_id": "shifting-dungeon-8",
+      "skill_check": {
+        "skill": "observation",
+        "difficulty": 40
+      }
+    },
+    {
+      "text": "Push forward, trying to maintain your sense of direction",
+      "next_id": "shifting-dungeon-9"
+    }
+  ]
+},
+{
+  "id": "shifting-dungeon-4",
+  "description": "You sense a faint magical disturbance, as though some powerful force is manipulating the dungeon. The walls around you hum with arcane energy, and you can feel the floor shifting underfoot. There might be something at the heart of the dungeon controlling these changes.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Focus your magic to try and detect the source of the disturbance",
+      "next_id": "shifting-dungeon-10",
+      "skill_check": {
+        "skill": "arcanism",
+        "difficulty": 70
+      }
+    },
+    {
+      "text": "Follow the disturbance and see if it leads to the source of the changes",
+      "next_id": "shifting-dungeon-11"
+    },
+    {
+      "text": "Retreat and look for a safer path to continue exploring",
+      "next_id": "shifting-dungeon-12"
+    }
+  ]
+},
+{
+  "id": "shifting-dungeon-5",
+  "description": "Following the footprints, you enter a chamber where the ground is uneven and cracked. A faint glimmer of light comes from a source above. The floor beneath you begins to shift, and the path you walked starts to close behind you. You can hear the sound of something large moving nearby.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Investigate the glimmer of light above",
+      "next_id": "shifting-dungeon-13",
+      "skill_check": {
+        "skill": "exploration",
+        "difficulty": 50
+      }
+    },
+    {
+      "text": "Look for a way to stabilize the shifting floor to prevent being trapped",
+      "next_id": "shifting-dungeon-14",
+      "skill_check": {
+        "skill": "engineering",
+        "difficulty": 60
+      }
+    },
+    {
+      "text": "Turn back and follow a different path to escape the shifting danger",
+      "next_id": "shifting-dungeon-15"
+    }
+  ]
+},
+{
+  "id": "shifting-dungeon-6",
+  "description": "You take a closer look at the symbols, some of which appear to be related to ancient spellwork. As you examine them, the walls seem to pulse with energy, as if reacting to your presence. The symbols shift and change as though they are alive, but there’s a consistent sequence to them.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Attempt to decipher the symbols and understand their meaning",
+      "next_id": "shifting-dungeon-16",
+      "skill_check": {
+        "skill": "cryptography",
+        "difficulty": 70
+      }
+    },
+    {
+      "text": "Press one of the symbols to see what happens",
+      "next_id": "shifting-dungeon-17"
+    },
+    {
+      "text": "Look for hidden clues or markings that might help you understand the symbols",
+      "next_id": "shifting-dungeon-18",
+      "skill_check": {
+        "skill": "observation",
+        "difficulty": 40
+      }
+    }
+  ]
+},
+{
+  "id": "shifting-dungeon-7",
+  "description": "You search the floor and notice several traps laid out, including pressure plates that seem to trigger hidden spikes. As you continue to search, the shifting walls make it harder to pinpoint the traps’ exact locations. The dungeon is alive and unpredictable.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Use your knowledge of engineering to disable the traps",
+      "next_id": "shifting-dungeon-19",
+      "skill_check": {
+        "skill": "engineering",
+        "difficulty": 65
+      }
+    },
+    {
+      "text": "Carefully navigate the traps by memorizing the shifting patterns",
+      "next_id": "shifting-dungeon-20",
+      "skill_check": {
+        "skill": "observation",
+        "difficulty": 50
+      }
+    },
+    {
+      "text": "Set a diversion to trigger the traps away from your path",
+      "next_id": "shifting-dungeon-21",
+      "skill_check": {
+        "skill": "stealth",
+        "difficulty": 60
+      }
+    }
+  ]
+},
+{
+  "id": "shifting-dungeon-8",
+  "description": "The dungeon begins to twist in on itself, changing direction as you pause and watch. You spot a subtle pattern in the way the walls shift, and you feel as though you can predict where the paths will open next. The puzzle of the shifting dungeon seems solvable, if you can act quickly enough.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Use your newfound insight to guide you down the correct path",
+      "next_id": "shifting-dungeon-22",
+      "skill_check": {
+        "skill": "intuition",
+        "difficulty": 55
+      }
+    },
+    {
+      "text": "Wait for the next major shift and take advantage of it",
+      "next_id": "shifting-dungeon-23"
+    },
+    {
+      "text": "Go back to where you started and try a different approach",
+      "next_id": "shifting-dungeon-24"
+    }
+  ]
+},
+{
+  "id": "shifting-dungeon-9",
+  "description": "You push forward, but the more you advance, the more the dungeon changes. The walls shift behind you, and the floor rises beneath your feet. You feel the weight of the dungeon's uncertainty pressing on your chest. It’s like being in a maze that constantly reconfigures itself.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Push forward into the unknown, trusting your instincts",
+      "next_id": "shifting-dungeon-25"
+    },
+    {
+      "text": "Turn around and retrace your steps to see if the path has changed",
+      "next_id": "shifting-dungeon-26"
+    }
+  ]
+}

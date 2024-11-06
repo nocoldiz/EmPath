@@ -1,0 +1,264 @@
+{
+  "id": "court-trial-1",
+  "description": "Em and Bubba find themselves in a large, intimidating tribunal court. The room is filled with stern judges and a bustling crowd. Multiple charges have been brought against them from their past adventures. They stand accused of felonies ranging from illegal alchemy to destruction of public property and even accusations of involvement with shady magical organizations. The fate of both of them hangs in the balance.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Defend yourself by denying all charges and plead innocence",
+      "next_id": "court-trial-2",
+      "skill_check": {
+        "skill": "bluffing",
+        "difficulty": 30
+      }
+    },
+    {
+      "text": "Attempt to bribe the judge to get a lighter sentence",
+      "next_id": "court-trial-3",
+      "skill_check": {
+        "skill": "bluffing",
+        "difficulty": 50
+      }
+    },
+    {
+      "text": "Consult with Bubba and come up with a strategy to prove the charges are fabricated",
+      "next_id": "court-trial-4",
+      "skill_check": {
+        "skill": "diplomacy",
+        "difficulty": 40
+      }
+    }
+  ]
+},
+{
+  "id": "court-trial-2",
+  "description": "You deny all charges, but the prosecutor presents evidence of your past exploits. A magical item you once used, a journal entry from your journey, and even a video recording from a third-party camera. The evidence is overwhelming.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Try to discredit the evidence, saying it's forged or falsified",
+      "next_id": "court-trial-5",
+      "skill_check": {
+        "skill": "cryptography",
+        "difficulty": 60
+      }
+    },
+    {
+      "text": "Admit to the crimes but ask for leniency on the basis of your previous good deeds",
+      "next_id": "court-trial-6",
+      "skill_check": {
+        "skill": "empathy",
+        "difficulty": 40
+      }
+    },
+    {
+      "text": "Request a jury trial to have your case heard by peers",
+      "next_id": "court-trial-7"
+    }
+  ]
+},
+{
+  "id": "court-trial-3",
+  "description": "The judge seems skeptical as you try to bribe him with an offer of money and rare artifacts. The prosecutor raises an eyebrow, clearly aware of the attempt. The tension in the courtroom rises.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Try to charm the judge with your charisma and convince him you're harmless",
+      "next_id": "court-trial-8",
+      "skill_check": {
+        "skill": "diplomacy",
+        "difficulty": 50
+      }
+    },
+    {
+      "text": "Bribe the prosecutor instead in an attempt to win his favor",
+      "next_id": "court-trial-9",
+      "skill_check": {
+        "skill": "bluffing",
+        "difficulty": 55
+      }
+    },
+    {
+      "text": "Give up the bribe and attempt to defend your actions legally",
+      "next_id": "court-trial-10"
+    }
+  ]
+},
+{
+  "id": "court-trial-4",
+  "description": "You whisper to Bubba, strategizing on how to approach the trial. Bubba suggests using your old contacts, including one in the magical underground network, to prove the charges against you are based on rumors and false claims.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Use your contact in the magical underground to disprove the claims",
+      "next_id": "court-trial-11",
+      "skill_check": {
+        "skill": "arcanism",
+        "difficulty": 70
+      }
+    },
+    {
+      "text": "Submit a legal defense by highlighting the flaws in the prosecution's case",
+      "next_id": "court-trial-12",
+      "skill_check": {
+        "skill": "law",
+        "difficulty": 60
+      }
+    },
+    {
+      "text": "Request a recess to gather more evidence in your favor",
+      "next_id": "court-trial-13"
+    }
+  ]
+},
+{
+  "id": "court-trial-5",
+  "description": "You attempt to discredit the evidence, but the prosecutor's cryptographic expert quickly dismantles your argument. The evidence appears irrefutable. The judge's eyes narrow, sensing the weak defense.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Admit to some of the charges and try to negotiate a plea deal",
+      "next_id": "court-trial-6",
+      "skill_check": {
+        "skill": "negotiation",
+        "difficulty": 55
+      }
+    },
+    {
+      "text": "Make a last-ditch effort to call in a surprise witness",
+      "next_id": "court-trial-14",
+      "skill_check": {
+        "skill": "persuasion",
+        "difficulty": 70
+      }
+    }
+  ]
+},
+{
+  "id": "court-trial-6",
+  "description": "You admit to the crimes but beg the court for leniency, referencing your past good deeds. The prosecutor scoffs, and the judge seems unmoved, but there's a small glimmer of hope.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Mention your potential to help with future legal or criminal investigations",
+      "next_id": "court-trial-15",
+      "skill_check": {
+        "skill": "diplomacy",
+        "difficulty": 45
+      }
+    },
+    {
+      "text": "Ask Bubba to speak on your behalf, hoping his emotional appeal will sway the judge",
+      "next_id": "court-trial-16",
+      "skill_check": {
+        "skill": "empathy",
+        "difficulty": 40
+      }
+    }
+  ]
+},
+{
+  "id": "court-trial-7",
+  "description": "You request a jury trial, believing that having your case judged by a group of people rather than a single judge will work in your favor. The court grants the request, and you wait for the jury to be selected.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Present your case to the jury in a calm and logical manner",
+      "next_id": "court-trial-17",
+      "skill_check": {
+        "skill": "diplomacy",
+        "difficulty": 60
+      }
+    },
+    {
+      "text": "Try to win the jury over with an emotional appeal",
+      "next_id": "court-trial-18",
+      "skill_check": {
+        "skill": "empathy",
+        "difficulty": 50
+      }
+    }
+  ]
+},
+{
+  "id": "court-trial-8",
+  "description": "The judge seems momentarily swayed by your charm but quickly regains composure. The courtroom watches as you attempt to win his favor with your words. The tension builds, and the prosecutor appears unimpressed.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Shift to a more aggressive approach, demanding a fair trial",
+      "next_id": "court-trial-19",
+      "skill_check": {
+        "skill": "bluffing",
+        "difficulty": 45
+      }
+    },
+    {
+      "text": "Backtrack and present evidence of your past good deeds",
+      "next_id": "court-trial-6"
+    }
+  ]
+},
+{
+  "id": "court-trial-9",
+  "description": "You bribe the prosecutor, offering him a rare artifact, but it backfires. The prosecutor calls in the guards, and suddenly the situation escalates. You’re now in deeper trouble than before.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Attempt to escape the courtroom and flee",
+      "next_id": "court-trial-20",
+      "skill_check": {
+        "skill": "stealth",
+        "difficulty": 70
+      }
+    },
+    {
+      "text": "Apologize and confess, hoping the judge will show mercy",
+      "next_id": "court-trial-6"
+    }
+  ]
+},
+{
+  "id": "court-trial-10",
+  "description": "You drop the bribe and decide to present your case legally. The prosecutor smirks, but you hold your ground, citing legal precedents and trying to sway the judge's opinion.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Argue the legal flaws in the prosecutor’s case",
+      "next_id": "court-trial-12",
+      "skill_check": {
+        "skill": "law",
+        "difficulty": 65
+      }
+    },
+    {
+      "text": "Challenge the legality of some of the evidence presented",
+      "next_id": "court-trial-5"
+    }
+  ]
+},
+{
+  "id": "court-trial-11",
+  "description": "You call on your underground contact, but the network is slow to respond. The prosecutor uses the delay as an excuse to push forward with the trial.",
+  "image": "",
+  "sound": "",
+  "choices": [
+    {
+      "text": "Pull back and focus on defending yourself using logic and reason",
+      "next_id": "court-trial-10"
+    },
+    {
+      "text": "Request the judge to delay the trial until you can gather further evidence",
+      "next_id": "court-trial-13"
+    }
+  ]
+}

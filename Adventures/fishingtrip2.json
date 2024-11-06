@@ -1,0 +1,136 @@
+{
+  "title": "Fishing with Bubba",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "You and Bubba have decided to spend a relaxing afternoon by the river. The sun is high, the water clear, and the gentle sound of the river flowing creates a peaceful atmosphere. Bubba is already sitting on the riverbank, holding a fishing rod and giving you an encouraging smile. You set your gear down next to him, ready to catch some fish.",
+      "choices": [
+        {
+          "text": "Sit next to Bubba and start fishing right away.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Ask Bubba if he has any fishing tips to share.",
+          "next_id": "adventure-3"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "You sit down beside Bubba, and the two of you cast your lines into the calm water. The sun warms your skin as you settle into a comfortable silence. The occasional splash of a fish jumping in the distance reminds you of the peaceful rhythm of the day.",
+      "choices": [
+        {
+          "text": "Wait patiently for a fish to bite.",
+          "next_id": "adventure-4"
+        },
+        {
+          "text": "Reel in your line and check your bait.",
+          "next_id": "adventure-5"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You turn to Bubba with a smile and ask if he has any fishing tips. Bubba grins and leans in, lowering his voice as if sharing a secret. 'The key to a good catch is patience. But don't be afraid to experiment with different baits or try casting your line in a new spot. Sometimes fish just need a little nudge.' You nod, feeling a little wiser.",
+      "choices": [
+        {
+          "text": "Thank Bubba and start fishing with a renewed sense of focus.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Try using a different bait, hoping to attract more fish.",
+          "next_id": "adventure-5"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You wait patiently, enjoying the quiet of the moment. Bubba hums a tune softly under his breath as the two of you enjoy the stillness. Suddenly, your fishing rod jerks, and you grab it, ready to reel in your first catch. The fight is on!",
+      "choices": [
+        {
+          "text": "Reel in your catch slowly and steadily.",
+          "next_id": "adventure-6",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 20
+          }
+        },
+        {
+          "text": "Pull hard on the rod and try to catch the fish quickly.",
+          "next_id": "adventure-7",
+          "skill_check": {
+            "skill": "fishing",
+            "difficulty": 30
+          }
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "You check your bait and decide to give it another go. Bubba offers a nod of approval as you cast your line back into the water. It’s another peaceful moment as the two of you wait for something to bite.",
+      "choices": [
+        {
+          "text": "Keep waiting patiently for a fish to bite.",
+          "next_id": "adventure-4"
+        },
+        {
+          "text": "Try changing the spot where you cast your line.",
+          "next_id": "adventure-6"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You start reeling in the line slowly, careful not to spook the fish. With a bit of tension in your arms, you feel the fish fighting against the pull of your reel. After a bit of a struggle, you finally manage to bring it to the surface. It’s a decent-sized fish, and you can’t help but smile as Bubba gives you a thumbs up.",
+      "choices": [
+        {
+          "text": "Celebrate your catch and show it to Bubba.",
+          "next_id": "good-end"
+        },
+        {
+          "text": "Release the fish back into the river, giving it a chance to grow.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "You pull hard on the rod, eager to bring in the fish quickly. However, the fish puts up a stronger fight than you expected, and the line snaps under the pressure. You groan in frustration as Bubba gives you a sympathetic look. 'It’s all part of the process,' he says with a grin.",
+      "choices": [
+        {
+          "text": "Try again with a lighter touch this time.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Take a break and enjoy the surroundings for a moment.",
+          "next_id": "neutral-end"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    }
+  ],
+  "endings": {
+    "good-end": {
+      "description": "You hold the fish up proudly for Bubba to see, and he claps you on the back. 'Nice work!' you hear him say as you take a moment to admire your catch. The day is still young, and you’ve already made the most of it."
+    },
+    "neutral-end": {
+      "description": "You release the fish back into the water, watching it swim away. 'It’s always good to give back,' Bubba remarks with a grin. Even though you didn’t keep the fish, the peaceful day has been rewarding in its own way."
+    },
+    "bad-end": {
+      "description": "The line snaps, and the fish escapes. You sit back, a little disappointed, but Bubba just chuckles. 'It happens to the best of us.' You both sit back, enjoying the peace of the river, knowing that there’s always next time."
+    }
+  }
+}

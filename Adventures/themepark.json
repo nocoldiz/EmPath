@@ -1,0 +1,207 @@
+{
+  "title": "The Abandoned Theme Park",
+  "textboxes": [
+    {
+      "id": "park-1",
+      "description": "You arrive at an eerie, overgrown entrance to an old theme park. The once colorful gates are now rusted, and the sign above reads ‘Wonderland Park’. A sense of unease fills the air as you step closer. You can hear the faint sound of music playing in the distance. Bubba is with you, looking around nervously. 'Something doesn’t feel right,' he mutters.",
+      "choices": [
+        {
+          "text": "Enter the theme park, curious about the strange music",
+          "next_id": "park-2"
+        },
+        {
+          "text": "Tell Bubba to wait outside while you investigate alone",
+          "next_id": "park-3"
+        },
+        {
+          "text": "Leave, deciding it’s too risky to explore",
+          "next_id": "park-end"
+        }
+      ]
+    },
+    {
+      "id": "park-2",
+      "description": "You step through the gate and into the park. The sound of music grows louder, but the source remains unclear. The path splits in three directions: the carnival rides, the old game booths, and a towering funhouse in the distance. All are shrouded in mystery and decay. Bubba suggests checking out the rides, but he seems distracted.",
+      "choices": [
+        {
+          "text": "Head towards the carnival rides",
+          "next_id": "park-4"
+        },
+        {
+          "text": "Investigate the game booths, hoping to find clues",
+          "next_id": "park-5"
+        },
+        {
+          "text": "Walk towards the funhouse, feeling drawn to it",
+          "next_id": "park-6"
+        }
+      ]
+    },
+    {
+      "id": "park-3",
+      "description": "You decide to go alone. Bubba’s worried, but you reassure him. As you walk through the gate, a sudden gust of wind blows the rusted door shut behind you. The faint music echoes louder now. You have the option to go towards the rides, booths, or funhouse, but something feels off.",
+      "choices": [
+        {
+          "text": "Go to the carnival rides",
+          "next_id": "park-4"
+        },
+        {
+          "text": "Investigate the game booths",
+          "next_id": "park-5"
+        },
+        {
+          "text": "Head towards the funhouse",
+          "next_id": "park-6"
+        }
+      ]
+    },
+    {
+      "id": "park-4",
+      "description": "You walk towards the carnival rides, now long abandoned. The Ferris wheel creaks in the wind, and the old bumper cars lie scattered in a dirty pit. The music grows louder, and you notice the faint glow of something in the distance. When you approach, the ground shakes slightly. Is it an earthquake, or something else?",
+      "choices": [
+        {
+          "text": "Investigate the glowing object in the distance",
+          "next_id": "park-7",
+          "skill_check": {
+            "skill": "empathy",
+            "difficulty": 50
+          }
+        },
+        {
+          "text": "Check the bumper cars for anything unusual",
+          "next_id": "park-8"
+        },
+        {
+          "text": "Leave the rides and head back to the entrance",
+          "next_id": "park-end"
+        }
+      ]
+    },
+    {
+      "id": "park-5",
+      "description": "The game booths are eerily still, the carnival prizes gathering dust in the windows. You wonder if anything still works. The faded prizes mock you from their display shelves. You spot a strange shimmer coming from one of the booths, a sign of life in this ghost town.",
+      "choices": [
+        {
+          "text": "Approach the shimmer and inspect it",
+          "next_id": "park-9",
+          "skill_check": {
+            "skill": "electronics",
+            "difficulty": 40
+          }
+        },
+        {
+          "text": "Try one of the old booths to see if anything still works",
+          "next_id": "park-10"
+        },
+        {
+          "text": "Leave the booths and head towards the funhouse",
+          "next_id": "park-6"
+        }
+      ]
+    },
+    {
+      "id": "park-6",
+      "description": "The towering funhouse looms before you, its warped mirror windows reflecting odd shapes. The entrance is blocked by vines, but you manage to push through. Inside, everything seems distorted. The walls appear to move, and you hear faint laughter echoing in the air. You feel as if you're being watched.",
+      "choices": [
+        {
+          "text": "Explore deeper inside the funhouse",
+          "next_id": "park-11"
+        },
+        {
+          "text": "Leave the funhouse and check the carnival rides",
+          "next_id": "park-4"
+        },
+        {
+          "text": "Exit the funhouse, feeling too uneasy to continue",
+          "next_id": "park-end"
+        }
+      ]
+    },
+    {
+      "id": "park-7",
+      "description": "As you approach the glowing object, it becomes clearer: it’s a strange stone, pulsing with an eerie light. As you touch it, you feel a surge of energy course through your body, followed by a strange vision: the theme park isn’t abandoned; it’s simply frozen in time. The energy from the stone may have awakened something in the park.",
+      "choices": [
+        {
+          "text": "Take the stone and see if it leads anywhere",
+          "next_id": "park-12",
+          "reward": {
+            "id": "glowing_stone",
+            "quantity": 1
+          }
+        },
+        {
+          "text": "Leave the stone, unsure if it’s worth the risk",
+          "next_id": "park-end"
+        }
+      ]
+    },
+    {
+      "id": "park-8",
+      "description": "You check the bumper cars and find one that’s still operational. As you start to turn it on, the lights flicker and a distorted voice emerges from the speakers. 'Leave now.' The sound is chilling. Bubba’s voice calls out from behind you: 'We should go, this place is bad news.'",
+      "choices": [
+        {
+          "text": "Drive the bumper car towards the exit",
+          "next_id": "park-end"
+        },
+        {
+          "text": "Turn off the car and investigate further",
+          "next_id": "park-4"
+        }
+      ]
+    },
+    {
+      "id": "park-9",
+      "description": "You approach the shimmer and find an old, rusted control panel. After some tinkering, you manage to bring the booth to life. The game suddenly activates, but instead of a typical carnival game, it shows a map of the park with unknown symbols and locations marked on it.",
+      "choices": [
+        {
+          "text": "Follow the map to the marked location",
+          "next_id": "park-13"
+        },
+        {
+          "text": "Leave the booth and check the rides",
+          "next_id": "park-4"
+        }
+      ]
+    },
+    {
+      "id": "park-10",
+      "description": "You try one of the old booths, but it only spits out broken tokens. Still, the tokens shimmer with a strange energy. Maybe they’re more than they seem.",
+      "choices": [
+        {
+          "text": "Take the tokens and see if they’re useful later",
+          "next_id": "park-14",
+          "reward": {
+            "id": "mysterious_tokens",
+            "quantity": 3
+          }
+        },
+        {
+          "text": "Leave the booth and head to the funhouse",
+          "next_id": "park-6"
+        }
+      ]
+    },
+    {
+      "id": "park-11",
+      "description": "As you venture deeper into the funhouse, the mirrors reflect strange, distorted versions of yourself. You feel disoriented and confused, unsure of what’s real. Suddenly, a voice echoes, ‘You can never leave.’ The mirrors start to move, trapping you inside.",
+      "choices": [
+        {
+          "text": "Break a mirror to escape",
+          "next_id": "park-15",
+          "skill_check": {
+            "skill": "handtohand",
+            "difficulty": 60
+          }
+        },
+        {
+          "text": "Call for help, hoping Bubba can get you out",
+          "next_id": "park-16"
+        }
+      ]
+    },
+    {
+      "id": "park-end",
+      "description": "You make your way out of the park, the strange music still echoing in your ears. The place may have been abandoned for years, but you’ll never forget the feeling of being watched. Perhaps you’ll return someday… if only to unravel its secrets."
+    }
+  ]
+}

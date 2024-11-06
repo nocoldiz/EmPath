@@ -1,0 +1,189 @@
+{
+  "title": "The Gigantic Shift",
+  "textboxes": [
+    {
+      "id": "adventure-1",
+      "description": "As the camper drives through the valley, the world around you begins to warp. A bright, intense light shines from above—a prismatic entity floating in the sky, its rays casting pure white beams across the valley. You feel an intense pressure build up, and before you can even react, the light envelops you. When the light fades, you realize with a mix of awe and terror that you’ve grown to an enormous size—hundreds of kilometers tall. The land beneath you is now a vast expanse, with tiny structures and people barely visible at your feet.",
+      "choices": [
+        {
+          "text": "Look down at the valley, trying to gauge the extent of the changes.",
+          "next_id": "adventure-2"
+        },
+        {
+          "text": "Move cautiously, testing your new scale and the world around you.",
+          "next_id": "adventure-3"
+        },
+        {
+          "text": "Try to find Bubba, hoping that he’s still in the camper.",
+          "next_id": "adventure-4"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-2",
+      "description": "As you gaze downward, the once familiar camper seems like a speck on the landscape. You can barely make out the movement of people, and the trees look like tiny tufts of grass. The valley, now a vast plain beneath you, stretches endlessly in all directions. The prismatic entity still hovers in the sky, and you realize that the light may have altered reality itself. The earth feels fragile beneath your massive form, and your every movement causes tremors. You must carefully consider your next move.",
+      "choices": [
+        {
+          "text": "Try to move slowly, being mindful of your enormous size.",
+          "next_id": "adventure-5"
+        },
+        {
+          "text": "Attempt to sit down in an attempt to reduce the environmental impact.",
+          "next_id": "adventure-6"
+        },
+        {
+          "text": "Focus on the prismatic entity, wondering if it has caused your transformation.",
+          "next_id": "adventure-7"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-3",
+      "description": "You begin to move carefully, but your enormous legs cause massive shaking with each step. The world around you buckles and shifts, and buildings collapse from the pressure of your presence. You feel immense guilt as you watch the tiny structures and people scatter. You realize that any movement, no matter how small, could have catastrophic consequences. The valley feels fragile, and you must take extreme care.",
+      "choices": [
+        {
+          "text": "Try to move to an open area to minimize destruction.",
+          "next_id": "adventure-8"
+        },
+        {
+          "text": "Pause and attempt to control your movements more consciously.",
+          "next_id": "adventure-9"
+        },
+        {
+          "text": "Stop moving entirely and observe the world around you for a while.",
+          "next_id": "adventure-10"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-4",
+      "description": "You try to locate Bubba, but your towering form makes it almost impossible to see the camper from above. You spot a small speck in the distance, but it’s hard to determine whether it’s Bubba or something else. You feel the need to hurry, but each step you take causes massive disruptions in the landscape. Time seems to stretch, and you realize that you may have caused irreversible damage just by moving.",
+      "choices": [
+        {
+          "text": "Move carefully toward the camper and try to locate Bubba.",
+          "next_id": "adventure-11"
+        },
+        {
+          "text": "Stop and try to communicate with Bubba telepathically.",
+          "next_id": "adventure-12"
+        },
+        {
+          "text": "Attempt to look for clues in the environment to determine where Bubba might be.",
+          "next_id": "adventure-13"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-5",
+      "description": "You try to move cautiously, but the immense scale of your body makes it almost impossible to be gentle. Every footstep sends tremors through the valley, and the structures around you seem to crumble from the force. You realize that the valley is not built to support a being of your size. The ground begins to crack beneath your feet, and you hear the faint sound of buildings breaking apart.",
+      "choices": [
+        {
+          "text": "Stop moving and focus on controlling your immense strength.",
+          "next_id": "adventure-14"
+        },
+        {
+          "text": "Try to use your hands to gently support the ground to avoid destruction.",
+          "next_id": "adventure-15"
+        },
+        {
+          "text": "Look for a way to shrink back to your original size.",
+          "next_id": "adventure-16"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-6",
+      "description": "You attempt to sit down in an open area, but the ground beneath you cracks with the weight of your enormous form. The land shifts and groans as the valley struggles to support you. You realize that no matter what you do, the valley is not designed to accommodate a being of your size. You must find a way to either reduce your size or leave the area altogether.",
+      "choices": [
+        {
+          "text": "Attempt to contact the prismatic entity to see if it can reverse the transformation.",
+          "next_id": "adventure-17"
+        },
+        {
+          "text": "Try to stand up carefully and move to a safer location.",
+          "next_id": "adventure-18"
+        },
+        {
+          "text": "Look around for any possible sources of magic or technology that could help.",
+          "next_id": "adventure-19"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-7",
+      "description": "You turn your attention to the prismatic entity. Its rays still shimmer brightly in the sky, casting odd reflections across the land. The prismatic light seems to be interacting with the world, bending it in strange ways. You begin to feel that your transformation is linked to the entity, but the true nature of its power is still unclear.",
+      "choices": [
+        {
+          "text": "Attempt to interact with the entity directly using your mental strength.",
+          "next_id": "adventure-20",
+          "skill_check": {
+            "skill": "arcanism",
+            "difficulty": 85
+          }
+        },
+        {
+          "text": "Look for any signs or symbols that might explain the entity’s influence.",
+          "next_id": "adventure-21"
+        },
+        {
+          "text": "Try to communicate with the entity telepathically, asking it to reverse your transformation.",
+          "next_id": "adventure-22"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-8",
+      "description": "You try to carefully step toward an open area, hoping to reduce the damage caused by your movements. However, the landscape remains fragile, and you can feel the earth trembling beneath you. You’re overwhelmed by the sheer size of your body and the difficulty of controlling it. The tension builds as you consider your next move.",
+      "choices": [
+        {
+          "text": "Try to stand still and focus on controlling your movements.",
+          "next_id": "adventure-23"
+        },
+        {
+          "text": "Move toward a distant mountain range, hoping it offers more stability.",
+          "next_id": "adventure-24"
+        },
+        {
+          "text": "Investigate the shimmering light around you, hoping it will offer a solution.",
+          "next_id": "adventure-25"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    },
+    {
+      "id": "adventure-9",
+      "description": "You focus intently on your movements, hoping to stop the trembling and minimize the damage. But the strain is immense. The weight of your enormous body is difficult to manage, and you’re starting to feel the physical strain of existing at this size. Every minute feels like an hour as you try to control your immense strength.",
+      "choices": [
+        {
+          "text": "Try to meditate and calm your mind to gain better control.",
+          "next_id": "adventure-26"
+        },
+        {
+          "text": "Continue to move slowly and cautiously, avoiding causing further destruction.",
+          "next_id": "adventure-27"
+        },
+        {
+          "text": "Try to contact the prismatic entity directly.",
+          "next_id": "adventure-28"
+        }
+      ],
+      "image": "",
+      "sound": ""
+    }
+  ]
+}
